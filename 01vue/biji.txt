@@ -1,0 +1,153 @@
+姜文 1035465284  18310349227
+
+
+webstorm 2017.1
+node 7.6 
+
+
+数组的方法：
+	pop push shift unshift indexof slice lastIndexOf reverse sort join map forEach filter for of 
+	splice includes concat some every reduce find 
+ 
+
+includes:  包含，
+	console.log([1,2,3].includes(4))  false indexOf 
+	console.log([1,2,33].includes(3))  false
+
+	some 找的是true　every找的是false  是一对,find 找的是那一项，如果没有，返回undefined 
+	
+	let arr=[1,2,3,4,5,6]
+	let flag=arr.some(function(item,index){
+		return item>3
+	});
+
+	let arr=[1,2,3,4,5,6]
+	let flag=arr.every(function(item,index){
+		return item>3
+	});
+	
+	find 
+	let arr=[1,2,3,4,5,6]
+	let flag=arr.find(function(item,index){
+		return item>3
+	});
+
+filter:过滤，如果回调函数中返回true，表示要，会将这一项放在新数组里
+	let arr=[1,2,3,4,5,6]
+	let newarr=arr.filter(function(item,index){
+		return item!==2 && item !==4
+	});
+
+每个callback后面都是一个参数是this指向
+	let arr=[1,2,3,4,5,6]
+	let newarr=arr.filter(function(item,index){
+		console.log(this)
+	},index);
+
+
+map:把原数组变成一个新的数组
+let nArr=[1,2,3,4,5,6].map(function(item,index){
+	return item*2
+})
+
+
+reduce :收敛  返回叠加后的结果 ，有4个参数
+	let arr=[1,2,3,4,5,6]
+	let r=arr.reduce(function(prev,next){
+		return prev+next;
+	});
+	
+	let pArr=[{price:28,count:1},{price:18,count:3},{price:12,count:5}]
+	let r=pArr.reduce(function(prev,next,index){
+		console.log(index)
+		if(index==1){ //index==1 是循环的第一次，加起来的是数字
+			return prev.price*prev.count+next.price*next.count
+		}
+		return prev+next.price*next.count
+	});
+
+	let pArr=[0,{price:28,count:1},{price:18,count:3},{price:12,count:5}]
+	let r=pArr.reduce(function(prev,next,index){
+		return prev+next.price*next.count
+		
+	});
+
+	let pArr=[{price:28,count:1},{price:18,count:3},{price:12,count:5}]
+	let r=pArr.reduce(function(prev,next,index){
+		return prev+next.price*next.count
+		
+	},0)
+
+	let pArr=[[1,2,3],[1,2,3],[1,2,3]]
+	let r=pArr.reduce(function(prev,next,index){
+		return prev.concat(next)
+	})
+
+//配置node 环境  setting->npm
+//配置es环境  setting->language->es6
+
+
+箭头函数：没有this指向，没有orguments
+
+需要改变this就有箭头函数
+
+let obj={
+	a:1,
+	b:function(){
+		setTimeout(function(){
+			console.log(this.a)
+		},bind(this));
+	}
+}
+	
+obj.b();
+
+let obj={
+	a:1,
+	b:function(){
+		setTimeout(()=>{
+			console.log(this.a)
+		});
+	}
+}
+	
+obj.b();
+
+
+
+
+
+function x(a){
+	return function y(b){
+		return a+b
+	}
+}
+
+left x=a=>{
+	return b=>a+b
+}
+
+let x=a=>b=>a+b   //高阶函数 
+console.log(x(1)(2))
+
+let newFunc=(a,...rest)=>{  //剩余运算符
+	console.log(...rest)
+}
+newFunc(1,2,3,4)
+
+
+vue  view  用户界面，渐进式框架
+
+安装node 
+node -v
+npm init
+npm install vue --save 
+
+
+表单元素
+--可以实现数据绑定
+
+
+
+
+
