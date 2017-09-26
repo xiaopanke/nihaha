@@ -147,7 +147,17 @@ npm install vue --save
 表单元素
 --可以实现数据绑定
 
+vm.$set
+vm.$el
+
+v-model 双向绑定
+v-once 绑定一次
+v-html 展示成html
+v-text  可以解决闪烁问题
+
+v-for
+v-cloak 和 CSS 规则如 [v-cloak] { display: none }
 
 
 
-
+npm install vue --save ?区别

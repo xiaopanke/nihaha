@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1312345623</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{msg}}</p>
+        <input type="text" v-model="msg">
+        <div v-once>
+            {{msg}}
+        </div>
+        <div v-html="msg"></div>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        }
+    })
+</script>
+</body>
+</html>

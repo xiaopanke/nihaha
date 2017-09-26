@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1323</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{school.name}}{{school.age}}{{school.address}}</p>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'12313',
+            school:{name:'lipanke',age:'1'}
+        }
+    })
+    vm.$set(vm.school,'address','回')
+</script>
+</body>
+</html>
