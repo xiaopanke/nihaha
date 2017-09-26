@@ -161,3 +161,4 @@ v-cloak 和 CSS 规则如 [v-cloak] { display: none }
 
 
 npm install vue --save ?区别
+一会看区别
