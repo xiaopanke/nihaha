@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .cart{
+           text-align: center; font-size:35px; line-height: 100px; width:100px;height:100px;position: fixed;bottom:50px;right:0;background:yellow; color:#000;}
+    .boxshow{ position:fixed;bottom:10px;width:80%;background: #fff;}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <a href="" class="navbar-brand">拖拽购物车</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <div class="col-md-3" v-for="(item,index) in cart">
+                    <div class="panel panel-warning" draggable="true" @dragstart="start($event,index)">
+                        <div class="panel-heading">{{item.name}}</div>
+                        <div class="panel-body"><img :src="item.cover" alt="" width="100" ref="img"></div>
+                        <div class="panel-footer">价格：{{item.price}}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="cart" @drop="drop" @dragover.prevent @click="boxshow=!boxshow">
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+            <span>{{count}}</span>
+        </div>
+        <div class="container boxshow" v-if="boxshow" >
+            <table class="table table-bordered">
+                <caption class="text-center">商品列表</caption>
+                <p v-if="!buy.length">暂无商品</p>
+                <tr v-if="buy.length">
+                    <th class="text-center text-danger">全选 <input type="checkbox"></th>
+                    <th class="text-center text-danger">商品</th>
+                    <th class="text-center text-danger">单价</th>
+                    <th class="text-center text-danger">数量</th>
+                    <th class="text-center text-danger">小计</th>
+                    <th class="text-center text-danger">操作</th>
+                </tr>
+                <tr  v-for="(item,index) in buy">
+                    <th><input type="checkbox"></th>
+                    <th>{{item.name}}</th>
+                    <th>{{item.price}}</th>
+                    <th><button>-</button><input type="text" v-model="item.num"><button>+</button></th>
+                    <th>￥{{item.price * item.num}}</th>
+                    <th>
+                        <button>删除</button>
+                    </th>
+                </tr>
+                <!--sum()这种方法一般不会使用，因为性能低，只要页面上有任何一个数据变化sum都会重新执行-->
+                <tr><td colspan="6">总价：</td></tr>
+            </table>
+        </div>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            cart:[],
+            buy:[],
+            curDrag:{},
+            boxshow:false
+        },
+        created(){
+            this.initdata();
+        },
+        computed:{
+            count(){
+                return this.buy.length
+            }
+        },
+        methods:{
+            initdata(){
+                this.$http.get('./cartdata.json').then((res)=>{
+                    this.cart=res.body
+                },(err)=>{
+                   console.log(err)
+                })
+            },
+            start(e,index){
+                this.curDrag=this.cart[index] //记住当前拖拽的那一项
+                this.curDrag.num=1;
+                e.dataTransfer.setDragImage(this.$refs.img[index],0,0) //设置拖拽的图片
+            },
+            drop(){
+                this.buy.push(this.curDrag)
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

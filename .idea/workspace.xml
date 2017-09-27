@@ -2,319 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4f68da-0a9b-4c90-8d89-6d74519b66ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/1.buy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/2.decorate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/2.decorate2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/3.v-bind.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/prodata.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/201708node" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/dist/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/bs-commonjs-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/bs-raw-files-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/change-version.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/configBridge.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/npm-shrinkwrap.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/js/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/badges.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/close.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/glyphicons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/input-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/jumbotron.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/background-variant.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/border-radius.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/center-block.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/clearfix.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/gradients.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/grid-framework.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/hide-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/image.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/nav-divider.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/nav-vertical-align.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/opacity.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/progress-bar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/reset-filter.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/reset-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/resize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/responsive-visibility.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/size.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/tab-focus.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/table-row.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/text-emphasis.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/text-overflow.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/mixins/vendor-prefixes.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/modals.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/pager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/print.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/responsive-embed.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/tables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/theme.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/less/wells.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/bootstrap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.esm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.runtime.common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.runtime.esm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.runtime.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/dist/vue.runtime.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/codegen/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/codegen/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/create-compiler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/directives/bind.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/directives/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/directives/model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/directives/on.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/error-detector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/helpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/optimizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/parser/entity-decoder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/parser/filter-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/parser/html-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/parser/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/parser/text-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/compiler/to-function.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/components/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/components/keep-alive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/global-api/assets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/global-api/extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/global-api/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/global-api/mixin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/global-api/use.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/init.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/inject.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/lifecycle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/proxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/bind-object-listeners.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/bind-object-props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/check-keycodes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/render-list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/render-slot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/render-static.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/resolve-filter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render-helpers/resolve-slots.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/render.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/instance/state.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/observer/array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/observer/dep.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/observer/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/observer/scheduler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/observer/watcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/debug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/error.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/lang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/perf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/util/props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/create-component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/create-element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/create-functional-component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/extract-props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/get-first-component-child.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/is-async-placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/merge-hook.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/normalize-children.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/resolve-async-component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/helpers/update-listeners.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/modules/directives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/modules/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/modules/ref.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/patch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/core/vdom/vnode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/directives/html.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/directives/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/directives/model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/directives/text.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/modules/class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/modules/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/modules/style.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/compiler/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/entry-compiler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/entry-runtime-with-compiler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/entry-runtime.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/entry-server-basic-renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/entry-server-renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/class-util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/components/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/components/transition-group.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/components/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/directives/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/directives/model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/directives/show.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/modules/attrs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/modules/class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/modules/dom-props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/modules/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/modules/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/modules/style.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/modules/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/node-ops.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/patch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/runtime/transition-util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/compiler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/directives/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/directives/show.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/modules/attrs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/modules/class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/modules/dom-props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/modules/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/modules/style.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/server/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/util/attrs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/util/class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/util/compat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/util/element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/util/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/web/util/style.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/directives/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/directives/model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/modules/append.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/modules/class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/modules/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/modules/props.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/compiler/modules/style.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/entry-compiler.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/entry-framework.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/entry-runtime-factory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/components/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/components/richtext.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/components/transition-group.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/components/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/directives/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/modules/attrs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/modules/class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/modules/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/modules/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/modules/style.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/modules/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/node-ops.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/patch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/runtime/text-node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/platforms/weex/util/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/bundle-renderer/create-bundle-renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/bundle-renderer/create-bundle-runner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/bundle-renderer/source-map-support.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/create-basic-renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/create-renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/optimizing-compiler/codegen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/optimizing-compiler/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/optimizing-compiler/modules.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/optimizing-compiler/optimizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/optimizing-compiler/runtime-helpers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/render-context.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/render-stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/render.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/template-renderer/create-async-file-mapper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/template-renderer/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/template-renderer/parse-template.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/template-renderer/template-stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/webpack-plugin/client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/webpack-plugin/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/webpack-plugin/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/server/write.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/sfc/parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/shared/constants.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/src/shared/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/types/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/types/options.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/types/plugin.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/types/vnode.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node_modules/vue/types/vue.d.ts" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/1drag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/2.computed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/2.watch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/02vue/cartdata.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/ad.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/video.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02vue/biji.txt" afterPath="$PROJECT_DIR$/02vue/biji.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -329,31 +24,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2.decorate2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02vue/2.decorate2.html">
+      <file leaf-file-name="1drag.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02vue/1drag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+            <state relative-caret-position="-475">
+              <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biji.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02vue/biji.txt">
+      <file leaf-file-name="cartdata.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02vue/cartdata.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="3.v-bind.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02vue/3.v-bind.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -364,6 +49,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>npm</find>
+      <find>all</find>
+      <find>count</find>
+      <find>curDrag</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -377,9 +65,15 @@
         <option value="$PROJECT_DIR$/02vue/prodata.json" />
         <option value="$PROJECT_DIR$/02vue/1.buy.html" />
         <option value="$PROJECT_DIR$/02vue/2.decorate.html" />
-        <option value="$PROJECT_DIR$/02vue/biji.txt" />
         <option value="$PROJECT_DIR$/02vue/2.decorate2.html" />
         <option value="$PROJECT_DIR$/02vue/3.v-bind.html" />
+        <option value="$PROJECT_DIR$/02vue/1.buy02.html" />
+        <option value="$PROJECT_DIR$/02vue/2.computed.html" />
+        <option value="$PROJECT_DIR$/02vue/1.computed.html" />
+        <option value="$PROJECT_DIR$/02vue/2.watch.html" />
+        <option value="$PROJECT_DIR$/02vue/cartdata.json" />
+        <option value="$PROJECT_DIR$/02vue/biji.txt" />
+        <option value="$PROJECT_DIR$/02vue/1drag.html" />
       </list>
     </option>
   </component>
@@ -422,6 +116,9 @@
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -511,7 +208,64 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -526,18 +280,18 @@
       <option name="presentableId" value="Default" />
       <updated>1506430414257</updated>
       <workItem from="1506430416648" duration="608000" />
-      <workItem from="1506476814384" duration="11552000" />
+      <workItem from="1506476814384" duration="24804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12160000" />
+    <option name="totallyTimeSpent" value="25412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="2" width="1310" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1885626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17233385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -598,14 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01vue/biji.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="150" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02vue/4.boot.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -620,22 +366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02vue/prodata.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="75" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02vue/1.buy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -656,18 +386,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02vue/biji.txt">
+    <entry file="file://$PROJECT_DIR$/02vue/3.v-bind.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="14" />
+        <state relative-caret-position="220">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/1.buy02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02vue/3.v-bind.html">
+    <entry file="file://$PROJECT_DIR$/02vue/2.computed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="250">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/1.computed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="51" column="56" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/2.watch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/biji.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/prodata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/1.buy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01vue/biji.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="32" column="7" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/cartdata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02vue/1drag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
           <folding />
         </state>
       </provider>

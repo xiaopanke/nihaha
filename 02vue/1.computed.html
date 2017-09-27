@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <table class="table-bordered table">
+                <tr>
+                    <td><input type="checkbox" v-model="all"></td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr v-for="(item,index) in products">
+                    <td><input type="checkbox" v-model="item.checked"></td>
+                    <td><input type="text" v-model="item.producename"></td>
+                    <td><input type="text" v-model="item.produceprice"></td>
+                    <td><input type="text" v-model="item.producenum"></td>
+                    <td><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td colspan="5">{{sum}}</td>
+                </tr>
+            </table>
+            <input type="text" v-model="name">
+        </div>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            name:'123',
+            products:[
+                {"checked":true,"producename":"书名01","produceprice":"2.12","producenum":2}
+                ,{"checked":true,"producename":"书名02","produceprice":"1.32","producenum":5}
+                ,{"checked":true,"producename":"书名03","produceprice":"1.12","producenum":5}
+            ],
+        },
+        computed:{//计算”属性“ 但是写的时候是方法
+            /*sum(){
+                console.log(1)
+                return this.products.reduceRight((prev,next)=>prev+next.produceprice*next.producenum,0);
+            }*/
+            all:{
+                get(){
+                    console.log(this.products.every(item=>item.checked))
+                    return this.products.every(item=>item.checked)
+                },
+                set(val){
+                     this.products.forEach(item=>item.checked=val)
+                }
+            },
+            sum:{
+                get(){
+                    return this.products.reduceRight((prev,next)=>prev+next.produceprice*next.producenum,0);
+                },
+                set(val){ //给sum复制的时候调用
+                   console.log(val)
+                }
+            }
+        },
+        methods:{
+
+        }
+    })
+
+
+</script>
+</body>
+</html>

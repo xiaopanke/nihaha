@@ -36,8 +36,24 @@ vue开发工具
     - .self  这个事件只在自己身上触发 e.target || e.srcElement
     - .once  绑定只触发一次
 
+computed:{//计算”属性“ 但是写的时候是方法
+            sum(){
+                console.log(1)
+                return this.products.reduceRight((prev,next)=>prev+next.produceprice*next.producenum,0);
+            }
+        },
+
+        {{sum}}
 
 
+
+sum:{
+    get(){
+        return this.products.reduceRight((prev,next)=>prev+next.produceprice*next.producenum,0);
+    }
+}
+
+this.$refs.img
 
 删除
 this.products.filter(item=>item==v))
