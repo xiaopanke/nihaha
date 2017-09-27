@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修饰符</title>
+</head>
+<body>
+    <div id="app">
+        <div @click="grandPa">grandPa
+            <div @click="parent">
+                parent
+                <div @click.stop="son">son</div>
+            </div>
+
+        </div>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+
+        },
+        methods:{
+            grandPa(){
+                alert('grandPa');
+            },
+            parent(){
+                alert('parent');
+            },
+            son(){
+                alert('son'); //先冒泡
+            },
+        }
+    })
+
+
+</script>
+</body>
+</html>

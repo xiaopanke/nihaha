@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div id="app">
+        <div class=""container>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <caption class="text-center">商品列表</caption>
+                    <p v-if="!products.length">暂无商品</p>
+                   <tr v-if="products.length">
+                        <th class="text-center text-danger">全选</th>
+                        <th class="text-center text-danger">商品</th>
+                        <th class="text-center text-danger">单价</th>
+                        <th class="text-center text-danger">数量</th>
+                        <th class="text-center text-danger">小计</th>
+                        <th class="text-center text-danger">操作</th>
+                    </tr>
+                    <tr  v-for="(item,index) in products">
+                        <th><input type="checkbox" v-model="item.checked"></th>
+                        <th>{{item.producename}}</th>
+                        <th>{{item.produceprice}}</th>
+                        <th><input type="text" v-model="item.producenum"></th>
+                        <th>{{item.produceprice * item.producenum}}</th>
+                        <th>
+                            <button @click="deletapro($event)" :data-index="index">删除</button>
+                        </th>
+                    </tr>
+                </table>
+                <button @click="seleall"  v-if="products.length">全选</button>
+                <form action="">
+                    <div class="form-group">
+                        <label for="producename"  class="control-label">商品名称</label>
+                        <input type="text" id="producename" class="form-control"  v-model="addname">
+                    </div>
+                    <div class="form-group">
+                        <label for="produceprice" class="control-label"  >商品价格</label>
+                        <input type="text" id="produceprice" class="form-control" v-model="addprice">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" type="button" @click="addproduce">添加</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+    <!--vue-resource，他会将一个$http属性挂载在vm上-->
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            addname:'',
+            addprice:'',
+            products:[]
+        },
+        created(){
+            this.$http.get('./prodata.json').then(function(r){
+                this.products=r.body
+
+            },function (e) {
+                console.log(e)
+            })
+        },
+        methods:{
+            addproduce(){
+                this.products.push({
+                    checked:false,
+                    producename:this.addname,
+                    produceprice:this.addprice,
+                    producenum:1
+                })
+            },
+            deletapro(e){
+                this.products.splice(e.currentTarget.getAttribute('data-index'),1);
+            },
+            seleall(){
+                this.products.forEach(function (item,index) {
+                    item.checked=true;
+                })
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>
