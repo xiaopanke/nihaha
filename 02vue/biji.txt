@@ -3,7 +3,7 @@ created(){}  指的是vm创建完成后，数据和方法已经被声明好了，
 获取数据，这个方法他钩子方法，这里的this指向vm实例
 
 
-    created(){
+    created(){ //等data和methods加载完，再加载
                 this.$http.get('./prodata.json').then(function(r){//success
                     this.products=r.body
 

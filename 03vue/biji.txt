@@ -1,0 +1,17 @@
+
+可以多个一起安装
+npm install vue bootstrap axios --save
+
+解决异步的方案就是回调函数
+callback->promise->generator->async await
+
+
+watch:{ //只能默认监控一层
+        todos:{
+            handler(){
+                localStorage.setItem('list',JSON.stringify(this.todos))
+            },deep:true
+        }
+    }
+
+    那个deep是深度监控
