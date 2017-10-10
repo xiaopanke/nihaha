@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="msg[0].name">
+
+    </div>
+<script src="vue.min.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:[{name:12,num:1}]
+        },
+        watch:{
+            /*msg:{
+                handler(){
+                    console.log('改变啦')
+                },deep:true
+            }*/
+            msg(){ //watch 只监控第一层，如果想深监控就加handler 和deep
+                    console.log('改变啦')
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>
