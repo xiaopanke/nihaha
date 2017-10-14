@@ -1,0 +1,91 @@
+git config --global user.name xiaopanke
+
+git config --global user.email 1547947237@qq.com
+
+查看配置的列表
+git config --list
+
+初始化git（会产生一个.git文件夹）
+以某个文件夹做为git所管理的目录
+git init
+
+要提交git前先查看信息
+git status
+（如果是红色表示未添加到暂存区）
+
+
+
+
+git add 文件名    提交到暂存区
+git add -A   提交到暂存区
+git add .    提交到暂存区
+
+git commint -m "注释"  提交到历史区
+
+
+
+
+git log 查看git提交的日志
+git reflog  查看git 所有的日志
+
+
+比较每个区的不同git diff
+
+git diff  比较工作区和暂存区
+git diff --cached  比较暂存区和历史区
+git diff 分支名   比较工作区和历史区
+
+
+撤销(穿越)：
+从暂存区回到工作区
+    git checkout 文件名
+    git checkout .
+
+可能文件已经提交到暂存区了就用 （将本次的暂存区回到上一次的暂存区）
+    git reset HEAD  文件名
+    git reset HEAD .
+
+从历史区回滚
+    git reset --hard id
+
+
+分支列表
+git branch
+
+
+建分支
+git branch 分支名
+
+
+切分支
+git checkout 分支名
+
+删除分支 （先切换到别的分支，再删除分支）
+git branch -D 分支名
+
+创建并切换分支
+git checkout -b 分支名
+
+
+合并分支 ：
+
+首先先切换到master    git merge 分支名
+
+
+
+linux命令:
+pwd 打印文件目录
+clear 清屏
+mkdir 文件夹名   创建目录  eg:  mkdir haha
+ls    list-show 看文件列表
+ls -al 看到所有的文件列表（包括那个隐藏的文件）
+cd    change  directory
+touch 文件名     创建文件  eg:  touch 1.txt
+vi  文件名    编辑文件  然后再按i 键 改完之后呢  按esc  :  wq
+             清空文件的全部内容  按esc : 1,$d
+        如果只最近只输入一个q，表示的是不保存
+
+cat 文件名   查看文件的内容
+
+删除文件夹 ：rm -rf 文件夹名
+删除git：rm -rf .git

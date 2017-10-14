@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <style>
+        [v-cloak]{display: none}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="msg">
+        <div v-text="msg"></div>
+        <div v-once v-cloak >{{msg}}</div>
+        <!--
+            v-once 只绑定一次
+            v-cloak 当页面编译完成后会将此属性移除掉
+        -->
+        <div v-html="msg"></div> <!--合理使用，否则会导致xss攻击，将字符串转化成html标签 -->
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        }
+    })
+
+
+</script>
+</body>
+</html>
