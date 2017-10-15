@@ -1,7 +1,0 @@
-Object.definePropery  实现了双向绑定   https://github.com/DMQ/mvvm
-
-
-
-v-model 会忽略所有表单元素的value,checked,selected
-
-语法糖：通常来说使用语法糖能够增加程序的可读性，从而减少程序代码出错的机会。
