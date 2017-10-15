@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in list">
+                {{item.num*item.price | toFixedfn(1,'$')}}
+            </li>
+        </ul>
+    </div>
+<script src="vue.min.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            list:[
+                {num:1,price:12.1},
+                {num:2,price:1.21},
+                {num:3,price:2.1}
+            ]
+        },
+        filters:{
+            toFixedfn(v,parm1,parm2){
+                //第一个参数是传过来的值 ，从第二个开始 是自定义传过来的值
+                return v+parm2+parm1;
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

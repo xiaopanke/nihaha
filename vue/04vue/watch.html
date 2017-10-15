@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        watch:{ //watch和computed  computed不能实现异步  watch可以实现异步，有的时候，他们可以相互转化
+            msg(newvalue,oldvalue){
+                console.log('newvalue='+newvalue+'&oldvalue='+oldvalue);
+            }
+        },
+        data:{
+            msg:'1233'
+        }
+    })
+
+
+</script>
+</body>
+</html>

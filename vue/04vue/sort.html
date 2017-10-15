@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div id="app">
+        <div class="container" >
+            <table class="table table-bordered table-hover text-center">
+                <tr>
+                    <th class="text-center" @click="sortfn(0)">英语</th>
+                    <th class="text-center" @click="sortfn(1)">数学</th>
+                    <th class="text-center" @click="sortfn(2)">语文</th>
+                </tr>
+                <tr v-for="score in computeScores">
+                    <td v-for="i in score">{{i}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            type:0,
+            scores:[
+                {english:38,math:99,chinese:1},
+                {english:18,math:103,chinese:12},
+                {english:28,math:100,chinese:40},
+                {english:68,math:100,chinese:6}
+            ]
+        },
+        computed:{
+            computeScores(){
+                switch(this.type){
+                    case 0:
+                        return this.scores.sort((a,b)=>a.english-b.english);
+                        break;
+                    case 1:
+                        return this.scores.sort(function (a,b) {
+                            return a.math-b.math
+                        });
+                        break;
+                    case 2:
+                        return this.scores.sort(function (a,b) {
+                            return a.chinese-b.chinese
+                        });
+                        break;
+                }
+
+            }
+        },
+        methods:{
+            sortfn(t){
+                this.type=t;
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生命周期</title>
+</head>
+<body>
+    <div id="app">
+        <p>外部</p>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        template:'<div id="a">内部</div>', //有内部的模板就不用模板了
+        beforeCreate(){//一般用不到
+            console.log(this.msg)
+        },
+        created(){//获取数据 方法和数据已经挂载在实例上
+            console.log(this.msg)
+            console.log(document.getElementById('a')) //获取不到
+        },
+        beforeMount(){//此函数挂载之前 ，没有应用场景
+            alert(1);
+        },
+        mounted(){//挂载之后 可以获取真实的dom元素
+            alert(2);
+            console.log(document.getElementById('a')) //能获取
+        },
+        beforeUpdata(){//dom更新前会触发这个事件，，可以做一个全局数据的监控，我们一般用watch
+            alert(1)
+        },
+        updated(){
+
+        },
+        beforeDestory(){
+            alert('我死了');//一般清空定时器，或者移除自定义函数（肯定不会手动调用destroy方法）
+        },
+        destory(){}
+
+    })
+
+
+</script>
+</body>
+</html>

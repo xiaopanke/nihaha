@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <!--可以循环数字，字符串，数组，对象-->
+            <li v-for="(s,key,index) in my">{{index}}{{key}}:{{s}}</li>
+        </ul>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            my:{'name':'李盼珂','age':'17','身高':161.5}
+        }
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title></title>
+<style type="text/css">
+	/* init */
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table, th, td { margin: 0; padding: 0; }
+address, cite, em, i { font-style: normal; }
+body{ -webkit-appearance: none; background:#ffffff;}
+li { list-style: none; }
+a { color:#535862; text-decoration: none; }
+img{ vertical-align: top; border: 0;  }
+input[type="button"], input[type="submit"], input[type="reset"] { cursor: pointer; }
+input{outline: none;border: none; background-color:transparent;  
+    color:#fff;  
+    FILTER: alpha(opacity=0); /*androd*/  
+    appearance:none;  /*下拉框去掉右侧图标*/  
+    -moz-appearance:none;  
+    -webkit-appearance:none;}
+html,body{font:20px/1rem 'Microsoft Yahei'; color: #333;}
+.clearfix:after{ display: block;content: ''; clear: both;}
+.fl{ float: left;}
+.fr{ float: right;}
+.bsbb{ box-sizing:border-box;}
+/*header*/
+header{ height: 6rem; border-bottom:  #EFEFF4 .5rem solid;}
+header .hd_l{width: 50%; text-align: center; margin-top: 1.3rem;}
+header .hd_l p{font-size: .6rem; color:#878C92 ;}
+header .hd_l li{ width: 50%;}
+header .hd_l .num{ display: block; font-size: 1.2rem; font-weight: normal; line-height: 1.675rem;}
+header .hd_l .type{ font-size: 0.75rem ;}
+header .hd_r{ width: 6.6rem;margin-top: 1.1rem; margin-right: .6rem;}
+header .hd_r li{ line-height: }
+header .hd_r li span{ font-size: .6rem; color: #878C92;}
+header .hd_r li i{ font-size: .7rem; }
+header .hd_r .btn{border: 1px solid #FF5F57;border-radius: 8px; line-height: 1.5rem; text-align: center; display: block; margin:.4rem auto 0; color: #F24637; font-size: .7rem;}
+header .hd_r{}
+/*con*/
+.con{padding-bottom: 2.4rem;}
+.con .tab_btn {border-radius: 4px 0 0 4px; width: 17.6rem; margin:.5rem auto 0; border-left: 1px solid #ccc;}
+.con .tab_btn span{float:left; width:33.33%;line-height: 1.5rem; text-align: center; border: 1px solid #ccc; border-left:none; font-size: .65rem; 
+    box-sizing:border-box;}
+.con .tab_btn span:nth-child(1){border-radius: 4px 0 0 4px;}
+.con .tab_btn span:nth-child(3){border-radius: 0 4px 4px 0;}
+.con .tab_btn .cur{ background: #333; color: #fff;}
+/*todaylist今日申购*/
+.con .todaylist li{ position: relative; border-bottom: 1px solid #dbdbdb; padding-bottom: 1rem;}
+.con .todaylist .close .icon_l,.con .todaylist .close .msg{ opacity: .4;}
+.con .todaylist .icon_l{ width: 1.2rem; height: 1.2rem; border:1px solid #d2d2d2; border-radius: 50%; position: absolute; top:50%; margin-top:-.6rem; left: .75rem; }
+ .con .todaylist  .choose{ background: url(img/choose.png) no-repeat center center; background-size:.7rem auto}
+.con .todaylist .icon_r{ width: .275rem; height: .55rem; position: absolute; top:50%; margin-top:-.3rem; right: .75rem; background: url(img/arrow.png); background-size: 100% 100%; }
+.con .todaylist .msg{ margin-left: 2.95rem; margin-top: 1rem;}
+.con .msg h3{ font-size: .8rem; line-height: 1rem; margin-bottom: .25rem; }
+.con .msg h3 span{ color: #333;}
+.con .msg .type{ width: 1.2rem; line-height:0.95rem;border: 1px solid #3996F2;
+border-radius: 0.475rem; float: left; font-size: .55rem; text-align: center; color: #3996F2; margin-right: .25rem;}
+.con .msg .orange{ border-color: #FF7100; color: #FF7100;}
+.con .msg p{margin-bottom: .25rem;}
+.con .msg span{ font-size: .7rem; color: #878C92; float:left; margin-right: .2rem;}
+.con .msg em{ font-size: .7rem; float:left; margin-right: .85rem;}
+.con .msg .num{line-height: 1.75rem;}
+.con .msg .numbox{ margin-right: .25rem;}
+.con .msg .numbox .btn_l,.con .msg .numbox .btn_r{ width: 1.75rem; height: 1.75rem; background: url(img/reduce.png);float:left; background-size: 100% 100%;}
+.con .msg .numbox .btn_r{ background-image: url(img/add.png);}
+.con .msg .numbox .numin{ width: 3.825rem; border-top: 1px solid #d2d2d2;  float: left; border-bottom: 1px solid #d2d2d2; padding-left: 0.675rem;font-size:.7rem; font-weight: normal;box-sizing:border-box; line-height: 1.75rem; }
+/*waitlist待申购*/
+.waitlist{ display: none;}
+/*myist申购记录*/
+.mylist{ display: none;}
+.con .newrule { text-align: right; padding-right: .75rem; padding-top: .25rem; }
+.con .newrule a{ color: #3996F2; text-decoration: underline; font-size: .6rem;}
+.con .gobtn{ width: 100%; background: #F24637;  color: #fff; line-height: 2.4rem; font-size: .85rem; position: fixed; bottom: 0; left: 0;}
+.con .gobtn_on{ background: #dbdbdb;}
+.nothing{ width: 6rem; height: 6rem; background: url(img/nothing.png); background-size: 100% 100%;     margin: 4rem auto 7rem; display: none;}
+/*弹窗*/
+.focus-dlg {position:fixed;top:0;left:0;width:100%;height:100%;z-index:2000;opacity:0;visibility:hidden;-moz-transform:scale(.5);-ms-transform:scale(.5);-o-transform:scale(.5);-webkit-transform:scale(.5);transform:scale(.5);-moz-transition:transform .3s cubic-bezier(.17,.67,.42,1.22);-o-transition:transform .3s cubic-bezier(.17,.67,.42,1.22);-webkit-transition:transform .3s cubic-bezier(.17,.67,.42,1.22);transition:transform .3s cubic-bezier(.17,.67,.42,1.22);display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;}
+.md-dialog-show .focus-dlg {visibility:visible;opacity:1;-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);-webkit-transform:scale(1);transform:scale(1);}
+.md-dialog-show .md-overlay {opacity:1;visibility:visible;-moz-transition:all 1s;-o-transition:all 1s;-webkit-transition:all 1s;transition:all 1s;}
+.md-overlay {position:fixed;width:100%;height:100%;visibility:hidden;top:0;left:0;z-index:1000;opacity:0;background:rgba(0,0,0,0.75);filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#50000000',EndColorStr='#50000000');-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;}
+.dlg-con {background:#f5f5f5;width:89.3%;border-radius:4px;position:relative;padding-bottom:3rem;}
+.dlg-con .tit {margin:1.575rem 1.25rem .5rem;line-height:1rem;font-size:.8rem;font-weight:normal;}
+.dlg-con  .red {color:#F24637;}
+.dlg-con .subtit {margin:0 1.25rem 1rem;color:#878C92;font-size:.6rem;}
+.dlg-con .dlg-btn-wrap {width:100%;position:absolute;bottom:0;left:0;border-top:1px solid #d5d5d5;}
+.layout-box {display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;display:flexbox;display:box;}
+.dlg-con .dlg-btn:first-child {border-right:1px solid #d5d5d5;}
+.dlg-con .dlg-btn {height:2.475rem;line-height:2.475rem;text-align:center;font-size:.8rem;color:#3996F2;-webkit-box-flex:1;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;}
+.dlg-con .msg span{ margin: 1.5rem .25rem 0 1.5rem; font-size: .7rem;}
+.dlg-con .msg ul{ margin-top: 1.3rem;}
+.dlg-con .msg li{  font-size: .8rem; line-height: 1.2rem;}
+</style>
+<script src="http://i0.jrjimg.cn/zqt-red-1000/focus/common/js/jquery-1.7.2.min.js
+"></script>
+<script type="text/javascript">
+    /*计算字体大小*/
+    function change(){
+        document.documentElement.style.fontSize=20*document.documentElement.clientWidth/375+'px';
+    }
+    change();
+   $(function(){
+        window.addEventListener('resize',change,false);
+        //弹窗
+        $('.gobtn').click(function(){
+            $('body').addClass('md-dialog-show');
+        });
+        $('.dlg-btn-wrap .submit,.dlg-btn-wrap .dlg-close,.focus-dlg').click(function(){
+            $('body').removeClass('md-dialog-show');
+        });
+        $('.focus-dlg div').unbind().click(function (e) {
+            e.stopPropagation();
+        });
+        //小圆形按钮
+        $('.con .open .icon_l').toggle(function(){
+            $(this).addClass('choose');
+        },function(){
+            $(this).removeClass('choose');
+        });
+        //加股按钮
+        $('.con .open .btn_r').click(function(){
+            $(this).prev().val(parseInt($(this).prev().val())+500);
+            return false;
+        });
+        //减股按钮
+        $('.con .open .btn_l').click(function(){
+            $(this).next().val(parseInt($(this).next().val())-500);
+            //判断
+            if(parseInt($(this).next().val())<=0){
+                $(this).next().val(0);
+            }
+             return false;
+        });
+        //点击每个申购，跳详情页
+        $('.con .todaylist .open').click(function(){
+            window.location.href='https://www.baidu.com/';
+        });
+        $('.con .todaylist .close').click(function(){
+             return false;
+        });
+        //tab
+        $('.tab_btn span').click(function(){
+            $('.tab_btn span').removeClass('cur');
+            $('.tab_bd').hide();
+            $(this).addClass('cur');
+            $('.tab_bd').eq($(this).index()).show();
+        });
+   });
+</script>
+</head>
+<body>
+	<header class="clearfix">   
+        <div class="hd_l fl">
+            <p>您账户可申购额度为(股)</p>
+            <ul class="clearfix">    
+                <li class="fl">
+                    <strong class="num">30000</strong>
+                    <span class="type">沪市</span>
+                </li>     
+                <li class="fl">
+                    <strong class="num">50000</strong>
+                    <span class="type">深市</span>
+                </li>   
+            </ul>   
+        </div>
+        <div class="hd_r fr">
+            <ul>
+                <li class="clearfix">
+                    <span class="fl">可用余额</span>
+                    <i class="fr">194.56万</i>
+                </li>
+                <li class="clearfix">
+                    <span class="fl">中签需缴</span>
+                    <i class="fr">99999.65元</i>
+                </li>
+            </ul>
+            <a href="#" class="btn" >中签缴款</a>
+        </div>
+    </header>
+    <section class="con">
+        <div class="clearfix tab_btn">
+            <span class="cur">今日申购</span>
+            <span>待申购</span>
+            <span>申购记录</span>
+        </div>  
+        <ul class="todaylist tab_bd">
+            <li class="clearfix open">
+                <span class="icon_l fl choose"></span>
+                <div class="msg fl">
+                    <h3 class="clearfix">
+                        <i class="type">沪</i><span>雄帝科技  300546</span>
+                    </h3>  
+                    <p class="clearfix">
+                        <span>申购价格</span>
+                        <em>20.43</em>
+                        <span>申购价格</span>
+                        <em>20.43</em>
+                    </p> 
+                    <div class="num clearfix">
+                        <span>申购数量</span>
+                        <div class="numbox fl">
+                            <input type="button" class="btn_l" />
+                            <input type="text" value="1000" class="numin" >
+                            <input type="button" class="btn_r" />
+                        </div>
+                        <span>股</span>
+                    </div>
+                </div>
+                <span class="icon_r fl"></span>
+            </li>
+            <li class="clearfix close">
+                <span class="icon_l fl"></span>
+                <div class="msg fl">
+                    <h3 class="clearfix">
+                        <i class="type orange">深</i><span>雄帝科技  300546</span>
+                    </h3>  
+                    <p class="clearfix">
+                        <span>申购价格</span>
+                        <em>20.43</em>
+                        <span>申购价格</span>
+                        <em>20.43</em>
+                    </p> 
+                </div>
+                <span class="icon_r fl"></span>
+            </li>
+        </ul>
+        <div class="waitlist tab_bd">待申购</div>
+        <div class="mylist tab_bd">申购记录</div>
+        <p class="newrule"><a href="#">打新规则，一看就会</a></p>
+        <div class="nothing"></div>
+        <input type="button" value="一键申购" class="gobtn" />
+    </section>   
+    <!--弹窗-->
+    <div class="focus-dlg">
+        <div class="dlg-con">
+            <!--<div class="tit red">您已经成功申购xxxx1000股，xxxx2000股，请耐心等待中签结果。</div>
+            <p class="subtit">xxxx为创业板股票，您没有申购权限；xxxx您已经申购过1000股，不能再次申购。</p>-->
+            <div class="msg clearfix">
+                <span class="fl">您即将申购：</span>
+                <ul class="fl">
+                    <li>兄弟科技 1000股</li>
+                    <li>常熟银行 12000股</li>
+                </ul>   
+            </div>
+            <div class="dlg-btn-wrap layout-box">
+                <!--<a class="dlg-btn dlg-close">取消</a>-->
+                <a class="dlg-btn submit">确认</a>
+            </div>
+        </div>
+    </div>
+    <div class="md-overlay"></div>
+</body>
+</html>

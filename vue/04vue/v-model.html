@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <div @click="haha($event)" ref="heihei">点击我</div>
+        <!--如果checkbox绑定n个值，此时数据必须是数组类型，并且checkbox必须有value属性，当选中后会将value都放在数组里-->
+        <input type="checkbox" v-model="checks" value="睡觉"> 睡觉
+        <input type="checkbox" v-model="checks" value="游戏"> 游戏
+        <input type="checkbox" v-model="checks" value="玩"> 玩
+        <br />
+        {{checks}}
+        <br />
+        <br />
+        <br />
+        <!--使用radio 必须加value属性，会自动的将点击的结果赋予给v-model绑定的数据，如果相等则选中，不相等则取消选中-->
+        <input type="radio" v-model="radio" value="男"> 男
+        <input type="radio" v-model="radio" value="女"> 女
+        <input type="radio" v-model="radio" value="中性"> 中性
+        <br />
+        {{radio}}
+
+        <br />
+        <br />
+        <br />
+        <!--默认使用value，没有value就使用option里面的值 -->
+        <select v-model="select">
+            <option value="" disabled>请选择</option>
+            <option value="1">北京</option>
+            <option value="2">河北</option>
+            <option value="3">河南</option>
+        </select>
+        <br>
+        {{select}}
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            select:'',
+            radio:'男',
+            checks:['玩']
+        },
+        methods:{
+            haha(e){
+                console.log(e.target);
+                //e.target.style.background='red'
+                this.$refs.heihei.style.background='red'
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

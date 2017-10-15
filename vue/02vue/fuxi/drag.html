@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <style>
+        .box{width:100px;height:100px;background:red;}
+        .go{ position: fixed;bottom:0;right:0;width:50px;height:50px;background:yellow;}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="box" draggable="true" @dragstart="start($event)">
+            wr<br />
+        </div>
+        <div class="go"></div>
+    </div>
+<script src="vue.min.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        methods:{
+            start(e){
+                e.dataTransfer.setDragImage()
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

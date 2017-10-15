@@ -2,125 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4f68da-0a9b-4c90-8d89-6d74519b66ed" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01node/biji.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/.idea/01vue.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/1.arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/1.helloWorld.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/2.arrowFunc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/2.double.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/3.directive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/4.boot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/biji.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/biji.txt.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/node.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/img/add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/img/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/img/choose.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/img/nothing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/img/reduce.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/01vue/xingu/img/tip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/.idea/01vue.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/1.buy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/1.computed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/1drag.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/2.computed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/2.decorate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/2.decorate2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/2.watch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/3.v-bind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/4.boot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/biji.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/cartdata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/drag.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/1.arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/axios.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/buji.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/computed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/drag.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/jihuabian.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/object.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/object.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/v-if.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/vue.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/fuxi/watch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/node.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/prodata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/02vue/video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/.idea/01vue.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/1.axios.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/2.promise.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/3.promise.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/4.promise.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/5.todo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/6.copy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/6.lifecycle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/biji.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/todo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/03vue/todo.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/Object.definePropery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/Object.definePropery2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/biji.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/computed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/directive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/directive2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/livecycle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/ref.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/set.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/sort.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/sort2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/sort3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/todolist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/v-for.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/v-if.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/v-model.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue/watch.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/b.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/biji.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/.babelrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/dist/a1fdc1c911bc390c323c918e6883b12e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/dist/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/src/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/src/a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/src/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/src/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/src/style.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue/webpack-pro/webpack.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/text_niu.text" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -482,12 +363,20 @@
       <workItem from="1507772297497" duration="22956000" />
       <workItem from="1507860131029" duration="4522000" />
       <workItem from="1507866388352" duration="36258000" />
-      <workItem from="1508031806364" duration="247000" />
+      <workItem from="1508031806364" duration="352000" />
     </task>
+    <task id="LOCAL-00001" summary="改变目录结构">
+      <created>1508032094542</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1508032094542</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132669000" />
+    <option name="totallyTimeSpent" value="132774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +388,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="28" width="1310" height="728" extended-state="0" />
+    <frame x="35" y="28" width="1310" height="728" extended-state="1" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24606918" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -524,6 +413,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="改变目录结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="改变目录结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .del{text-decoration: line-through;color:#999;}
+        .red{font-size: 12px;}
+        [v-cloak] { display: none; }
+    </style>
+</head>
+<body>
+<div id="app">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    todolist
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container" v-cloak>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <p class="text-warning">亲，还有{{notodo}}件事需要完成</p>
+                            <input type="text" class="form-control" v-model="todo.title" @keyup.enter="add" >
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item" v-for="(item,index) in newtodos">
+                                    <!--点击谁，就把当前这个记住，用当前这个和每一项比，-->
+                                    <div @dblclick="savecurrent(item)" v-show="cur!==item">
+                                        <input type="checkbox" v-model="item.selected">
+                                        <!--<span :class="item.selected  ? 'del' :''">{{item.title}}</span>-->
+                                        <span :class="{del:item.selected,red:item.selected}">{{item.title}}</span>
+                                        <button class="btn btn-danger btn-xs pull-right" @click="removefn(item)">&times;</button>
+
+                                    </div>
+                                    <!--v-auto-focus.1="cur==item"  自定义指令-->
+                                    <input type="text" ref="input" v-model="newobj.title"   v-show="cur==item" v-auto-focus.1="cur==item" @keyup.esc="cancel" @keyup.enter="submitfn(item)" @blur="submitfn(item)" >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+                            <ul class="nav nav-pills">
+                                <li :class="{active:hash=='all'}"><a href="#all">全部</a></li>
+                                <li :class="{active:hash=='unfinish'}"><a href="#unfinish">未完成</a></li>
+                                <li :class="{active:hash=='finish'}"><a href="#finish">已完成</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+    vue-resource 和 axios 是基于promise
+    vue-resource 支持jsonp 可以在服务器使用
+    axios 不支持jsonp ,没有挂在vue实例上
+-->
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="node_modules/axios/dist/axios.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>
