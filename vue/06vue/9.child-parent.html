@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <div :style="{'background':color}">父级</div>
+        <child :color="color" @childfn="changeparent">
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            color:'red'
+        },
+        methods:{
+            changeparent(val){//子级触发父组件时传递过来的
+                this.color=val
+            }
+        },
+        components:{
+            child:{
+                template:`<div :style="{'background':color}">子级的{{color}}<button @click="changeson">变蓝</button></div>`,
+                methods:{
+                    changeson(){
+                        this.$emit('childfn','blue')
+                    }
+                },
+                props:{
+                    color:{
+                        type:String,
+                        default:'yellow'
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <child :title="msg"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    /*
+    子组件不能改父组件
+    * props:['title'] 数组方式不能能被属性的校验
+    * type:[Number,Boolean,Array,Object,String]  校验类型
+    *
+    * 父组件如何调用子组件的方法
+    *
+    * */
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:100
+        },
+        components:{
+            child:{
+                'template':'<div>儿子{{title}}{{abc}}</div>',
+                props:{
+                    title:{
+                        //type:Number//要求必须是Number类型，只有提示作用
+                        type:[Number,Boolean,Array,Object,String],
+                        default:'无', //如果父组件不传给子组件，默认就是'无',
+                        validator(val){//val代表传递过来的值，如果返回true，就通过，反之，就不通过
+                            return val>500
+                        }
+                    },
+                    abc:{}
+                },
+                methods:{
+                    fn(){
+                        this.title='哈哈'
+                    }
+                }
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

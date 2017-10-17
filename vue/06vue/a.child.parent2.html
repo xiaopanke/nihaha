@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <child :abc.sync="msg"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        methods:{
+            changefnparent(val){
+                this.msg=val
+            }
+        },
+        components:{
+            child:{
+                'template':"<div>{{abc}}<button @click='changefnson'>123</button></div>",
+                props:['abc'],
+                methods:{
+                    changefnson(){
+                        this.$emit('update:abc','123123')
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

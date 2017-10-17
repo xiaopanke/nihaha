@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <my-hello></my-hello>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let my={
+        template:'<div>{{msg}}</div>',
+        data(){
+            return {
+                msg:'hello'
+            }
+        }
+    }
+    Vue.component('my-hello',my)
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        }
+    })
+
+
+</script>
+</body>
+</html>

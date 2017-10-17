@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        {{count}}
+        <!--<child :count="count" @fnson="val=>count=count+val"></child>-->
+        <child :count.sync="count"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            count:1
+        },
+        methods:{
+
+        },
+        components:{
+            child:{
+                'template':'<div>{{count}} <button @click="add()">+ {{num}}</button></div>',
+                data(){
+                    return {
+                        num:5,
+                        count2:0
+                    }
+                },
+                props:['count'],
+                methods:{
+                    add(){
+                        this.count2=this.count+this.num;
+                        this.$emit('update:count',this.count2)
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

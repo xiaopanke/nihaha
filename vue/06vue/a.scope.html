@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <child></child>
+        <child2></child2>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    /*
+    * 组件中不能使用同一个对象
+    * */
+    let obj={count:1}
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        components:{
+            child:{
+                data(){
+                    return obj
+                },
+                'template':'<div>儿子组件{{count}}<button @click="count++">12</button></div>',
+            },
+            child2:{
+                data(){
+                    return obj
+                },
+                'template':'<div>儿子组件{{count}}<button @click="count++">12</button></div>',
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

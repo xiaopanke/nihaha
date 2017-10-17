@@ -20,3 +20,27 @@ spa框架:
 
 npm init -y
 npm i vue bootstrap axios
+
+子组件得到父组件的data
+    <child :abc="abc"></child>
+
+    props:[abc]
+
+点击子组件改变父组件的data
+        <child :color="color" @childfn="changeparent">
+        this.$emit('childfn','blue')
+
+
+
+props父传递数据给子数据
+-作用域是狡辩的，互相不能访问
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="fn">父级的点击</button>
+        <!--
+            ref 放在原生dom上可以获取元素，放在组件上可以获取组件
+        -->
+        <child :title="msg" ref="child"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'123'
+        },
+        methods:{
+            fn(){
+                alert(this.$refs.child.title+this.$refs.child.bb);
+                this.$refs.child.fn() //父组件调用子组件的方法
+            }
+        },
+        components:{
+            child:{
+                data(){
+                    return {
+                        bb:'bb'
+                    }
+                },
+                template:'<div>{{title}}<button @click="fn">点击</button></div>',
+                props:['title'],
+                methods:{
+                    fn(){
+                        alert('子级');
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

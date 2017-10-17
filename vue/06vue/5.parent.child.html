@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <child :song="msg"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+
+    /*
+    * 组件相互独立，两个人之间没有任何关系
+    * 父组件传给子组件：
+    *   子组件加属性  子组件用props接收（会在当前组件上声明一个data）
+    * */
+
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'老子'
+        },
+        components:{
+            child:{
+                template:'<div>儿子{{song}}</div>',
+                props:['song']
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

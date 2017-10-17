@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <div></div>
+        <span></span>
+        <p></p>
+    </div>
+    <script>
+        let root=document.querySelector('#app')
+        let fragment=document.createDocumentFragment();
+
+        function  getchild() {
+            if(!first)return;
+            fragment.appendChild(root.firstChild)
+            getchild()
+        }
+        getchild()
+        console.log(fragment)
+    </script>
+</body>
+</html>

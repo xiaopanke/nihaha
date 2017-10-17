@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        父{{msg}}
+        <child :msg.sync="msg"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        components:{
+            child:{
+                template:"<div>{{msg}}<button @click='fn'>点击 </button></div>",
+                props:['msg'],
+                methods:{
+                    fn(){
+                        this.$emit('update:msg','blue')
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

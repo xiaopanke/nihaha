@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+        <child :title="msg" :a="1"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    /*
+    * 子组件不能直接更改父组件的数据，可以让子组件传递给父组件，父组件改变后再重新渲染给子组件
+    * 单向数据流 （只能让父组件来更改，再传给子组件）
+    * */
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'老子'
+        },
+        components:{
+            child:{
+                'template':'<div style="color:red">儿子{{title}}{{a}} <button @click="fn">打</button></div>',
+                props:['title','a'],
+                methods:{
+                    fn(){
+                        this.title='哈哈'
+                    }
+                }
+            }
+        }
+    })
+
+</script>
+</body>
+</html>
