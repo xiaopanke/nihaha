@@ -2,14 +2,422 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4f68da-0a9b-4c90-8d89-6d74519b66ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/1.start.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/2.global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/3.arguments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/sum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/use.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/usesum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/README.MD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/errno" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/errno.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/image-size" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/image-size.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/lessc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/lessc.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/mime" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/mime.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/mkdirp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/.bin/mkdirp.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/handsome/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/handsome/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/zfpx/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/node_modules/zfpx/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/02node/4.npm/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/05vue/donghua/1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/05vue/donghua/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/05vue/donghua/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/05vue/donghua/vue.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/05vue/donghua/yarn.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/1.global.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/2.scope.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/3.transclude.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/3.transclude.component2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/biji.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/UPGRADE_GUIDE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/dist/axios.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/dist/axios.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/dist/axios.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/dist/axios.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/index.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/adapters/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/adapters/http.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/adapters/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/axios.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/cancel/Cancel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/cancel/CancelToken.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/cancel/isCancel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/Axios.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/InterceptorManager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/createError.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/dispatchRequest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/enhanceError.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/settle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/core/transformData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/defaults.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/bind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/btoa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/buildURL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/combineURLs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/cookies.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/deprecatedMethod.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/isAbsoluteURL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/isURLSameOrigin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/normalizeHeaderName.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/parseHeaders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/helpers/spread.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/lib/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/axios/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/dist/js/npm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/bs-commonjs-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/bs-glyphicons-data-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/bs-lessdoc-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/bs-raw-files-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/change-version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/configBridge.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/npm-shrinkwrap.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/grunt/sauce_browsers.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/affix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/scrollspy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/js/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/glyphicons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/input-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/jumbotron.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/background-variant.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/border-radius.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/center-block.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/clearfix.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/gradients.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/grid-framework.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/hide-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/image.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/nav-divider.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/nav-vertical-align.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/opacity.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/progress-bar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/reset-filter.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/reset-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/resize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/responsive-visibility.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/size.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/tab-focus.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/table-row.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/text-emphasis.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/text-overflow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/mixins/vendor-prefixes.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/print.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/responsive-embed.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/bootstrap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/.coveralls.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/.eslintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/src/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/src/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/src/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/src/inspector-log.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/debug/src/node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/follow-redirects/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/follow-redirects/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/follow-redirects/http.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/follow-redirects/https.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/follow-redirects/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/follow-redirects/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/is-buffer/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/is-buffer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/is-buffer/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/is-buffer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/is-buffer/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/is-buffer/test/basic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/ms/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/ms/license.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/ms/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/ms/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.esm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.runtime.common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.runtime.esm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.runtime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/dist/vue.runtime.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/codegen/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/codegen/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/create-compiler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/directives/bind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/directives/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/directives/on.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/error-detector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/optimizer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/parser/entity-decoder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/parser/filter-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/parser/html-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/parser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/parser/text-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/compiler/to-function.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/components/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/components/keep-alive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/global-api/assets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/global-api/extend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/global-api/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/global-api/mixin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/global-api/use.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/inject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/lifecycle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/proxy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/bind-object-listeners.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/bind-object-props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/check-keycodes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/render-list.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/render-slot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/render-static.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/resolve-filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render-helpers/resolve-slots.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/render.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/instance/state.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/observer/array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/observer/dep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/observer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/observer/scheduler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/observer/watcher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/error.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/next-tick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/perf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/util/props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/create-component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/create-element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/create-functional-component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/extract-props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/get-first-component-child.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/is-async-placeholder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/merge-hook.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/normalize-children.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/resolve-async-component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/helpers/update-listeners.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/modules/directives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/modules/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/modules/ref.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/patch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/core/vdom/vnode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/directives/html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/directives/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/directives/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/modules/class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/modules/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/modules/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/modules/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/compiler/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/entry-compiler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/entry-runtime-with-compiler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/entry-runtime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/entry-server-basic-renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/entry-server-renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/class-util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/components/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/components/transition-group.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/components/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/directives/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/directives/show.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/modules/attrs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/modules/class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/modules/dom-props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/modules/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/modules/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/modules/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/modules/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/node-ops.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/patch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/runtime/transition-util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/compiler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/directives/show.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/modules/attrs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/modules/class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/modules/dom-props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/modules/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/modules/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/server/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/util/attrs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/util/class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/util/compat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/util/element.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/util/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/web/util/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/directives/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/modules/append.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/modules/class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/modules/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/modules/props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/compiler/modules/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/entry-compiler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/entry-framework.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/entry-runtime-factory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/components/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/components/richtext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/components/transition-group.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/components/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/modules/attrs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/modules/class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/modules/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/modules/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/modules/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/modules/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/node-ops.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/patch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/runtime/text-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/platforms/weex/util/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/bundle-renderer/create-bundle-renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/bundle-renderer/create-bundle-runner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/bundle-renderer/source-map-support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/create-basic-renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/create-renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/optimizing-compiler/codegen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/optimizing-compiler/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/optimizing-compiler/modules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/optimizing-compiler/optimizer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/optimizing-compiler/runtime-helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/render-context.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/render-stream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/render.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/template-renderer/create-async-file-mapper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/template-renderer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/template-renderer/parse-template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/template-renderer/template-stream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/webpack-plugin/client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/webpack-plugin/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/webpack-plugin/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/server/write.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/sfc/parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/shared/constants.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/src/shared/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/types/index.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/types/options.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/types/plugin.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/types/vnode.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/node_modules/vue/types/vue.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/06vue/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue/lipanke.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/02node/biji.txt" afterPath="$PROJECT_DIR$/node/02node/biji.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue/05vue/webpack-pro/package.json" afterPath="$PROJECT_DIR$/vue/05vue/webpack-pro/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,61 +432,61 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="biji.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/06vue/biji.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.global.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/06vue/1.global.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="biji.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node/02node/biji.txt">
+        <entry file="file://$PROJECT_DIR$/node/01git/biji.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+            <state relative-caret-position="264">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2.global.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/02node/2.global.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1342">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sum.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/02node/sum.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="3.arguments.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/02node/3.arguments.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usesum.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/02node/usesum.js">
+      <file leaf-file-name="2.scope.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/06vue/2.scope.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
+              <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4.dialog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/02node/4.dialog.js">
+      <file leaf-file-name="3.transclude.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/06vue/3.transclude.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="7" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3.transclude.component2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/06vue/3.transclude.component2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -91,8 +499,8 @@
       <list>
         <option value="XSLT Stylesheet" />
         <option value="Less File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -117,18 +525,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fuxi/object.html" />
-        <option value="$PROJECT_DIR$/fuxi/object.js" />
-        <option value="$PROJECT_DIR$/fuxi/buji.txt" />
-        <option value="$PROJECT_DIR$/fuxi/jihuabian.js" />
-        <option value="$PROJECT_DIR$/fuxi/1.arr.js" />
-        <option value="$PROJECT_DIR$/fuxi/global.js" />
-        <option value="$PROJECT_DIR$/04vue/biji.txt" />
-        <option value="$PROJECT_DIR$/04vue/Object.defindPropery.html" />
-        <option value="$PROJECT_DIR$/04vue/Object.definePropery2.js" />
-        <option value="$PROJECT_DIR$/04vue/Object.definePropery.js" />
-        <option value="$PROJECT_DIR$/04vue/v-model.html" />
-        <option value="$PROJECT_DIR$/04vue/set.html" />
         <option value="$PROJECT_DIR$/04vue/directive.html" />
         <option value="$PROJECT_DIR$/04vue/computed.html" />
         <option value="$PROJECT_DIR$/04vue/vue.html" />
@@ -167,7 +563,19 @@
         <option value="$PROJECT_DIR$/node/02node/4.dialog.js" />
         <option value="$PROJECT_DIR$/node/02node/sum.js" />
         <option value="$PROJECT_DIR$/node/02node/usesum.js" />
+        <option value="$PROJECT_DIR$/node/02node/4.npm/README.MD" />
+        <option value="$PROJECT_DIR$/node/02node/4.npm/package.json" />
+        <option value="$PROJECT_DIR$/node/02node/4.npm/handsome/index.js" />
+        <option value="$PROJECT_DIR$/node/02node/4.npm/zfpx/index.js" />
+        <option value="$PROJECT_DIR$/node/02node/4.npm/main.js" />
         <option value="$PROJECT_DIR$/node/02node/biji.txt" />
+        <option value="$PROJECT_DIR$/vue/lipanke.txt" />
+        <option value="$PROJECT_DIR$/vue/05vue/donghua/1.html" />
+        <option value="$PROJECT_DIR$/vue/06vue/biji.txt" />
+        <option value="$PROJECT_DIR$/vue/06vue/1.global.component.html" />
+        <option value="$PROJECT_DIR$/vue/06vue/2.scope.component.html" />
+        <option value="$PROJECT_DIR$/vue/06vue/3.transclude.component.html" />
+        <option value="$PROJECT_DIR$/vue/06vue/3.transclude.component2.html" />
       </list>
     </option>
   </component>
@@ -183,11 +591,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node/02node/4.npm/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
-    <option name="y" value="28" />
+    <option name="x" value="47" />
+    <option name="y" value="13" />
     <option name="width" value="1310" />
-    <option name="height" value="728" />
+    <option name="height" value="691" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -230,7 +641,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -240,6 +650,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="haha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,9 +730,14 @@
               <option name="myItemId" value="node" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,6 +755,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\haha\vue\06vue" />
       <recent name="C:\Users\Administrator\Desktop\haha\04vue" />
       <recent name="C:\Users\Administrator\Desktop\haha\fuxi" />
       <recent name="C:\Users\Administrator\Desktop\haha\03vue" />
@@ -312,34 +774,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.usesum.js">
-    <configuration default="false" name="2.global.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="2.global.js" working-dir="$PROJECT_DIR$/node/02node">
-      <envs>
-        <env name="NODE_ENV" value="dev" />
-      </envs>
-      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
-        <option name="envVars">
-          <list />
-        </option>
-        <option name="extraHosts">
-          <list />
-        </option>
-        <option name="links">
-          <list />
-        </option>
-        <option name="networkDisabled" value="false" />
-        <option name="networkMode" value="bridge" />
-        <option name="portBindings">
-          <list />
-        </option>
-        <option name="publishAllPorts" value="false" />
-        <option name="version" value="1" />
-        <option name="volumeBindings">
-          <list />
-        </option>
-      </EXTENSION>
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.main.js">
     <configuration default="false" name="3.arguments.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="3.arguments.js" working-dir="$PROJECT_DIR$/node/02node">
       <method />
     </configuration>
@@ -350,6 +785,9 @@
       <method />
     </configuration>
     <configuration default="false" name="usesum.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="usesum.js" working-dir="$PROJECT_DIR$/node/02node">
+      <method />
+    </configuration>
+    <configuration default="false" name="main.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/node/02node/4.npm">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -435,19 +873,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.2.global.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.3.arguments.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.use.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.sum.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.usesum.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.3.arguments.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.use.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.sum.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.usesum.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.main.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.usesum.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.sum.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.use.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.3.arguments.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.2.global.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.main.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.usesum.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.sum.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.use.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.3.arguments.js" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +913,9 @@
       <workItem from="1507866388352" duration="36258000" />
       <workItem from="1508031806364" duration="945000" />
       <workItem from="1508033471872" duration="10056000" />
-      <workItem from="1508050828707" duration="3853000" />
+      <workItem from="1508050828707" duration="9014000" />
+      <workItem from="1508060238174" duration="10053000" />
+      <workItem from="1508139302724" duration="7978000" />
     </task>
     <task id="LOCAL-00001" summary="改变目录结构">
       <created>1508032094542</created>
@@ -488,7 +928,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147276000" />
+    <option name="totallyTimeSpent" value="170468000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,16 +940,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="28" width="1310" height="728" extended-state="1" />
+    <frame x="47" y="13" width="1310" height="691" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24606918" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14308175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922536" sideWeight="0.5031447" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29411766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52150536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37142858" sideWeight="0.49685535" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32436976" sideWeight="0.49685535" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -537,7 +978,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node/02node/use.js</url>
           <line>6</line>
-          <properties />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -545,22 +985,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fuxi/drag.html" />
-    <entry file="file://$PROJECT_DIR$/03vue/4.promise.js" />
-    <entry file="file://$PROJECT_DIR$/fuxi/global.js" />
-    <entry file="file://$PROJECT_DIR$/fuxi/1.arr.js" />
-    <entry file="file://$PROJECT_DIR$/fuxi/jihuabian.js" />
-    <entry file="file://$PROJECT_DIR$/04vue/biji.txt" />
-    <entry file="file://$PROJECT_DIR$/04vue/Object.defindPropery.html" />
-    <entry file="file://$PROJECT_DIR$/04vue/Object.definePropery.js" />
-    <entry file="file://$PROJECT_DIR$/04vue/Object.definePropery2.js" />
-    <entry file="file://$PROJECT_DIR$/04vue/v-model.html" />
-    <entry file="file://$PROJECT_DIR$/04vue/set.html" />
-    <entry file="file://$PROJECT_DIR$/04vue/directive.html" />
-    <entry file="file://$PROJECT_DIR$/04vue/computed.html" />
-    <entry file="file://$PROJECT_DIR$/04vue/vue.html" />
-    <entry file="file://$PROJECT_DIR$/04vue/v-for.html" />
-    <entry file="file://$PROJECT_DIR$/04vue/todolist.html" />
     <entry file="file://$PROJECT_DIR$/04vue/v-if.html" />
     <entry file="file://$PROJECT_DIR$/04vue/directive2.html" />
     <entry file="file://$PROJECT_DIR$/04vue/sort3.html" />
@@ -609,27 +1033,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node/02node/4.dialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/02node/3.arguments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/02node/sum.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +1044,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="27" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/02node/4.dialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -645,14 +1058,125 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1342">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/02node/4.npm/node_modules/.npminstall.done" />
+    <entry file="file://$PROJECT_DIR$/node/02node/4.npm/handsome/index.js" />
+    <entry file="file://$PROJECT_DIR$/node/02node/4.npm/README.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/02node/4.npm/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/02node/4.npm/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/02node/4.npm/zfpx/index.js" />
+    <entry file="file://$PROJECT_DIR$/node/02node/3.arguments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/02node/4.npm/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node/02node/biji.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="1255">
+          <caret line="141" column="9" lean-forward="false" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/05vue/donghua/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/lipanke.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/06vue/biji.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/06vue/node_modules/vue/types/options.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/06vue/2.scope.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/06vue/3.transclude.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/06vue/1.global.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/06vue/3.transclude.component2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/01git/biji.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <parent>
+
+        </parent>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    /*
+    *子组件使用 是在父组件的模板中使用
+     * 组件的使用顺序 ：1.引用组件 2.注册组件  3.在模板中使用
+    * */
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        components:{
+            parent:{
+                template:'<div>蔬菜<child></child></div>',
+                components:{
+                    child:{
+                        template:'<div>绿叶菜</div>'
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

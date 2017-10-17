@@ -73,3 +73,70 @@ nrm test 测网速
 
 
 本地第三方模块（在项目中使用）
+-初始化package.json（记录安装的依赖有哪些）
+
+-开发上线依赖（在开发和上线时使用）
+npm install jquery
+
+
+-开发依赖（只在开发时使用）
+npm install less --save-dev
+
+
+如果node-module删除了，但是package.json的依赖有,那就直接npm install
+
+删除依赖：
+    怎么安的就怎么删除
+    npm uninstall jquery
+    npm uninstall less --save-dev
+
+npm root -g 查看全局位置
+npm config list 查看配置列表
+
+yarn 安装
+npm install yarn -g
+yarn add 项目名
+
+
+初始化:yarn init
+yarn不能安装全局的
+yarn add jquery (项目依赖)
+yarn add less --dev (开发依赖)
+
+
+
+
+用localhost跑项目
+npm install http-server -g
+
+用法：
+    进入到项目中
+    http-server 文件名字
+
+
+
+在npm上发布我们自己的包
+包由多个模块组成
+-指定一个入口文件 告诉从哪里开始运行
+-需要有package.json文件
+-README.MD写上包的作用
+-入口文件的名字要等于package.json=>main文件
+-进入到需要发布的文件夹内
+-切换到国外源，确认源必须是npm（nrm ls      nrm use npm）
+-注册或者登陆用户npm addUser
+-发布npm publish
+
+
+删除发布：
+    npm unpublish --force
+
+重新发布：
+     要改一下package.json的版本
+     再npm publish
+
+使用第三方模块安装即可，可以通过模块名引入包
+
+
+内置，核心模块
+
+-util (继承)

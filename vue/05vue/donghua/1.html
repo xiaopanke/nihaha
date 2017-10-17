@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <style>
+
+        .fadeIn{width:200px;height:200px;background: red;}
+        .fly-enter{width:100px;height:100px;}
+        .fly-enter-active{-webkit-transition:1s linear}
+        .fly-leave-active{width:100px;height: 100px;}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button @click="drag=!drag">按钮</button>
+        <transition name="fly">
+            <div v-if="drag" class="fadeIn">1213</div>
+        </transition>
+
+    </div>
+<script src="vue.min.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            drag:true
+        }
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        {{a}}
+        <my-hello></my-hello>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    /*
+    全局
+    Vue.filter()
+    Vue.directive()
+    1.组件的名字不能使用已经存在的标签
+    2.一个组件就是一个对象
+    3.名字规范
+    4.组件模板中必须只能 仅仅有一个根节点
+    5.标签中的名字可以转化（短横线转驼峰->大写转小写），所以可以偷懒一律一样就行
+    6.子组件中data必须是一个函数 ，return
+    7.子组件中的数据可以在自己中使用
+    */
+
+    Vue.component('myHello',{
+        template:'<div @click="fn">{{a}}</div>',
+        data(){
+            return {
+                a:121213
+            }
+        },
+        created(){
+        },
+        methods:{
+            fn(){
+                alert(1);
+            }
+        },
+        mounted(){
+            this.$nextTick(()=>{
+            })
+        }
+    })
+
+    let vm=new  Vue({ //根实例->组件()
+        el:'#app',
+        data:{
+            a:'1233'
+        },
+    })
+
+
+    //beforeCreat created beforeMount mounted beforeUpdata updata beforeDestory destory
+</script>
+</body>
+</html>

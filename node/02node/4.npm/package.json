@@ -1,0 +1,12 @@
+{
+  "name": "panke",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^3.0.0-alpha.3"
+  },
+  "dependencies": {
+    "handsome": "file:handsome"
+  }
+}

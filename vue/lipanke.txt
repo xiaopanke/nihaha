@@ -1,0 +1,309 @@
+vue复习：
+ MVVM双向数据绑定（数据变化会影响视图，视图变化会影响数据）
+    model view viewmodel
+    双向绑定内部靠的就是Object.defineProperty
+
+
+    下载vue npm（node packdge manager）
+
+    npm init -y
+    npm install vue --save
+ 取值表达式  小胡子语法：
+    {{}}  {{a.b}}
+
+
+使用vue有两种方式：
+     1,直接引用  工程化   <script src="./node_modules/vue/dist/vue.js"></script>
+     2，你使用vue会给你一个Vue(类)  require() ?
+
+//需要一个json，需要一个位置承载这些数据
+let vm=new Vue({ //不兼容ie8以下，包括ie8  根实例
+    el:'#app',  //是一个选择器querySelector ,不能选择body|html
+    data:{ //所有的数据都要先声明一下，这个data最终会被这个实例代理
+        msg:'1234'
+    }
+});
+
+如果当前属性声明时不存在，新增的属性不会导致视图变化，也就是不会发生双向绑定，如果增加属性,需要用$set方法
+vm.a={name:'lipanke',age:17} 替换掉原有的属性
+vm.$set(vm.a,'address','henan');  新增属性
+可以通过修改数据，来更改视图
+
+箭头函数，没有this指向，没有arguments
+需要改变this，就用箭头函数
+let a=(n)=>{return n+1}  == let a=(n)=>(n+1)
+
+
+v-model:
+    <input type="text" v-model="msg">
+    实现双向绑定，见到表单元素就加v-model,会自动的将数据绑定到表单元素的value中
+
+diractive:指令
+    v-once : 只绑定一次，数据变化后不更新
+    v-html : 展示成html
+    v-text : 可以解决闪烁问题 {{}}是v-text的简写
+    v-show:控制的是样式
+    v-if ：控制的是DOM
+
+{{}} 可以做运算，可以做三元表达式
+        {{msg==='a' ? 'ok' : 'no'}}
+
+vm.$set 添加新的属性
+vm.$data  取data
+vm.$el取的是元素
+
+
+v-for 循环 可以循环数组 对象 字符串
+    v-for="(item,index) in arr"
+    {{item}}{{index}}
+
+
+v-cloak  解决闪烁问题
+css:[v-cloak]{display:none}
+先让带有v-cloak的元素隐藏掉，当vue加载好后，会自动将v-cloak这个属性移除掉
+
+
+method
+    methods存放的是方法，不能和data中的内容重名，最后都会合并到vm的实例上，被
+    vm所代理，method中this指向的都是vm实例
+    vue中方法可以带括号也可以不带括号，v-on可以简写成@事件名
+    如果写括号需要手动传入$event属性
+    @mousedown="a($event)"
+
+
+如果要获取输入框的内容，需要使用up ，可以使用键盘修饰符
+@keyup.13="add"
+@keyup.enter="add"
+
+
+vue-resource
+    <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+
+    vue-resource 他会将一个$http属性挂载vm上
+    $http是定义在vue的原型上，实例上可以直接使用
+    this.$http.get('./products.json').then( (res)=> { //success
+        //vue-resource将this改成了vm实例
+        this.products = res.body;
+    }, (err) => { //error
+        console.log(err);
+    });
+
+filters 过滤器
+    改变展示的结果，而且可以实现共用 ，也可以用methods来实现
+    {{data | toFixed(2,'￥')}}
+        toFixed(input,param1,param2){ //必须就是|后面的名字,
+            //input 代表的是|前面的结果 返回值则是最终展现的结果
+            return param2+parseFloat(input).toFixed(param1);
+        }
+
+created:实例加载后执行，等data和methods加载成功执行
+    一般放ajax请求请求过来的代码
+
+
+vue的修饰符，都在事件后面以.开头，而且可以使用多个事件.stop.prevent
+    @click.capture="" 捕获 ，先捕获，再冒泡
+     @click.self="" 只有点击自己时触发 e.target||e.srcElement
+     @click.once 只触发一次
+
+     .stop阻止冒泡 e.stopPropagation || cancelBubble=true
+     .prevent 阻止默认行为 e.preverDefault returnValue=false
+     .capture 捕获行为addEventListener('click',fn,true)
+
+
+
+v-bind:
+       :title="title"
+       :src="src"
+       :style="stryle"
+       通过boolean类型，使其判断样式是否生效
+       :class="{back:true,fontSize:true}"
+
+       数值中写的类名都会生效
+       :class="['back',{fontSize:true}]"
+
+computed:  计算属性，但是写的时候是方法
+
+
+watch:{
+    heart(){ //和要监控的数据必须相同名字
+    }
+}
+
+
+methods computed watch的区别
+监控一个数据的变化（纯粹就是执行一件事）可以实现异步方法
+
+h5的新属性，拖拽
+draggable="true" 让元素可以拖拽
+e.dataTransfer.setDragImage() 设置拖拽的图片
+dragstart
+dragover 阻止dragover 否则不会触发drop
+drop
+
+template:'<div id="a">{{a}}</div>'
+如果内部有模板就不会使用外部的模板
+
+
+生命周期：
+    beforeCreate 一般用不到，这里不能拿到数据和方法
+    created 获取数据，方法和数据已经挂载在实例了了
+    beforeMount 此函数在挂载 之前执行，一般用不到
+    mounted 可以操作真实的dom
+    beforeUpdate dom更新前会触发这个事件，可以做一个全局数据的监控，我们一般用watch
+    updated
+    beforeDestroy 一般清空定时器，或者移除自定义函数
+    destroy
+
+$nextTick 等待dom渲染完成后，再操作dom dom渲染是异步渲染
+    mounted(){
+        this.$nextTick(()=>{
+            console.log(this.msg);
+        })
+    }
+
+    vm.#destroy();移除所以的监听和观察者，孩子组件
+
+
+
+手动挂载
+let vm=new Vue({
+    data:{
+    }
+}).$mount("#app")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
