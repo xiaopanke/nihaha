@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+        <child :msg="msg"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:1
+        },
+        components:{
+            child:{
+                'template':'<div>{{msg}}</div>',
+                props:{
+                    msg:{
+                        type:[Number],
+                        //default:100
+                        require:true
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <router-link to="./home" tag="span">首页</router-link>
+        <router-link :to="{path:'/list'}"  tag="span">列表页</router-link>
+        <router-view></router-view>
+    </div>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+<script>
+    let Home={'template':'<div>首页</div>'}
+    let List={'template':'<div>列表页</div>'}
+    let routes=[
+        {path:'/',component:Home},
+        {path:'/home',component:Home},
+        {path:'/list',component:List},
+        {path:'*',redirect:'/list'},
+    ]
+    let router=new VueRouter({
+        mode:'history',
+        routes
+    })
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        router
+    })
+
+
+</script>
+</body>
+</html>

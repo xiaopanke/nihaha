@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="fn">点我</button>
+        <child ref="child"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    /*
+    * 先走子级的mount,再走父级的mount
+    * */
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        mounted(){//父组件挂载完成并不能确保子组件一定渲染完成，所以在mounted中一般会加nextTick()
+           //console.log(this.$refs.child.$el.innerHTML)
+            this.$nextTick(()=>{
+                console.log(this.$refs.child.$el.innerHTML)
+            })
+        },
+        components:{
+            child:{
+                data(){
+                    return {a:1}
+                },
+                'template':'<div>{{a}}</div>',
+                props:[],
+                methods:{
+                    fn(){alert(123456);}
+                },
+                mounted(){
+                    this.a=2;
+                },
+            }
+        },
+        methods:{
+            fn(){//父获取子数据
+                this.$refs.child.fn()
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

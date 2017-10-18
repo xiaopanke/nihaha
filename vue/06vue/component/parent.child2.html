@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+        <button @click="fnparent">按钮</button>
+        <child :msg="msg" ref="child"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:1
+        },
+        methods:{
+            fnparent(){
+                this.$refs.child.fnson()
+            }
+        },
+        components:{
+            child:{
+                data(){
+                    return {
+                        a:1456789
+                    }
+                },
+                'template':'<div>{{msg}} <button @click="fnson">按钮</button></div>',
+                props:{
+                    msg:{
+                        type:[Number],
+                        default:100,
+                        require:true
+                    }
+                },
+                methods:{
+                    fnson(){
+                        alert(this.a)
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

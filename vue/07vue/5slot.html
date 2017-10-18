@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+    <style>
+        *{margin:0}
+        #mask{width:100%;
+            height:100%;background:rgba(0,0,0,.4);position: fixed;top:0;left:0}
+        #dialog{
+            width:450px;height:200px;background: #fff;transform: translate(-50%,-50%);top:50%;left:50%;position: fixed;
+        }
+[v-cloak]{display: none}
+    </style>
+</head>
+<body>
+<!--
+    slot 插槽
+
+-->
+    <div id="app" v-cloak>
+        <button @click="showdialog=true">出来</button>
+
+        <modal v-if="showdialog" @closedislog="showdialog=false">
+            <div slot="header">
+                <h2 @click="dianji">减少{{msg}}</h2>
+                <p>122</p>
+            </div>
+            <div slot="footer">
+                <h5>footer</h5>
+                <span>12313213</span>
+            </div>
+            <div>default</div>
+            <div>q21345654321`2345675432</div>
+        </modal>
+    </div>
+    <template id="modal">
+        <div id="mask">
+            <div id="dialog">
+                <slot name="header"></slot>
+                <button @click="closedialog">&times;</button>
+                <slot name="footer"></slot>
+                <slot name="default"></slot><!--默认的-->
+            </div>
+        </div>
+    </template>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233',
+            showdialog:false
+        },
+        components:{
+            modal:{
+                'template':"#modal",
+                methods:{
+                    closedialog(){
+                        this.$emit('closedislog')
+                    }
+                }
+            }
+        },
+        methods:{
+            dianji(){
+                alert(13213);
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

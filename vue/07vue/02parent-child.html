@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="fn">点我</button>
+        <child ref="child"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233'
+        },
+        mounted(){
+            alert('父级');
+            alert(this.$refs.child.a)
+        },
+        components:{
+            child:{
+                data(){
+                    return {a:1}
+                },
+                'template':'<div>头部</div>',
+                props:[],
+                methods:{
+                    fn(){alert(123456);}
+                },
+                mounted(){
+                    alert('子级');
+                },
+            }
+        },
+        methods:{
+            fn(){//父获取子数据
+                alert(this.$refs.child.a)
+                this.$refs.child.fn()
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

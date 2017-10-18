@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        <child1></child1>
+        <child2></child2>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    /*
+    父-》子 （属性校验）
+    子-》父（通过自定义事件）
+    平级组件eventbus 发布订阅
+    复杂的 vuex
+    * 一呼百应，导致页面不好维护，只适合简单组件，就爷爷和孙子，平级就两个组件 ，一般不采用，太混乱
+    * vuex(统一状态管理，借鉴redux flux思想)
+    * */
+    let EventBus=new Vue() //vue事件上有$on $emit的方法
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            msg:'1233',
+        },
+        components:{
+            child1:{
+                'template':'<div @click="change">1{{msg}}{{color}}</div>',
+                props:['msg'],
+                data(){
+                    return { color:'red'}
+                },
+                created(){
+                    EventBus.$on('love2',(val)=>{
+                        this.color=val
+                    })
+                },
+                methods:{
+                    change(){
+                        EventBus.$emit('love',this.color) //触发了一个叫love的函数
+                    }
+                }
+            },
+            child2:{
+                'template':'<div @click="change">2{{msg}}{{color}}</div>',
+                props:['msg'],
+                data(){
+                    return { color:'blue'}
+                },
+                created(){
+                    EventBus.$on('love',(val)=>{ //绑定了一个叫love的函数
+                        this.color=val
+                    })
+                },
+                methods:{
+                    change(){
+                        EventBus.$emit('love2',this.color)
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">{{val}}
+        <input type="radio" value="man" v-model="val">
+        <input type="radio" value="woman" v-model="val">
+        <!--保持缓存中-->
+        <keep-alive>
+            <component :is="val"></component>
+        </keep-alive>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let man={'template':'<div>男人</div>',beforeDestroy(){console.log(1)},activated(){ //存放不需要缓存的结果
+        //不会受keep-alive的影响
+        alert('activated');
+    }}
+    let woman={'template':'<div>女人</div>',beforeDestroy(){console.log(2)}}
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            val:'man'
+        },
+        created(){
+            //alert(1);
+        },
+        components:{
+            man,woman
+        }
+    })
+
+
+</script>
+</body>
+</html>

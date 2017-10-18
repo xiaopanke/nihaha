@@ -1,0 +1,41 @@
+EventBus.$emit('love',this.color) //触发了一个叫love的函数
+
+ EventBus.$on('love',(val)=>{ //绑定了一个叫love的函数
+                        this.color=val
+                    })
+
+
+父-》子 （属性校验）
+子-》父（通过自定义事件）
+平级组件eventbus 发布订阅
+复杂的 vuex
+
+ <!--保持缓存中-->
+<keep-alive>
+    <component :is="val"></component>
+</keep-alive>
+
+
+路由器
+不同的url返回不同的结果
+vue的路由(spa)spa中只有一个首页，可以切换url地址，显示不同的组件
+-切换路径但是页面仍然是以前的那个
+hash  #
+history.pushState('','','./c')  没#号， 在开发的时候会产生404，如果上线时会使用这个方式，
+    可以依赖服务端解决404问题
+
+mode 模式  默认模式就是hash的方式，如果mode:'history' h5的api
+
+
+
+
+
+
+
+
+
+
+
+
+
+

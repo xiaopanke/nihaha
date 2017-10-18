@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哈哈</title>
+</head>
+<body>
+    <div id="app">
+        {{count}}
+        <child :count.sync="count"></child>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm=new  Vue({
+        el:'#app',
+        data:{
+            count:1
+        },
+        components:{
+            child:{
+                data(){
+                    return {
+                        count2:0
+                    }
+                },
+                'template':'<div>{{count}} <button @click="add">+</button></div>',
+                props:['count'],
+                methods:{
+                    add(){
+                        this.count2=this.count+1 //不能直接改变props里的data
+                        this.$emit('update:count',this.count2)
+                    }
+                }
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>
