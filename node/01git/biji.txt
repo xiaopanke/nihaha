@@ -122,3 +122,7 @@ git push origin gh-pages  //推到远程的这个分支上
 
 
 找到setting 在最下面
+
+
+http://localhost:3000/api/sliders
+http://localhost:8080/api/sliders

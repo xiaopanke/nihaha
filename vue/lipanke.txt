@@ -1,4 +1,4 @@
-vue复习：
+﻿vue复习：
  MVVM双向数据绑定（数据变化会影响视图，视图变化会影响数据）
     model view viewmodel
     双向绑定内部靠的就是Object.defineProperty
@@ -171,88 +171,370 @@ let vm=new Vue({
     }
 }).$mount("#app")
 
+spa框架：
+	单页应用 （1个页面）
+
+组件：component 
+	把一个复杂的页面拆分成若干个组件，最后再拼成一个完整的页面
+
+组件的分类：
+	页面级组件（home组件 ,list组件）
+	基础组件（页面组件包含着基础组件，可复用的组件）
+
+组件的使用：
+	全局组件（不需要在组件中再次声明了）
+	-写一些插件时可能会需要用到全局组件 
+	局部组件（在某个组件中声明的）
+	自己写的一些组件一般都是局部组件
+
+全局组件：
+	Vue.component(tagName,options)
+
+局部组件：
+	new Vue({
+		el:'',
+		components:{
+			child:{
+				template:'<div></div>'
+			}
+		}
+	})
+
+1.组件的名字不能使用已经存在的标签
+2.一个组件就是一个对象
+3.名字规范 myHello会自动转化成myhello
+4.组件模板中必须只能仅仅有一个根节点 
+5.标签中的名字可以转化（知横线转驼峰->大写转小写）一律名字相同即可
+6.组件中的data必须是一个函数 
+7.组件中的数据可以在自己的模板中使用
+
+template:'<div></div>' //用模板中的内容替换掉标签(el)
+
+局部组件 定义在内部的，组件之间应该是互不影响的，所以data是个函数，返回一个新对象，来避免相互引用的问题
+对象是引用数据类型
+
+组件中函数的this指向的是当前组件的实例
+
+组件的使用顺序 
+1.引入这个组件 
+2.注册组件 
+3.在模板中使用（是在父组件模板中使用）
+
+template中的内容会被转化成虚拟dom,文档碎片，先获取第一个元素通过createElement创建一个元素，firstChild appendChild到这个dom元素里
+
+
+MVVM=数据劫持+compile+发布订阅
+
+组件的特点：相互独立，两个人之间没有任何关系
+子组件不能直接更改父组件的数据 ，可以子组件传递给父组件，父组件改变后再重新渲染子组件 
+单向数据流 父组件变化刷新子组件
+
+属性校验：校验父灯传递过来的属性
+props:['title'] 数组方式不能实现属性的校验
+props:{ 
+	title:{
+ 		type:[Number,Boolean,Array,Object,String],
+		default:'无',
+		validator(val){ val代表传递过来的值 ，如果返回true通过 ，返回false，不通过
+			return val>50
+		}
+	}
+}
+ 
+
+子组件的属性ref
+	ref放在原生dom上可以获取元素，放在组件上可以获取当前组件
+<child ref="child"></child>
+
+eg:this.$refs.child.hit();
+
+子组件通过event给父组件传递信息
+第一种方法：
+	<child @child-fn="changeColor"></child>
+	子组件：this.$emit('child-fn','blue') 
+		第一个参数是方法，第二个参数是传递给父级的
+	
+this.$on('child-fn',changeColor) 这个this指的是child
+给子组件绑了一个监听函数，这个监听函数是父类的
+
+第二种方法：
+	<child :msg="msg" @update:msg="val=>msg=val"></child>
+	子组件：this.$emit('update:msg','blue');
+
+第三种方法：
+	<child :msg.sync="msg" ></child>
+	子组件：this.$emit('update:msg','blue');
+
+
+
+使用模板编译的方式：
+1.有el
+2.template
+3.render
+会将el和template的形式转化成AST(抽象语法树)会转化成一个函数render 会个vhode{tage:'div',children:['hello',{tab:'h1'}]}->createElement->append页面中
+let vm = new Vue({
+      el:'#app',
+      render:createElement=>{
+         return createElement('div',{class:'a'},['hello',createElement('h1','你好')])
+      }
+      /*template:`<div>
+        hello
+        <h1>你好</h1>
+      </div>`*/
+  })
+
+
+//父组件挂载完成并不能确保子组件一定渲染完成，所以在mounted中一般会加nextTick防止无法获取的最新的结果
+mouted(){
+	this.$nextTick(()=>{
+
+	})
+}
+
+
+slot:
+例如别人写好的一个模态框组件 我们来使用,我们会先引入进来,传入一些自己的内容,所以绑定的方法都是自己的
+父组件中：
+<header slot="header">{{msg}}</header>
+<footer slot="footer"></footer>
+
+子组件中：
+<slot name="header"></slot>
+<button @click="close">&times;</button>
+<slot name="default"></slot>
+<slot name="footer"></slot>
+
+keeplive：保持缓存
+组件切换时用的东西
+加了keeplive created只会执行一次 activated都会执行
+不加keeplive created都会执行 activated不会执行
+
+
+router 路由 
+需要引用vue-router.js这个js
+
+安装
+npm init -y
+npm install vue-router
+
+不同的url返回不同的结果
+vue的路由（spa）spa中只有一个首页，切换url地址显示不同的组件 
+切换路径但是页面仍然是以前的那个
+	1.hash #
+	2.pushState 没有#号(在开发的时候会产生404)，上线时会使用这个方式，可以依赖服务端解决404问题
+	3.mode模式 默认就是hash  如果mode:'history' h5的api
+
+
+步骤：
+1.创建一个VuerRouter实例 
+  let router = new VueRouter({ 
+      routes // 将路由表注入进来
+  });
 
+2.准备好需要切换的组件
+  let Home = {template:'<div>首页</div>'}; 
+  let List = {template:'<div>列表页</div>'};
 
+3.将路由实例放在vue实例中,在任意组件中会多两个属性
+let vm = new Vue({
+      el:'#app',
+      router
+      // this.$router this.$route
+  });
 
+ 方法：this.$router
+ 	后退：this.$router.go(-1)  this.$router.back()
+ 	跳页面： this.$router.push('/home')
 
+ 属性：this.$route
+ 		获取路径中的id  this.$route.params.id
 
+//路由表
+ let routes = [ 
+      {path:'/home',component:Home},
+      {path:'/list',component:List}
+  ];
 
 
 
+router-view
+	<router-view><router-view>会将默认匹配到的结果插到此标签内
 
+router-link
+	<router-link to="/list"></router-link>
+	<router-link :to="{path:'/list'}" tab="span"></router-link>
+	
+	to动态绑定时可以放对象 tag表示编译后的标签名
 
 
+let router = new VueRouter({
+    mode:'history', // h5 pushState没有# 但是会有404,开发时采用默认hash的形式
+    routes:[
+        {path:'',component:Home}, // 配置默认显示的组件
+        {path:'/home',component:Home},
+        {path:'/list',component:List},
+        // {path:'*',component:List} //如果这样写组件是切换了 但是路径还是写错的
+        {path:'*',redirect:'/list'} //重定向 一般是404配置
+    ]
+  });
 
+路由的嵌套
+routes:[
+          {path:'/home',component:Home},
+          {
+              path:'/profile',
+              component:Profile,
+              children:[ //children的path不能加/
+                  {path:'aboutme',component:AboutMe},
+                  {path:'introduce',component:Introduce},
+              ]
+          }
+      ]
 
 
+webpack
+用来打包vue
+- vue组件都写在写在一起了,.vue文件,每一个.vue文件都是一个组件 .js babel-loader .css css-loader
+.vue vue-loader
 
+组件组成
+1.模板（结构） 需要vue-template-compiler
+2.逻辑（行为）
+3.样式
 
+ webpack(模块化)
+webpack webpack-dev-server
+js打包 babel-core babel-loader babel-preset-es2015 babel-preset-stage-0
+css模块 less less-loader css-loader style-loader
+img模块 url-loader file-loader
+html打包 html-webpack-plugin
+vue模块 vue-loader vue-template-compiler
+vue vue-router
 
 
+vue-cli 脚手架
+npm install vue-cli -g
+vue init 模板名 项目名
+vue init webpack vue-pro-webpack
 
 
 
 
+width:100%;position: fixed;top:50px;left:0;right:0;bottom:60px;
+  overflow-y: scroll;
 
 
+import from 'vue' 前端 用这个
+module.exports  是后台的写法 有.
 
 
 
+npm install axios vuex
 
 
+开node服务器
+//npm install -g nodemon    
+//nodemon 文件名
 
 
+图片的懒加载
+vue-lazyload
 
 
+get 获取  
+post 前端传给后台(新建)  
+put  修改
+delete 修改
 
 
 
 
+JSON.stringify(book) //将对象转化成字符串
+JSON.parse('{"a":1}') //将字符串转化成对象 
 
 
 
 
 
+找到数组里id相同的，返回是一个数组里的某一项
+let book=books.find(item=>(item.id===id)) 
 
 
+去掉等于那个id的，返回是一个数组
+let books=books.filter(item=>(item.id!==id)) 
 
+//遍历一个数组，返回一个新数组
+let books=books.map(item=>(item*2)) 
+//找，看有没有相同的，返回一个boolean
+ flag =state.collects.some((a)=>a.id==book.id)
 
 
 
+//监控路径参数的变化 
+watch:{
+        $route(){
+            this.getBook();
+        }
+    }
 
 
 
 
+http http.createServer((req,res)=>{}).listen(3000); 用来创建服务 
+url  let {pathname,query}=url.parse(req.url,true)  处理请求的地址
 
+fs  fs.readFile('./book.json','uft8',(err,data)=>{})  读取数据，读取出来的是字符串 
+	fs.writeFile('./book.json',JSON.stringify(data),()=>{}) 写入数据 写过去的也是字符串
 
 
 
 
 
+对象展开运算符
+computed: {
+  localComputed () { /* ... */ },
+  // 使用对象展开运算符将此对象混入到外部对象中
+  ...mapState({
+    // ...
+  })
+}
 
 
 
 
 
+vuex:
+子组件里：
+	{{$store.state.count}} 获取数据
+	this.$store.commit('add',3) 改变数据
 
+vuex:
+import Vuex from 'vuex'
 
+Vue.use(Vuex)
+let state={  //data:{}  和组件中的数据功能是一样的
+  count:0
 
+}
+let mutations={ //就是组件中的方法
+    add(state,val){ //state代表的是状态，是默认参数
+        state.count+=val;
+    },
+    reduce(state,val){
+        state.count-=val
+    }
+}
+let store=new Vuex.Store({
+  state,
+  mutations,
+  strict:true //开户严格模式，必须通过mutaion来修改
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+new Vue({
+    el:'#app',
+    store, //this.$store 每个组件都会拥有一个$store属性
+    ...App,
+})
 
 
 

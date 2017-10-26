@@ -11,6 +11,6 @@ import router from './router' //引入router 如果是index.js可以活力index.
 let vm = new Vue({
     el:'#app',
     render: h => h(App), //用根实例替换掉app
-    router
+    router  //this.$router 方法  this.$route属性
 });
 

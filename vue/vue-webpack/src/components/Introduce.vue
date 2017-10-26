@@ -1,6 +1,11 @@
 <template>
     <div>
-        我的简介
+        我是 <br>
+        我是 <br>
+        我是 <br>
+        我是 <br>
+        我是 <br>
+        我是 <br>
     </div>
 </template>
 <script>

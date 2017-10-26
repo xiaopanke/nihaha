@@ -1,6 +1,13 @@
 <template>
     <div>
-        关于我
+        关于我 <br>
+        关于我 <br>
+        关于我 <br>
+        关于我 <br>
+        关于我 <br>
+        关于我 <br>
+        关于我 <br>
+        关于我 <br>
     </div>
 </template>
 <script>

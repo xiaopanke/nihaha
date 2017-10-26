@@ -30,5 +30,6 @@
 </script>
 <style>
     /*可以默认app.vue里面的样式是全局的*/
-.list-active{color: blue !important;}
+.haha{color: blue !important;}
+    .xixi{color: yellow !important;}
 </style>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function v(data) {
+    console.log(data)
+  }
+  let oScript=document.createElement('script')
+  oScript.src='http://localhost:3000/jsonp?callback=v'
+  document.body.appendChild(oScript)
+  //jsonp要求函数必须是全局函数
+</script>
+</body>
+</html>
