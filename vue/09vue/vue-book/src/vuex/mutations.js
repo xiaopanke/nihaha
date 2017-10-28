@@ -5,8 +5,10 @@ export default{ //[]会将里面的内容作为变量
 		let flag =state.collects.some((a)=>a.id==book.id)
 		if(flag)return;
 		if(!flag)state.collects.push(book)
+    localStorage.setItem('c',JSON.stringify(state.collects))
 	},
 	[Types.REMOVE_COLLECT](state,book){ //删除
-		state.collects=state.collects.filter(a=>(a.id!==book.id)) 
+		state.collects=state.collects.filter(a=>(a.id!==book.id))
+    localStorage.setItem('c',JSON.stringify(state.collects))
 	}
 }

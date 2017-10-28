@@ -1,0 +1,30 @@
+如果有一天，你忘记了请求和响应的格式。 打开gitbash
+输入　curl --verbose http://localhost:8080/user
+张仁阳<hongqishi@qq.com>  11:29:28
+ curl --verbose --data "name=zfpx" -X POST http://localhost:8080/user
+
+ $ curl --verbose --data "name=zfpx" -X POST http://localhost:8080/user
+ Note: Unnecessary use of -X or --request, POST is already inferred.
+ * timeout on name lookup is not supported
+ *   Trying 127.0.0.1...
+   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                  Dload  Upload   Total   Spent    Left  Speed
+   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to localhost (127.0.0.1) port 8080 (#0)
+ > POST /user HTTP/1.1
+ > Host: localhost:8080
+ > User-Agent: curl/7.46.0
+ > Accept: */*
+ > Content-Length: 9
+ > Content-Type: application/x-www-form-urlencoded
+ >
+ } [9 bytes data]
+ * upload completely sent off: 9 out of 9 bytes
+ < HTTP/1.1 200 OK
+ < X-Powered-By: Express
+ < Date: Sat, 28 Oct 2017 03:30:15 GMT
+ < Connection: keep-alive
+ < Content-Length: 3
+ <
+ { [3 bytes data]
+ 100    12  100     3  100     9    200    600 --:--:-- --:--:-- --:--:--   600404
+ * Connection #0 to host localhost left intact

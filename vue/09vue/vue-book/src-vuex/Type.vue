@@ -1,11 +1,12 @@
 <template>
     <div>
         {{count}}
-       {{type}}
+        {{$store.state.count}}
     </div>
 </template>
 <script>
     import {mapState,mapGetters} from 'vuex'
+    console.log(mapState)
     export default{
         data(){
             return {
@@ -20,7 +21,6 @@
 
         },
         methods: {},
-        computed: {},
         components: {}
     }
 </script>

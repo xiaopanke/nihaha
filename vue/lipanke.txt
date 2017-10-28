@@ -538,6 +538,16 @@ new Vue({
 
 
 
+轮播
+npm install vue-awesome-swiper --save
+
+
+
+
+
+那些报错：
+SyntaxError: Unexpected token o in JSON at position 1
+json文件错啦，点击进去看看
 
 
 
@@ -548,12 +558,46 @@ new Vue({
 
 
 
+@全体成员 
+本周六讲解express cookie session
+express
+文档
+http://www.zhufengpeixun.cn/docs/html/node%E5%91%A8%E6%9C%AB%E5%A4%A7%E7%BA%B2/1.Express.html
+http://www.zhufengpeixun.cn/docs/html/node%E5%91%A8%E6%9C%AB%E5%A4%A7%E7%BA%B2/2.cookie.html
+http://www.zhufengpeixun.cn/docs/html/node%E5%91%A8%E6%9C%AB%E5%A4%A7%E7%BA%B2/3.session.html
+视频
+下载链接：http://pan.baidu.com/s/1bo87HoF 密码：dcpr
+在线观看 http://www.ablesky.com/kecheng/detail_1260500
+张仁阳<hongqishi@qq.com> 2017/10/27 22:26:29
+React参考资源
+英文官方文档
+https://facebook.github.io/react/
+中文官方文档
+https://doc.react-china.org/
+http://www.css88.com/react/
+redux官网文档
+英文 http://redux.js.org/
+中文 http://www.redux.org.cn/
+参考纸质书籍
+React推荐书籍 React与Redux开发实例精解 
+http://item.jd.com/12010463.html 
+
+参考电子教材
+http://huziketang.com/books/react/
+在线练习
+https://scriptoj.com/problemsGroups/593a2e29b3838c385539fa4f
+视频教程百度云盘下载地址
+链接：http://pan.baidu.com/s/1c1ZAezu 密码：3qp0
+视频教程在线观看地址
+http://www.ablesky.com/org/510_d_381963_0_-1_-1_0_1#orgTab
+实战项目
+https://github.com/zhufengnodejs/zhufengketangapp
 
 
+http://www.zhufengpeixun.cn/docs/html/node%E5%91%A8%E6%9C%AB%E5%A4%A7%E7%BA%B2/1.Express.html
 
-
-
-
+老师上课的项目仓库：
+https://github.com/zhufengnodejs?tab=repositories
 
 
 
