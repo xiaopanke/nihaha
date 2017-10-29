@@ -1,4 +1,7 @@
 如果有一天，你忘记了请求和响应的格式。 打开gitbash
+ curl -X POST http://localhost:8080/user
+
+
 输入　curl --verbose http://localhost:8080/user
 张仁阳<hongqishi@qq.com>  11:29:28
  curl --verbose --data "name=zfpx" -X POST http://localhost:8080/user

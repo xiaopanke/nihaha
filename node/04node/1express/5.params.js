@@ -38,6 +38,31 @@ app.post('/signup',(req,res)=>{
         res.end(result)
     })
 })
+
+//http://localhost:8080/user/122/456
+//id  我们称为路径参数
+app.get('/user/:id/:name',(req,res)=>{
+    let id=req.params.id
+    let name=req.params.name
+    res.end(id+name)
+})
+//next表示继续执行的意思
+//可以在param里把路径参数进行处理，比如把字符串转成数字
+app.param('num1',(req,res,next,num)=>{
+    req.num1=parseInt(num)
+    next();
+})
+app.param('num2',(req,res,next,num)=>{
+    req.num2=parseInt(num)
+    next();
+})
+app.get('/add/:num1/:num2',(req,res)=>{
+    res.end(((req.num1+req.num2)+''))
+})
+app.get('/minus/:num1/:num2',(req,res)=>{
+    res.end(((req.num1-req.num2)+''))
+})
+
 app.listen(8080,function () {
     console.log('服务已经启动')
 })
