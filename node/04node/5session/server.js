@@ -1,7 +1,7 @@
 let express =require('express')
 let index=require('./routes/index')
 let user=require('./routes/user')
-let cookieParser=require('cookie-parser')
+let session=require('express-session')
 let path=require('path')
 let bodyParser=require('body-parser')//用来解析请求体的，把请求体的数据变成对象，赋给req.body
 let app =express();
@@ -19,7 +19,12 @@ app.use(bodyParser.urlencoded({extended:true}))
 //也有是JSON的格式 JSON.parse();
 app.use(bodyParser.json())
 
-app.use(cookieParser())
+app.use(session({
+    resave:true,
+    saveUninitialized:true,
+    secret:'panke' //加密cookie的密钥，让别人识别不出来我写的是什么
+
+}))
 
 //当请求路径以/开头，走Index中间件
 //当请求路径以/user开头，走user中间件
