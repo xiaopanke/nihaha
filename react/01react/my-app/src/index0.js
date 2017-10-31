@@ -5,8 +5,8 @@ import './index.css'
 function Avatar(props) {
   return(
     <img className="Avatar"
-      src={props.avatarUrl}
-      alt={props.name}
+      src={props.author.avatarUrl}
+      alt={props.author.name}
     />
   )
 }
@@ -15,7 +15,7 @@ function Comment(props) {
   return (
     <div className="Comment">
       <div className="UserInfo">
-        <Avatar {...props.author} />
+        <Avatar author={props.author} />
         <div className="UserInfo-name">
           {props.author.name}
         </div>
