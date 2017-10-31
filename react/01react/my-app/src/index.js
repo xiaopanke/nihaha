@@ -1,18 +1,39 @@
 import React from 'react';
- import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+import './index.css'
 
-
-function tick() {
-  let clock=(
-    <div>
-        <h1>{new Date().toLocaleString()}</h1>
+function Comment(props) {
+  return (
+    <div className="Comment">
+      <div className="UserInfo">
+        <img className="Avatar"
+          src={props.author.avatarUrl}
+          alt={props.author.name}
+        />
+        <div className="UserInfo-name">
+          {props.author.name}
+        </div>
+      </div>
+      <div className="Comment-info">
+        <div className="Comment-text">
+          {props.text}
+        </div>
+        <div className="Comment-date">
+          {props.date.toLocaleString()}
+        </div>
+      </div>
     </div>
-  )
-  ReactDOM.render(
-    clock,
-    document.getElementById('root')
   );
 }
-
-
-setInterval(tick,1000)
+let props={
+  author:{
+    name:'panke',
+    avatarUrl:'https://www.baidu.com/img/wanshengdoodle_677234cad70a5974a64e4665c6485c71.gif'
+  },
+  text:'今天天气不错',
+  date:new Date()
+}
+ReactDOM.render(
+  <Comment {...props} />,
+  document.querySelector('#root')
+)
