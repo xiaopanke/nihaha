@@ -21,11 +21,10 @@ class Toggle extends React.Component{
     this.state={
       on:true
     }
-    this.toggleClick=this.toggleClick.bind(this)
   }
   render(){
     return (
-      <button onClick={this.toggleClick}>{this.state.on ? '开' : '关'}</button>
+      <button onClick={this.toggleClick.bind(this)}>{this.state.on ? '开' : '关'}</button>
     )
   }
   /* 解决this指向问题
@@ -44,12 +43,3 @@ ReactDOM.render(
   <Toggle  />,
   document.querySelector('#root')
 )
-
-
-/*
-<button onClick={this.handleClick.bind(this, props0, props1, ...}></button>
-
-handleClick(porps0, props1, ..., event) {
-}
-
-*/
