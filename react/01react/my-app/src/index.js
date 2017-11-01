@@ -1,47 +1,47 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 
-class ActionLink extends React.Component{
-  render(){
-    return(
-      <div>
-        <a href="" onClick={this.handleClick}>点我</a>
-      </div>
-    )
-  }
-  handleClick=(event) => {
-    event.preventDefault()
-    console.log('click me');
-  }
+function UserGreeting() {
+    return <h1>欢迎</h1>
+}
+function GuestGreet() {
+  return <h1>请登陆</h1>
 }
 
-class Toggle extends React.Component{
+function Greeting(props) {
+    let isLogin=props.isLogin
+    return isLogin ? <UserGreeting /> : <GuestGreet />
+}
+
+function LoginButton(props) {
+    return <button onClick={props.onClick}>登陆</button>
+}
+function LogoutButton(props) {
+    return <button onClick={props.onClick}>退出</button>
+}
+
+class LoginCtrl extends Component{
   constructor(){
     super();
-    this.state={
-      on:true
-    }
-    this.toggleClick=this.toggleClick.bind(this)
+    this.state={isLogin:false}
   }
   render(){
-    return (
-      <button onClick={this.toggleClick}>{this.state.on ? '开' : '关'}</button>
+    let {isLogin}=this.state; //结构赋值
+    console.log(this.state)
+    console.log({isLogin})
+    console.log(isLogin)
+    let button=isLogin ? <LogoutButton onClick={()=>this.setState({isLogin:false})} /> :<LoginButton onClick={()=>this.setState({isLogin:true})} />
+    return(
+      <div>
+        <Greeting isLogin={this.state.isLogin}  />
+        {button}
+      </div>
     )
-  }
-  /* 解决this指向问题
-    1.箭头函数
-    2.bind
-    3.直接在构造函数中绑定 this.toggleClick=this.toggleClick.bind(this)
-  */
-  toggleClick(){
-    this.setState({
-      on:!this.state.on
-    })
   }
 }
 
 ReactDOM.render(
-  <Toggle  />,
+  <LoginCtrl  />,
   document.querySelector('#root')
 )
 
