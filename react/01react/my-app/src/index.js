@@ -1,66 +1,45 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 
-function UserGreeting() {
-    return <h1>欢迎</h1>
-}
-function GuestGreet() {
-  return <h1>请登陆</h1>
-}
-
-function Greeting(props) {
-    let isLogin=props.isLogin
-    return isLogin ? <UserGreeting /> : <GuestGreet />
-}
-
-function LoginButton(props) {
-    return <button onClick={props.onClick}>登陆</button>
-}
-function LogoutButton(props) {
-    return <button onClick={props.onClick}>退出</button>
-}
-
-class LoginCtrl extends Component{
+class RegForm extends Component{
   constructor(){
-    super();
-    this.state={isLogin:false}
+    super()
+    this.state={
+      username:'',
+      password:''
+    }
+  }
+  handlechange=(n,event) => {
+    //let username=event.target.value //取得输入框的值
+    console.log(n)
+    if(n=='password'){
+      this.setState({
+        password:event.target.value
+      })
+    }else{
+      this.setState({
+          username:event.target.value
+      })
+    }
+
+  }
+  handlesubmit=(e) =>{
+     e.preventDefault()
+     console.log(this.state);
   }
   render(){
-    let {isLogin}=this.state; //结构赋值
-    console.log(this.state)
-    console.log({isLogin})
-    console.log(isLogin)
-    let button=isLogin ? <LogoutButton onClick={()=>this.setState({isLogin:false})} /> :<LoginButton onClick={()=>this.setState({isLogin:true})} />
     return(
-      <div>
-        <Greeting isLogin={this.state.isLogin}  />
-        {button}
-      </div>
+      <form onSubmit={this.handlesubmit} >
+      用户名：<input type='text' onChange={this.handlechange.bind(this,'username')} value={this.state.username} /> <br />
+        密码：<input type='text'  onChange={this.handlechange.bind(this,'password')}  value={this.state.password}  /> <br />
+        <input type='submit'/>
+      </form>
     )
   }
 }
 
-function MailBox(props){
-  return(
-    <div>
-      <h1>Hello</h1>
-      {
-        props.unreadMessages.length>0 && <h2>你有{props.unreadMessages.length}条未读消息</h2>
-      }
-    </div>
-  )
-}
-let unreadMessages=['1',2]
+
 ReactDOM.render(
-  <MailBox unreadMessages={unreadMessages} />,
+  <RegForm  />,
   document.querySelector('#root')
 )
-
-
-/*
-<button onClick={this.handleClick.bind(this, props0, props1, ...}></button>
-
-handleClick(porps0, props1, ..., event) {
-}
-
-*/
