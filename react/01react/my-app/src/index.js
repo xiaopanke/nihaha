@@ -40,8 +40,19 @@ class LoginCtrl extends Component{
   }
 }
 
+function MailBox(props){
+  return(
+    <div>
+      <h1>Hello</h1>
+      {
+        props.unreadMessages.length>0 && <h2>你有{props.unreadMessages.length}条未读消息</h2>
+      }
+    </div>
+  )
+}
+let unreadMessages=['1',2]
 ReactDOM.render(
-  <LoginCtrl  />,
+  <MailBox unreadMessages={unreadMessages} />,
   document.querySelector('#root')
 )
 
