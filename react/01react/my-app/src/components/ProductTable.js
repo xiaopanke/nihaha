@@ -14,7 +14,7 @@ export default class ProductTable extends Component{
           if(this.props.inStockOnly && !product.stocked)
           continue;
           if(!lastcategory || lastcategory!=product.category){
-            rows.push(<tr><td colSpan={2} style={{fontWeight:'bold'}}>{product.category}</td></tr>)
+            rows.push(<tr key={'c'+i}><td colSpan={2} style={{fontWeight:'bold'}}>{product.category}</td></tr>)
             lastcategory=product.category
           }
           rows.push(<tr key={i}><td style={{color:(product.stocked ? '#000' : 'red')}}>{product.name}</td><td style={{color:(product.stocked ? '#000' : 'red')}}>{product.price}</td></tr>)
