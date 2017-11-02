@@ -620,6 +620,13 @@ postman
     //获取自定义属性
     let abc=event.target.dataset.abc;
     let val=event.target.value;
+
+    
+    let jsondata={}
+    jsondata[abc]=val
+    this.setState(jsondata)
+
+
     this.setState({
       [abc]:val
     })

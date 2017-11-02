@@ -1,6 +1,19 @@
 <template>
   <div class="">
     {{data.d.value1}}
+    <!-- <ul>
+      <li v-for="i in item">
+          <div v-if="i.type==1">
+              ...
+          </div>
+          <div v-else-if="i.type==2">
+            ...
+          </div>
+          <div v-else>
+            ...
+          </div>
+      </li>
+    </ul> -->
   </div>
 </template>
 
