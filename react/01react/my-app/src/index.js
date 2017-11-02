@@ -1,45 +1,44 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css'
 
-class RegForm extends Component{
-  constructor(){
-    super()
-    this.state={
-      username:'',
-      password:''
-    }
-  }
-  handlechange=(n,event) => {
-    //let username=event.target.value //取得输入框的值
-    console.log(n)
-    if(n=='password'){
-      this.setState({
-        password:event.target.value
-      })
-    }else{
-      this.setState({
-          username:event.target.value
-      })
-    }
-
-  }
-  handlesubmit=(e) =>{
-     e.preventDefault()
-     console.log(this.state);
-  }
+//复合组件
+class Panel extends Component{
   render(){
     return(
-      <form onSubmit={this.handlesubmit} >
-      用户名：<input type='text' onChange={this.handlechange.bind(this,'username')} value={this.state.username} /> <br />
-        密码：<input type='text'  onChange={this.handlechange.bind(this,'password')}  value={this.state.password}  /> <br />
-        <input type='submit'/>
-      </form>
+      <div className="panel panel-default">
+        <PanelHead head={this.props.head} />
+        <PanelBody body={this.props.body} />
+        <PanelFooter foot={this.props.foot} />
+      </div>
+    )
+  }
+}
+class PanelHead extends Component{
+    render(){
+      return(
+        <div className="panel-heading">{this.props.head}</div>
+      )
+    }
+}
+class PanelBody extends Component{
+  render(){
+    return(
+      <div className="panel-body">{this.props.body}</div>
+    )
+  }
+}
+class PanelFooter extends Component{
+  render(){
+    return(
+      <div className="panel-footer">{this.props.foot}</div>
     )
   }
 }
 
 
+
 ReactDOM.render(
-  <RegForm  />,
+  <Panel head="头" body="体" foot="尾巴"  />,
   document.querySelector('#root')
 )
