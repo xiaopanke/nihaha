@@ -3,7 +3,7 @@ export default class ProductCategoryRow extends Component{
     render(){
         return (
             <div>
-ProductCategoryRow
+              {this.props.category}
             </div>
         )
     }
