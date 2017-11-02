@@ -5,6 +5,6 @@ let products=require('./products.js')
 console.log(products);
 
 ReactDOM.render(
-  <FilterableProductTable />,
+  <FilterableProductTable products={products} />,
   document.querySelector('#root')
 )
