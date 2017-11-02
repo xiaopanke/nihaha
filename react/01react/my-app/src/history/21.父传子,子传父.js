@@ -40,18 +40,30 @@ class Calculator extends Component{
   constructor(){
     super()
     this.state={
-      temperature:0
+      temperatureshe:0,
+      temperaturehua:0
     }
   }
   handletemperature=(temperature,scale) => {
     console.log(scale);
-    this.setState({temperature})
+    if(scale=='摄氏'){
+        this.setState({
+          temperatureshe:temperature,
+          temperaturehua:tryConvert(temperature,toCelsius)
+        })
+    }else{
+      this.setState({
+        temperatureshe:tryConvert(temperature,toFahrenheit),
+        temperaturehua:temperature
+      })
+    }
+
   }
   render(){
     return (
       <div>
-        <TemperatureInput scale="摄氏" temperature={this.state.temperature} onTemperatureChange={this.handletemperature} />
-        <TemperatureInput scale="华氏" temperature={this.state.temperature} onTemperatureChange={this.handletemperature} />
+        <TemperatureInput scale="摄氏" temperature={this.state.temperatureshe} onTemperatureChange={this.handletemperature} />
+        <TemperatureInput scale="华氏" temperature={this.state.temperaturehua} onTemperatureChange={this.handletemperature} />
         <BoilingVerdict />
       </div>
     )
