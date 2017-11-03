@@ -13,6 +13,7 @@ import Profile from './Profile';
 import User from './User';
 import ProtectedRoute from './ProtectedRoute'
 import Login from './Login'
+import MenuLink from './MenuLink'
 export default (
   <Router>
     <div>
@@ -24,9 +25,9 @@ export default (
               </div>
             </div>
             <ul className="nav navbar-nav">
-              <li><Link to='/home'>首页</Link></li>
-              <li><Link to='/user'>用户管理</Link></li>
-              <li><Link to='/profile'>个人设置</Link></li>
+            <MenuLink label="首页" to='/home'></MenuLink>
+            <MenuLink label="用户管理" to='/user'></MenuLink>
+              <MenuLink label="个人设置" to='/profile'></MenuLink>
             </ul>
         </div>
       </nav>
