@@ -3,7 +3,8 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -31,9 +32,10 @@ export default (
       <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <Route path='/home' component={Home} />
-              <Route path='/user' component={User} />
-              <Route path='/profile' component={Profile} />
+                <Route path='/' exact  component={props=><div>首页</div>} />
+                <Route path='/home' component={Home} />
+                <Route path='/user' component={User} />
+                <Route path='/profile' component={Profile} />
             </div>
           </div>
       </div>
