@@ -11,7 +11,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Home from './Home';
 import Profile from './Profile';
 import User from './User';
-
+import ProtectedRoute from './ProtectedRoute'
+import Login from './Login'
 export default (
   <Router>
     <div>
@@ -32,10 +33,13 @@ export default (
       <div className="container">
           <div className="row">
             <div className="col-sm-12">
-                <Route path='/' exact  component={props=><div>首页</div>} />
-                <Route path='/home' component={Home} />
-                <Route path='/user' component={User} />
-                <Route path='/profile' component={Profile} />
+                <Switch>
+                  <Route path='/' exact  component={props=><div>首页</div>} />
+                  <Route path='/home' component={Home} />
+                  <Route path='/user' component={User} />
+                  <Route path='/login' component={Login} />
+                  <ProtectedRoute  path='/profile' component={Profile} />
+                </Switch>
             </div>
           </div>
       </div>

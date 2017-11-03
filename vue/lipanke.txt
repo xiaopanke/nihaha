@@ -621,7 +621,7 @@ postman
     let abc=event.target.dataset.abc;
     let val=event.target.value;
 
-    
+
     let jsondata={}
     jsondata[abc]=val
     this.setState(jsondata)
@@ -631,3 +631,19 @@ postman
       [abc]:val
     })
     //[abc]  json里的变量
+
+
+
+
+
+    //props={path:'/profile',component:Profile}
+    //...rest 其余的
+    //rest ={path:'/profile'}
+    /*
+    这两个是一样的， {...rest} 叫做展开运算符
+    <Route path='/profile' />
+    <Route {...rest} />
+    */
+    export default  function({component:Component},...rest) {
+      return
+    }
