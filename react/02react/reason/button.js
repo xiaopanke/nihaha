@@ -17,7 +17,8 @@ class LikeButton{
   }
   setState(newState){
     //合并旧的状态和新的状态为一个新的状态，再把新的状态赋值给this.state
-    this.state=Object.assign({},this.stare,newState)
+    this.state=Object.assign({},this.stare,newState);
+    this.render()
   }
   handleClick(){
     this.state.isLiked=!this.state.isLiked
@@ -27,7 +28,7 @@ class LikeButton{
   render(){
     console.log('render')
     this.element=this.createDOMFromString(`<button type="button" name="button" class="like-btn">
-      <span class="like-text">点赞</span>
+      <span class="like-text">${this.state.isLiked ? '取消' : '点赞'}</span>
     </button>`);
     this.element.addEventListener('click',this.handleClick)
     return this.element
