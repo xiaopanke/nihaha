@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="button.js"></script>
+  <body>
+    <div id="root">
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    let LikeButton2=new LikeButton;
+     console.log(LikeButton2.render())
+     let container=document.querySelector('#root')
+     container.innerHTML=LikeButton2.render()
+    let likeBtn=document.querySelector('.like-btn')
+    let likeText=document.querySelector('.like-text')
+    let liked=false;
+    container.innerHTML=LikeButton2.render()
+    //给按钮增加点击事件，当点击按钮的时候，执行对应的回调函数
+    likeBtn.addEventListener('click',() => {
+      liked=!liked;
+      likeText.innerHTML=liked ? '取消' : '点赞'
+    })
+  </script>
+</html>
