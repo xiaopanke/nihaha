@@ -1,7 +1,7 @@
 class LikeButton extends Commponent{
-  constructor(){
+  constructor(props){
     //在构造函数中初始化一个状态对象，这是一个私有变量
-    super();
+    super(props);
     this.state={
       isLiked:false
     }
@@ -16,7 +16,7 @@ class LikeButton extends Commponent{
   }
   render(){
     console.log(this.state.isLiked ? '取消' : '点赞')
-    this.element=this.createDOMFromString(`<button type="button" name="button" class="like-btn">
+    this.element=this.createDOMFromString(`<button style="color:${this.props.color};background:${this.props.backgroundColor}" type="button" name="button" class="like-btn">
       <span class="like-text">${this.state.isLiked ? '取消' : '点赞'}</span>
     </button>`);
     this.element.addEventListener('click',this.handleClick)

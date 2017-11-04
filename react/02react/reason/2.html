@@ -12,8 +12,8 @@
     </div>
   </body>
   <script type="text/javascript">
-  let LikeButton2=new LikeButton;
+  let LikeButton2=new LikeButton({color:'red',backgroundColor:'yellow'});
    let container=document.querySelector('#root')
-   container.appendChild(LikeButton2.render())
+   LikeButton2.mount(container)
   </script>
 </html>

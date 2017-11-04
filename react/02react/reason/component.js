@@ -1,4 +1,7 @@
 class Commponent{
+  constructor(props){
+    this.props=props;
+  }
   createDOMFromString (domstr) {
     let div=document.createElement('div');
     div.innerHTML=domstr;
@@ -20,5 +23,9 @@ class Commponent{
     //添加新节点
     parent.appendChild(this.element)
   }
-  
+  //挂载
+  mount(container){
+    //把当前的元素挂载到父容器内部
+    container.appendChild(this.render())
+  }
 }
