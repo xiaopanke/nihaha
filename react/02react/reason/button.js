@@ -17,16 +17,24 @@ class LikeButton{
   }
   setState(newState){
     //合并旧的状态和新的状态为一个新的状态，再把新的状态赋值给this.state
-    this.state=Object.assign({},this.stare,newState);
-    this.render()
+    //this.state=Object.assign({},this.stare,newState); //es6
+    this.state={...this.stare,...newState}; //es7
+    console.log(this.state)
+    //先获取这个button的父级节点
+    let parent=this.element.parentNode;
+    //备份一下老节点
+    let oldEle=this.element;
+    this.render(); //render之后会得到一个新的节点
+    //删除老节点
+    parent.removeChild(oldEle)
+    //添加新节点
+    parent.appendChild(this.element)
   }
   handleClick(){
-    this.state.isLiked=!this.state.isLiked
-    let likeText=document.querySelector('.like-text');
-    likeText.innerHTML=this.state.isLiked ? '取消' : '点赞'
+    this.setState({isLiked:!this.state.isLiked})
   }
   render(){
-    console.log('render')
+    console.log(this.state.isLiked ? '取消' : '点赞')
     this.element=this.createDOMFromString(`<button type="button" name="button" class="like-btn">
       <span class="like-text">${this.state.isLiked ? '取消' : '点赞'}</span>
     </button>`);
