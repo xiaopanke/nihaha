@@ -4,6 +4,15 @@ import PropTypes from 'prop-types'
 
 
 class LikeButton extends Component{
+  /*static defaultProps={
+    likeText:'点赞',
+    unLikeText:'取消'
+  }
+  static propTypes={
+    likeText:PropTypes.string.isRequired, //要求是必填的
+    unLikeText:PropTypes.string,
+
+  }*/
   constructor(){
     super();//调用父类构造函数，是用来继承父类的私有属性
     this.state={isLiked:false}
