@@ -652,10 +652,3 @@ postman
 
     //this.state=Object.assign({},this.stare,newState); //es6
     this.state={...this.stare,...newState}; //es7
-
-
-
-
-function renderContent (content) {
-  return ReactDom.render(<h1>{content}</h1>,document.querySelector('#root'))
-}

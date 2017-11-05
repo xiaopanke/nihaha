@@ -1,1 +1,1 @@
-import  './components/4.good.js'
+import  './components/5.props.js'
