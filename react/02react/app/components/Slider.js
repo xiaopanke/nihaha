@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import SliderItem from './SliderItem'
 //默认导出一个Slider
 export default class Slider extends Component{
     constructor(){
@@ -33,13 +34,7 @@ export default class Slider extends Component{
         }
         return (
             <div className='slider-wrapper'>
-              <ul className="sliders" style={style}>
-                {this.props.images.map((item,index) => (
-                  <li key={index} className="slider">
-                    <img src={item} />
-                  </li>
-                ))}
-              </ul>
+              <SliderItem index={this.state.index}  images={this.props.images} speed={this.props.speed}  />
             </div>
         )
     }
