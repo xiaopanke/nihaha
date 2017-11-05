@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import SliderItem from './SliderItem';
 import SliderArrow from './SliderArrow'
+import SliderDots from './SliderDots'
 //默认导出一个Slider
 export default class Slider extends Component{
     constructor(){
@@ -16,7 +17,7 @@ export default class Slider extends Component{
         index=0;
       }
       if(index==-1){
-        index=2;
+        index=this.props.images.length-1;
       }
       this.setState({ //修改状态中的index值为新的index值
         index
@@ -38,9 +39,10 @@ export default class Slider extends Component{
           transitionDuration:this.props.speed + 's',//每次动画的持续时间
         }
         return (
-            <div onMouseOver={()=> {console.log(1);clearInterval(this.timerID)}}  onMouseOut={this.go} className='slider-wrapper'>
+            <div onMouseOver={()=> {clearInterval(this.timerID)}}  onMouseOut={this.go} className='slider-wrapper'>
               <SliderItem index={this.state.index}  images={this.props.images} speed={this.props.speed}  />
               <SliderArrow turn={this.turn}  />
+              <SliderDots turn={this.turn} images={this.props.images} index={this.state.index}  />
             </div>
         )
     }
