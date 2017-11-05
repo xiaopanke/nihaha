@@ -1,1 +1,1 @@
-import  './components/2.jsx.js'
+import  './components/4.good.js'
