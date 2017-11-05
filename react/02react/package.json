@@ -4,7 +4,8 @@
   "description": "## 初始化项目 ``` npm init -y ```",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "dev-slider":"webpack-dev-server --config webpack.config.slider.js --open"
   },
   "keywords": [],
   "author": "",

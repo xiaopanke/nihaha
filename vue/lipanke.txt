@@ -652,3 +652,10 @@ postman
 
     //this.state=Object.assign({},this.stare,newState); //es6
     this.state={...this.stare,...newState}; //es7
+
+
+
+    "scripts": {
+      "dev": "webpack-dev-server --open",
+      "dev-slider":"webpack-dev-server --config webpack.config.slider.js --open"
+    },

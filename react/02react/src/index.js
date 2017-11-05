@@ -1,1 +1,1 @@
-import  './components/5.props.js'
+import  './components/6.map.js'
