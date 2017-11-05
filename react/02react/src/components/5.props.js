@@ -1,5 +1,7 @@
 import React,{Component} from 'react' ;
 import ReactDom,{render} from 'react-dom';
+import PropTypes from 'prop-types'
+
 
 class LikeButton extends Component{
   constructor(){
@@ -30,6 +32,12 @@ class LikeButton extends Component{
 LikeButton.defaultProps={
   likeText:'点赞',
   unLikeText:'取消'
+}
+//验证组件参数的合法性和有效性 ,用来检查属性的名称和类型的
+LikeButton.propTypes={
+  likeText:PropTypes.string.isRequired, //要求是必填的
+  unLikeText:PropTypes.string,
+
 }
 /*
 1.先把传入这个组件的属性封装成一个对象{likeText:'赞',unLikeText:'已赞'}
