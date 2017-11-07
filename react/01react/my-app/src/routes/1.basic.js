@@ -37,8 +37,9 @@ function Users(props){
   )
 }
 function Detail(props){
+  let {id,age,name}=props.location.state
   return (
-      <div>age:{props.location.state.age} id:{props.location.state.id} name:{props.location.state.name}</div>
+      <div>age:{age} id:{id} name:{name}</div>
   )
 
 
