@@ -37,9 +37,15 @@ function Users(props){
   )
 }
 function Detail(props){
-  let {id,age,name}=props.location.state
+  let {id,age,name}=props.location.state;
+  console.log(props);
+
   return (
-      <div>age:{age} id:{id} name:{name}</div>
+      <div>
+      <Link to='/users'>返回</Link>
+      <button onClick={props.history.goBack}>返回</button>
+      age:{age} id:{id} name:{name}
+      </div>
   )
 
 
