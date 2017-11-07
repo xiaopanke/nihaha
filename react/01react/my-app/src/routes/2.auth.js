@@ -4,12 +4,14 @@ import {BrowserRouter as Router,Route,Link,Redirect,withRouter} from 'react-rout
 
 //在这个对象里模拟登录操作，里面存放一个变量isAuth,用来表示当前用户是否登陆
 let fakeAuth={
-  isAuth:false,//默认为未登陆状态
+  isAuth:!!localStorage.getItem('isAuth'),//默认为未登陆状态
   login(){ //登陆
     this.isAuth=true;
+    localStorage.setItem('isAuth','true')
   },
   signout(){//退出
     this.isAuth=false;
+    localStorage.clear();
   },
 }
 //路由的渲染方式有三种
