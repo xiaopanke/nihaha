@@ -1,0 +1,8 @@
+ul{background: red;}
+.fade-enter{
+  opacity: 0;
+}
+.fade-enter-active{
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
