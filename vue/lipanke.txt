@@ -659,3 +659,10 @@ postman
       "dev": "webpack-dev-server --open",
       "dev-slider":"webpack-dev-server --config webpack.config.slider.js --open"
     },
+
+
+    npm install xxx 安装了一个模块的话
+那么启动脚本就丢失了
+所以永远 不要通过 npm install来安装模块
+用yarn add xxx
+yarn add react-scripts
