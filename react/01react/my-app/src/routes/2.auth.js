@@ -100,3 +100,11 @@ ReactDOM.render(
     <AuthExample />
     ,document.querySelector('#root')
 );
+
+
+
+/*
+1.如何在跳转路径的时候传参数  state
+2.
+
+*/

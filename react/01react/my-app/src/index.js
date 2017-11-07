@@ -1,1 +1,2 @@
-import './routes/2.auth.js'
+import './routes/3.link.js'
+import './link.css'
