@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Link,Redirect,withRouter} from 'react-router-dom';
 
 //在这个对象里模拟登录操作，里面存放一个变量isAuth,用来表示当前用户是否登陆
 let fakeAuth={
@@ -61,15 +61,18 @@ class Protected extends Component{
   }
 }
 
-function AuthButton(){
+let AuthButton=withRouter(function(props){
   return(
     <div>
       {
-        fakeAuth.isAuth ? <p>欢迎 <button>退出</button></p> : <p>你尚未登录！</p>
+        fakeAuth.isAuth ? <p>欢迎 <button onClick={() => {
+          fakeAuth.signout();
+          props.history.push('/')
+        }}>退出</button></p> : <p>你尚未登录！</p>
       }
     </div>
   )
-}
+})
 class AuthExample extends Component{
   render(){
     return(
