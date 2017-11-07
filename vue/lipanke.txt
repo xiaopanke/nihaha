@@ -666,3 +666,6 @@ postman
 所以永远 不要通过 npm install来安装模块
 用yarn add xxx
 yarn add react-scripts
+
+
+rm -rf module_modules
