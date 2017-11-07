@@ -6,10 +6,10 @@ import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom';
 let fakeAuth={
   isAuth:false,//默认为未登陆状态
   login(){ //登陆
-
+    this.isAuth=true;
   },
   signout(){//退出
-
+    this.isAuth=false;
   },
 }
 //路由的渲染方式有三种
@@ -33,9 +33,23 @@ class Public extends Component{
   }
 }
 class Login extends Component{
+  login=() => {
+    fakeAuth.login();
+    //跳转登陆前的页面
+    if(this.props.location.state){
+      this.props.history.push(this.props.location.state.from.pathname)
+    }else{
+      this.props.history.push('/')
+    }
+
+  }
   render(){
+    let {from} =this.props.location.state || {from:'/'};
     return(
-      <div>Login</div>
+      <div>
+        <p>你需要登陆后才能访问{from.pathname}路径</p>
+        <button onClick={this.login}>登陆</button>
+      </div>
     )
   }
 }
