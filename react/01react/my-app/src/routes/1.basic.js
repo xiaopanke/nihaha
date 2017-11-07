@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter as Router,Route,Link} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 
 function Home(){
   return <div>home</div>
@@ -24,6 +24,25 @@ function User(props){
   console.log(props)
   return <div>User{props.match.params.id}</div>
 }
+let users=[
+  {id:1,name:'panke',age:17},
+  {id:2,name:'panke2',age:18},
+]
+function Users(props){
+  return (
+    <ul>
+        {users.map((item,index) => (<li key={index}><Link to={{pathname:'/detail',state:item}}>{item.name}</Link></li>
+      ))}
+    </ul>
+  )
+}
+function Detail(props){
+  return (
+      <div>age:{props.location.state.age} id:{props.location.state.id} name:{props.location.state.name}</div>
+  )
+
+
+}
 /*
 Router是路由容器，就是他负责处理在内部定义的所有路由
 A <Router>一个组件只可能拥有唯一的子元素
@@ -37,10 +56,13 @@ ReactDOM.render(
           <li><Link to='/'>首页</Link></li>
           <li><Link to='/about'>关于</Link></li>
           <li><Link to='/user/123'>用户详情</Link></li>
+          <li><Link to='/users'>用户列表</Link></li>
         </ul>
         <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>
         <Route path='/user/:id' component={User}/>
+        <Route path='/users' component={Users}/>
+        <Route path='/detail' component={Detail}/>
       </div>
     </Router>
     ,document.querySelector('#root')
