@@ -7,10 +7,10 @@ const SUB='SUB';
 let reducer=(state=0,action) => {
   switch (action.type) {
     case ADD:
-      return state+1;
+      return state+action.temp;
       break;
    case SUB:
-        return state-1;
+        return state-action.temp;
         break;
     default:
       return state;
@@ -29,6 +29,7 @@ class Counter extends Component{
   }
   //在组件渲染完成后订阅仓库的状态变化时间
   componentDidMount(){
+    console.log('componentDidMount');
     store.subscribe(() => {
       this.setState({number:store.getState()});
     })
@@ -36,10 +37,11 @@ class Counter extends Component{
   render(){
     return(
       <div>
+        <input type="text" ref={(input)=>this.input=input} />
         <p>{this.state.number}</p>
         <p>{store.getState()}</p>
-        <button onClick={() =>store.dispatch({type:'ADD'})}>+</button>
-        <button onClick={() =>store.dispatch({type:'SUB'})}>-</button>
+        <button onClick={() =>store.dispatch({type:'ADD',temp:parseFloat(this.input.value)})}>+</button>
+        <button onClick={() =>store.dispatch({type:'SUB',temp:parseFloat(this.input.value)})}>-</button>
       </div>
     )
   }
