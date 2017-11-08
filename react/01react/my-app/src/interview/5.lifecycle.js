@@ -51,6 +51,10 @@ class Counter extends Component{
   componentWillUpdate(){
     console.log('组件将要更新');
   }
+  //组件更新完成
+  componentDidUpdate(){
+    console.log('组件更新完成');
+  }
 }
 
 ReactDOM.render(<Counter />,document.querySelector('#root'))
