@@ -2,6 +2,9 @@ import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 
 class Child extends Component{
+  componentWillUpdate(){
+    
+  }
   render(){
     return (
       <div>
