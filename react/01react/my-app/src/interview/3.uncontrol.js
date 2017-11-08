@@ -3,17 +3,16 @@ export default class Form extends Component{
 
   haha=(event) => {
     event.preventDefault();
-    //这种已经不用啦
-    let username=this.refs.username.value;
-    let password=this.refs.password.value;
+    let username=this.username.value;
+    let password=this.password.value;
     console.log({username,password})
 
   }
   render(){
     return(
       <form onSubmit={this.haha}>
-        用户名：<input type="text" ref="username" /><br />
-        密码：<input type="password" ref="password" /><br />
+        用户名：<input type="text" ref={input=>this.username=input} /><br />
+        密码：<input type="password" ref={input=>this.password=input}  /><br />
         <input type="submit" /><br />
       </form>
     )
