@@ -1,6 +1,6 @@
 
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import Haha from './interview/3.uncontrol.js'
+import   './interview/4.Twitter.js'
 import './transition.css'
-ReactDOM.render(<Haha />,document.querySelector('#root'))
+//ReactDOM.render(<Haha />,document.querySelector('#root'))
