@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import * as types from '../store/action-types'
+import * as types from '../store/action-types';
+import actions from '../store/actions'
 class Counter extends Component{
   render(){
     return(
@@ -22,8 +23,9 @@ connect是一个函数，执行后又返回一个函数
 */
 //参数是仓库中的合并后的状态对象，返回值 是一个对象，它会成为当前组件的属性对象
 let mapStateToProps = state => state.counter
-let mapDispatchToProps = dispatch => ({
-    add:()=>dispatch({type:types.ADD}),
-    sub:()=>dispatch({type:types.SUB})
-})
-export default connect(mapStateToProps,mapDispatchToProps)(Counter)
+// let mapDispatchToProps = dispatch => ({
+//     add:()=>dispatch({type:types.ADD}),
+//     sub:()=>dispatch({type:types.SUB})
+// })
+//export default connect(mapStateToProps,mapDispatchToProps)(Counter)
+export default connect(mapStateToProps,actions)(Counter)
