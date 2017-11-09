@@ -7,10 +7,10 @@ const SUB='SUB';
 let reducer=(state=0,action) => {
   switch (action.type) {
     case ADD:
-      return state+action.temp;
+      return state+parseFloat(action.payload);
       break;
    case SUB:
-        return state-action.temp;
+        return state-parseFloat(action.payload);
         break;
     default:
       return state;
@@ -40,10 +40,22 @@ class Counter extends Component{
         <input type="text" ref={(input)=>this.input=input} />
         <p>{this.state.number}</p>
         <p>{store.getState()}</p>
-        <button onClick={() =>store.dispatch({type:'ADD',temp:parseFloat(this.input.value)})}>+</button>
-        <button onClick={() =>store.dispatch({type:'SUB',temp:parseFloat(this.input.value)})}>-</button>
+        <button onClick={() =>store.dispatch(add(this.input.value))}>+</button>
+        <button onClick={() =>store.dispatch(sub(this.input.value))}>-</button>
       </div>
     )
+  }
+}
+function add(payload) {
+  return{
+    type:'ADD',
+    payload,
+  }
+}
+function sub(payload) {
+  return{
+    type:'SUB',
+    payload,
   }
 }
 ReactDOM.render(<div>

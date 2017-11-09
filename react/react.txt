@@ -4,3 +4,11 @@
 
 2. http://www.css88.com/react/
 3. http://huziketang.com/books/react/lesson1
+
+
+xixi=(index) => {
+  store.dispatch({type:DEL_TODO,index})
+}
+
+<button onClick={this.xixi.bind(this,index)}>删除</button>
+<button onClick={()=>this.xixi(index)}>删除</button>

@@ -669,3 +669,8 @@ yarn add react-scripts
 
 
 rm -rf module_modules
+
+
+纯函数：
+  1.里面的参数是不能改变的
+  2.进去的什么参数就返回什么东西
