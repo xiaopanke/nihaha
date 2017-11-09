@@ -1,5 +1,16 @@
 
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import Haha from   './4.todo.js'
-ReactDOM.render(<Haha />,document.querySelector('#root'))
+import Todos from   './7.todo.js';
+import Counter from   './6.counter.js';
+class Page extends React.Component{
+  render(){
+    return(
+      <div>
+        <Todos />
+        <Counter />
+      </div>
+    )
+  }
+}
+ReactDOM.render(<Page />,document.querySelector('#root'))
