@@ -1,14 +1,14 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import * as types from '../store/action-types';
+import * as types from  '../store/action-types';
 import actions from '../store/actions'
 class Counter extends Component{
   render(){
     return(
       <div>
         <p>{this.props.number}</p>
-        <button  onClick={this.props.add}>+</button>
-        <button  onClick={this.props.sub}>-</button>
+        <button  onClick={this.props.add}>+++++</button>
+        <button  onClick={this.props.sub}>-----</button>
       </div>
     )
   }
