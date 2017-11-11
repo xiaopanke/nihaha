@@ -7,19 +7,27 @@ export default class CommentApp extends React.Component{
     this.props.addComment({username,content});
     this.content.value=''
   }
+  hahaBlur=(event) => {
+    let username=event.target.value;
+    localStorage.setItem('username',username)
+  }
+  componentDidMount(){
+    let username=localStorage.getItem('username') || '';
+    this.username.value=username;
+  }
   render(){
     return (
       <form onSubmit={this.haha} className="form-horizontal">
         <div className="form-group">
           <label htmlFor="username" className="control-label col-md-3">用户名</label>
           <div className="col-md-9">
-            <input type="text" className="form-control" ref={(input)=>this.username=input} required />
+            <input type="text" onBlur={this.hahaBlur} className="form-control" ref={(input)=>this.username=input} required />
           </div>
         </div>
         <div className="form-group">
           <label htmlFor="content" className="control-label col-md-3">内容</label>
           <div className="col-md-9">
-            <textarea className="form-control" ref={(input)=>this.content=input} required></textarea>
+            <textarea autoFocus className="form-control" ref={(input)=>this.content=input} required></textarea>
           </div>
         </div>
         <div className="form-group">
