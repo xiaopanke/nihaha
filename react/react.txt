@@ -12,3 +12,4 @@ xixi=(index) => {
 
 <button onClick={this.xixi.bind(this,index)}>删除</button>
 <button onClick={()=>this.xixi(index)}>删除</button>
+toLocaleString
