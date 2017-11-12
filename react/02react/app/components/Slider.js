@@ -18,7 +18,7 @@ export default class Slider extends Component{
       index+=step;//让老的值加上步长
       if(index>this.props.images.length){
         //当最后一张要走到2的时候，需要马上拉到索引0的位置 ，再往下走
-        this.sliders.style.transitionDuration=0;
+        this.sliders.style.transitionDuration='0s';
         this.sliders.style.left=0;
         //强行让浏览器重新计算
         getComputedStyle(this.sliders,null).left
