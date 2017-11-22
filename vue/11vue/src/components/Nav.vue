@@ -3,6 +3,7 @@
       <ul>
         <li>
           <router-link to='/eventbus'>eventbusa</router-link>
+          <router-link to='/uploadimg'>改头像</router-link>
         </li>
       </ul>
       

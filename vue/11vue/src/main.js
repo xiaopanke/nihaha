@@ -3,8 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import directives from './directives/autofix'
+directives(Vue)
 
-Vue.config.productionTip = false
+
 window.bus=new Vue()
 /* eslint-disable no-new */
 new Vue({
