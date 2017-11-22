@@ -17,3 +17,66 @@ toLocaleString
 
 npm i moment
 http://momentjs.cn
+
+
+1. 后台写一个后台接口  /lessons
+2. 前台(api)里写一个获取接口数据的方法
+3. 在action-types里添加新的actionType类型
+4. 在reducer里修改初始状态，并添加一个case
+5. 在`actions`里添加一个方法调用此方法
+
+
+@connect((state) => {
+  console.log(state) //这是reducer里返回的数据
+  return {
+    abc: state.cnt
+  }
+},{...actions})
+state里的数据名字不能和reducer里的函数名字一样
+@connect((state)=>{
+ return {
+   abc:state.mylist
+ }
+},{...actions})
+
+加个初始值，后面render的时候就不用再加length判断 
+let mylist=(state={list:[]},action)=>{
+  if(action.type===CONSTANTS.MYLIST){
+    return action.mylist
+  }
+  console.log(action.mylist)
+  return state
+}
+
+先走action 再走reducer
+
+
+如何判断是开发环境还是线上环境
+
+-p  是webpack压缩代码
+
+cross-env 是为了兼容mac和win
+
+ntl  package.json里的script 让在终端里使用
+
+koa-compress 减少代码体积
+
+
+DefinePlugin:
+  开发模式和发布模式的构建
+
+
+
+
+  import developConfig from './develop.js'
+  import productionConfig from './production.js'
+
+let Config={}
+  if(process.env.NODE_ENV=='develop'){
+    Config=developConfig
+  }else{
+    Config=productionConfig
+  }else{
+    throw 
+  }
+  export default Config
