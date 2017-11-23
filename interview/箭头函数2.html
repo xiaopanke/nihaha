@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script>
+        // var obj = {
+        //     a: 10,
+        //     b: function(){
+        //         console.group('%c%s','color:red',this) 
+        //       console.log(this.a); //10
+        //     },
+        //     c: function() {
+        //        return ()=>{
+        //             console.group('%c%s','color:red',this)
+        //              console.log(this.a); //10
+        //        }
+        //     }
+        //   }
+        //   obj.b(); 
+        //   obj.c()();
+          var obj = {
+                a: 10,
+                b: () => {
+                    console.log(this.a); //undefined
+                    console.log(this); //window
+                },
+                c: function() {
+                    console.log(this.a); //10
+                    console.log(this); //obj{...}
+                }
+            }
+            obj.b(); 
+            obj.c();
+ 
+    </script>
+</head>
+<body>
+</body>
+</html>
