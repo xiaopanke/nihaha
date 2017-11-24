@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        Function.prototype.call=function(){
+            var ary=[...arguments];
+            ary.shift();
+            if(arguments[0]==undefined){
+                this(...ary);
+                return;
+            }
+            var obj=Object(arguments[0]);
+            obj.__proto__.fn=this;
+            obj.fn(...ary);
+        };
+    </script>
+    
+</head>
+<body>
+</body>
+</html>
