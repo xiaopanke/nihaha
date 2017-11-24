@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li>
+                <span id="span"></span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        abc('#box','#span')
+        function abc(elaid,elbid){
+            console.log(document.querySelector(elaid).querySelectorAll(elbid))
+            if(document.querySelector(elaid).querySelector(elbid)){
+                console.log('包含')
+            }else{
+                console.log('不包含')
+            }
+        }
+    </script>
+</body>
+</html>
