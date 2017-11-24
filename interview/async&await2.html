@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sleep(time){
+            return function(){
+                setTimeout(()=>{
+                    console.log('这么执行setTimeout')
+                },time)
+            }
+        } 
+        async function start(){ //async表示这是一个async函数，await 必须用在这个函数里，如果不加async，程序就会报错
+            console.log('start');
+            await sleep(3000)(); //await 等待promise返回结果，再往下执行 ，如果不加await 那就是先打印end,再走sleep
+            console.log('end');
+        } 
+        start() 
+    </script>
+</body>
+</html>
