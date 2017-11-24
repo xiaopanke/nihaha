@@ -24,8 +24,13 @@
         for(var key of set1.keys()){
             console.log(key)
         }
+        console.log(Array.prototype)
     </script>
-    
+    <script>
+        //扩展运算符，可以把非数组变成数组，可以把数组变成非数组
+        var set=new Set([1,2,1,2,1,2,31,1,23,123])
+        console.log([...set])
+    </script>
 </head>
 <body>
 </body>
