@@ -4,6 +4,8 @@
         <li>
           <router-link to='/eventbus'>eventbusa</router-link>
           <router-link to='/uploadimg'>改头像</router-link>
+          <router-link to='/stylus'>stylus</router-link>
+          <router-link to='/created'>created</router-link>
         </li>
       </ul>
       
