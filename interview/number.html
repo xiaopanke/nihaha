@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        console.log(Number('')) //0
+        console.log(Number(' ')) //0
+        console.log(Number(true)) //1
+        console.log(Number(null)) //0
+        console.log(Number(.1)) //0.1
+        console.log(Number(1)) //1
+        console.log(Number(new Date)) //毫秒
+
+        console.log(parseInt('')) //null
+        console.log(parseInt(' ')) //null
+        console.log(parseInt(true)) //null
+        console.log(parseInt(null)) //null
+        console.log(parseInt(new Date)) //null
+
+        console.log(Boolean('')) //0,NaN,null undefined ''  都是false
+    </script>
+    
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

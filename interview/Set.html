@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let set1=new Set([1,2,2,3,4,1,1,1,1,'1','哈哈','嘻嘻','嘎嘎',true,false])
+        console.log(set1)
+        //默认去重
+        //size 对象的大小 
+        //add() 增加
+        set1.add(5).add('6').add(8)
+        console.log(set1)
+        console.log(set1.has(1))
+        console.log(set1.delete(1))
+        // set1.clear();
+        // console.log(set1)
+        set1.forEach((item,index)=>{ //只有value
+            console.log(item)
+            console.log(index)
+        })
+        for(var key of set1.keys()){
+            console.log(key)
+        }
+    </script>
+    
+</head>
+<body>
+</body>
+</html>

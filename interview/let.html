@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let a=1; //全局定义
+        console.log('a' in window) //打印出来是false
+        console.log(window.a) //undefined
+        
+        function abc(){
+            var c=123; //局部定义
+            console.log('c' in window)  //false
+        }
+        abc()
+
+        var b=1;
+        console.log('b' in window) //打印出来是true
+        console.log(window.b) //1
+    </script>
+    
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
