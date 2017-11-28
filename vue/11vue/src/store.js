@@ -7,6 +7,13 @@ const state={
     count2:1
 }
 
+//getters计算state里的变量 
+const getters={
+    count(state){
+        return state.count+10;
+    }
+}
 export default new vuex.Store({
-    state
+    state,
+    getters
 }) 

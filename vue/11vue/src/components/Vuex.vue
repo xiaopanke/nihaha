@@ -5,6 +5,9 @@
       <!-- 但是这样获取很麻烦，所以我们可以把这一长串的东西放到computed里面 -->
       {{count}}
       {{count2}}
+      <!-- 获取getters里的值 -->
+      {{this.$store.getters.count}}
+      {{getcount}}
   </div>
 </template>
 
@@ -18,7 +21,10 @@ export default {
     }
   },
   computed:{
-    ...mapState(['count','count2'])
+    ...mapState(['count','count2']),
+    getcount(){
+      return this.$store.getters.count
+    }
   }
 }
 </script>
