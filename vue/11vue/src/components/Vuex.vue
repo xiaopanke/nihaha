@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   
   data () {
@@ -16,14 +17,7 @@ export default {
       
     }
   },
-  computed:{
-      count(){
-        return  this.$store.state.count
-      },
-      count2(){
-        return  this.$store.state.count2
-      }
-  }
+  computed:mapState(['count','count2'])
 }
 </script>
 
