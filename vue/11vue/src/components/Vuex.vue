@@ -8,17 +8,27 @@
       <!-- 获取getters里的值 -->
       {{this.$store.getters.count}}
       {{getcount}}
+      <span @click='add(6)'>加6</span>
+      <!-- 通过dispath派发一个actions -->
+      <span @click='$store.dispatch("add",10)'>加10</span>
+      <span @click='addhaha(11)'>加11</span>
   </div>
 </template>
 
 <script>
-import {mapState,mapGetters} from 'vuex'
+import {mapState,mapGetters,mapMutations,mapActions} from 'vuex'
 export default {
   
   data () {
     return {
       
     }
+  },
+  methods:{
+    ...mapActions({
+      addhaha:'add'
+    }),
+    ...mapMutations(['add'])
   },
   computed:{
     ...mapState(['count','count2']),
