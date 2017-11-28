@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Foo(){
+            console.log(this)
+            this.getName=function(){
+                alert(3);
+            }
+            return this;
+        }
+        var getName=function(){
+            alert(2)
+        }
+        function getName(){
+            alert(1);
+        }
+        Foo().getName();
+        getName();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

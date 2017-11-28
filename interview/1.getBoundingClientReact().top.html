@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{ position: relative}
+        img{ position: absolute}
+    </style>
+    <script>
+        window.onload=function(){
+            var img=document.querySelectorAll('img');
+            for(var i=0;i<img.length;i++){
+                console.log('getBoundingClientRe'+img[i].getBoundingClientRect().top)
+                console.log('offsetTop'+img[i].offsetTop)
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+            <img src="https://avatars3.githubusercontent.com/u/12707710?s=460&v=4" alt=""><br />
+            <img src="https://avatars3.githubusercontent.com/u/12707710?s=460&v=4" alt=""><br />
+            <img src="https://avatars3.githubusercontent.com/u/12707710?s=460&v=4" alt=""><br />
+            <img src="https://avatars3.githubusercontent.com/u/12707710?s=460&v=4" alt=""><br />
+            <img src="https://avatars3.githubusercontent.com/u/12707710?s=460&v=4" alt=""><br />
+    </div>
+    
+</body>
+</html>

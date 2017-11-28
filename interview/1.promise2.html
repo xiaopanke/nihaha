@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+       function jianfei(){
+           return new Promise((resolve,reject)=>{
+               setTimeout(()=>{
+                    if(Math.random()>.5){
+                            resolve('减肥成功')
+                    }else{
+                            reject('减肥失败')
+                    }
+                },100)  
+           })
+       }
+       jianfei().then((succ)=>{ //接收成功
+           console.log(succ);
+       }).catch((fail)=>{ //失败的
+           console.log(fail)
+       })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

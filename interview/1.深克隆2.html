@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var a={
+            a:12,
+            b:[12,12,121,132],
+            c:function(){
+                console.log(this.a)
+            }
+        }
+        function type(obj) {
+            var toString = Object.prototype.toString;
+            var map = {
+                '[object Boolean]' : 'boolean', 
+                '[object Number]'  : 'number', 
+                '[object String]'  : 'string', 
+                '[object Function]' : 'function', 
+                '[object Array]'  : 'array', 
+                '[object Date]'   : 'date', 
+                '[object RegExp]'  : 'regExp', 
+                '[object Undefined]': 'undefined',
+                '[object Null]'   : 'null', 
+                '[object Object]'  : 'object'
+            };
+            return map[toString.call(obj)];
+            }
+        function deepClone(data) {
+            var t = type(data), o, i, ni;
+             
+            if(t === 'array') {
+              o = [];
+            }else if( t === 'object') {
+              o = {};
+            }else {
+              return data;
+            }
+             
+            if(t === 'array') {
+              for (i = 0, ni = data.length; i < ni; i++) {
+                o.push(deepClone(data[i]));
+              }
+              return o;
+            }else if( t === 'object') {
+              for( i in data) {
+                o[i] = deepClone(data[i]);
+              }
+              return o;
+            }
+          }
+        var b=deepClone(a);
+        b.a='bbbbb'
+        console.log(b.c())
+        console.log(a)
+        console.log(b)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

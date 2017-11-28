@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var obj={
+            name:'panke',
+            age:14,
+            animal:['dog','cat'],
+            fn:function(){
+                console.log(this.age)
+            }
+        }
+        function copyobj(obj){ //浅克隆
+            var newobj={};
+            for(var i in obj){
+                newobj[i]=obj[i];
+            }
+            return newobj
+        }
+        var obj2=obj;
+        obj2.age=1222;
+        obj2.animal.push('fish02')
+        var obj3=copyobj(obj)
+        obj3.age=1333;
+        obj3.animal.push('fish03')
+        console.log(obj)
+        console.log(obj2)
+        console.log(obj3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

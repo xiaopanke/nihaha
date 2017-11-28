@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+       
+        //定义一个类
+        function Animal(name){
+            this.name=name||'animal';
+            this.eat=function(food){
+                console.log(this.name+`吃`+food)
+            }
+        }
+        Animal.prototype.wan=function(what){
+            console.log(this.name+`玩`+what)
+        }
+
+        
+        //原型链继承
+        /*function Cat(){
+
+        };
+        Cat.prototype=new Animal();
+        Cat.prototype.name='cat'
+        var cat =new Cat();
+        
+        console.log(cat.name)
+        cat.eat('fish')
+        cat.wan('篮球')
+        console.log(cat instanceof Cat)
+        console.log(cat instanceof Animal)*/
+        //构造函数
+        /*function Cat(name){
+            Animal.call(this);
+            this.name=name|| 'cat12'
+        }
+        var cat =new Cat('cat1');
+        console.log(cat.name)
+        cat.eat('fish')
+        //cat.wan('篮球')
+        console.log(cat instanceof Cat)
+        console.log(cat instanceof Animal)*/
+        //实例继承
+        /*function Cat(name){
+            var instance =new Animal();
+            instance.name=name || 'cat23';
+            return instance
+        }
+        var cat =new Cat('cat1');
+        console.log(cat.name)
+        cat.eat('fish')
+        cat.wan('篮球')
+        console.log(cat instanceof Cat)
+        console.log(cat instanceof Animal)*/
+        //组合继承=构造函数+原型
+        function Cat(name){
+            Animal.call(this);
+            this.name=name|| 'cat34'
+        }
+        Cat.prototype=new Animal();
+        var cat =new Cat('cat1');
+        console.log(cat.name)
+        cat.eat('fish')
+        cat.wan('篮球')
+        console.log(cat instanceof Cat)
+        console.log(cat instanceof Animal)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

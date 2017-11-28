@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .son{
+            padding:10px;
+            background: red;
+            border:1px solid #000;
+            box-sizing: border-box;
+            width: 100px;position: absolute
+        }
+        .parent{padding:20px;
+        height: 100px;background: yellow;position: relative}
+        .gra{
+            height: 200px;background: blue;
+            border: 2px solid #000;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="gra">
+        <div class="parent">
+            <div class="son">123</div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let gra=document.querySelector('.gra');        
+    let parent=document.querySelector('.parent');        
+    let son=document.querySelector('.son'); 
+    console.log(son)
+    console.group('%c%s','color:red',`son.clientWidth=${son.clientWidth}`)       
+    console.group('%c%s','color:red',`son.offsetWidth=${son.offsetWidth}`)       
+    console.group('%c%s','color:red',`son.offsetLeft=${son.offsetLeft}`)       
+    console.group('%c%s','color:red',`son.offsetParent=${son.offsetParent.className}`)       
+    console.group('%c%s','color:red',`parent.offsetParent=${parent.offsetParent}`)       
+</script>

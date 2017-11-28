@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        console.log(x);//输出：function x(){}
+        var x=1;
+        function x(){}    
+//         实际执行的代码为，先将 var x=1 拆分为 var x; 和 x = 1; 两行，再将 var x; 和 function x(){} 两行提升至最上方变成：
+
+// var x;
+// function x(){}
+// console.log(x);
+// x=1;   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

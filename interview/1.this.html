@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    var obj1={name:'obj1'}
+    var obj2={name:'obj2'}
+    window.name='window';
+    function getName(){
+        console.log(this.name)
+    }
+    getName()
+    getName.call(obj1) //getName.call( obj1 ) 这句代码时， getName 函数体内的 this 就指向 obj1 对象
+    getName.call(obj2)
+</script>
+<body>
+    
+</body>
+</html>

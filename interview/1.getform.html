@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form action="" id="myForm">
+        <input type="text" name="a" value="aaaa">
+        <input type="radio" name="b" value="bbb">
+        <input type="text" name="b" value="bbb">
+        <input type="text" name="c" value="ccc">
+        <input type="text" name="d" value="dddd">
+        <input type="text" name="ee" value="eeeeeee">
+        <div>
+                <input type="text" name="e" value="eee">
+        </div>
+    </form>
+    <script>
+            var objJSON={};  
+            var myForm = document.getElementById("myForm"); 
+            console.log(myForm.elements) 
+            console.log(myForm.children) 
+            for(var i = 0; i<myForm.children.length;i++){  
+                var element=myForm.children[i];  
+                if(element.type=='text'||element.type=='radio' || element.type=='select-one'|| element.type=='select'){  
+                objJSON[element.name]=element.value;  
+                }  
+            }  
+            console.log(objJSON);  
+        </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var a={
+            a:12,
+            b:[12,12,121,132],
+            c:function(){
+                console.log(this.a)
+            }
+        }
+        console.log(a.c())
+        console.log(a)
+        var b = JSON.parse(JSON.stringify(a))//无法复制函数
+        console.log(b)
+        console.log(b.c())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
