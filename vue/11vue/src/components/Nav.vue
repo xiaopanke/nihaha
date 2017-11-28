@@ -6,6 +6,9 @@
           <router-link to='/uploadimg'>改头像</router-link>
           <router-link to='/stylus'>stylus</router-link>
           <router-link to='/created'>created</router-link>
+          <router-link to='/vuex'>vuex</router-link>
+          <router-link to='/vuexa'>vuexa</router-link>
+          <router-link to='/vuexb'>vuexb</router-link>
         </li>
       </ul>
       

@@ -5,6 +5,9 @@ import Eventbusb from '@/components/Eventbusb'
 import Uploadimg from '@/components/Uploadimg'
 import Stylus from '@/components/Stylus'
 import Created from '@/components/Created'
+import Vuexc from '@/components/Vuex'
+import Vuexa from '@/components/Vuexa'
+import Vuexb from '@/components/Vuexb'
 
 Vue.use(Router)
 
@@ -29,6 +32,18 @@ export default new Router({
     {
       path:'/created',
       component:Created
+    },
+    {
+      path:'/vuex',
+      component:Vuexc
+    },
+    {
+      path:'/vuexa',
+      component:Vuexa
+    },
+    {
+      path:'/vuexb',
+      component:Vuexb
     }
   ]
 })

@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import directives from './directives/autofix'
+import store from './store'
 directives(Vue)
 
 
@@ -12,6 +13,7 @@ window.bus=new Vue()
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
