@@ -17,7 +17,9 @@ export default {
       
     }
   },
-  computed:mapState(['count','count2'])
+  computed:{
+    ...mapState(['count','count2'])
+  }
 }
 </script>
 
