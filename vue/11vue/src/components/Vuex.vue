@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import {mapState,mapGetters} from 'vuex'
 export default {
   
   data () {
@@ -22,9 +22,9 @@ export default {
   },
   computed:{
     ...mapState(['count','count2']),
-    getcount(){
-      return this.$store.getters.count
-    }
+    ...mapGetters({
+      getcount:'count' //这里要起一个别名，要不就会与上面的count重名
+    })
   }
 }
 </script>
