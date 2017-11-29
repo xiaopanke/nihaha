@@ -9,6 +9,7 @@
           <router-link to='/vuex'>vuex</router-link>
           <router-link to='/vuexa'>vuexa</router-link>
           <router-link to='/vuexb'>vuexb</router-link>
+          <router-link to='/toastparent'>toastparent</router-link>
         </li>
       </ul>
       
