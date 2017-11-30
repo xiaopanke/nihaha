@@ -6760,7 +6760,7 @@
                     blob = owner._blob,
                     server = opts.server,
                     formData, binary, fr;
-    
+                
                 if ( opts.sendAsBinary ) {
                     server += (/\?/.test( server ) ? '&' : '?') +
                             $.param( owner._formData );

@@ -26,7 +26,7 @@ var uploader = WebUploader.create({
     // swf文件路径
     swf: 'jscss/Uploader.swf',
     // 文件接收服务端。
-    server:'/',
+    server:'https://www.baidu.com/',
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
     pick: '#picker',
@@ -41,6 +41,7 @@ var uploader = WebUploader.create({
 var $list=$('.list')
     // 当有文件被添加进队列的时候
 uploader.on( 'fileQueued', function( file ) {
+    console.log(1)
     $list.append( '<div id="' + file.id + '" class="item">' +
         '<h4 class="info">' + file.name + '</h4>' +
         '<p class="state">等待上传...</p>' +
