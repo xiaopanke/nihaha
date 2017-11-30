@@ -7863,7 +7863,6 @@
             _initAjax: function() {
                 var me = this,
                     xhr = new RuntimeClient('XMLHttpRequest');
-    
                 xhr.on( 'uploadprogress progress', function( e ) {
                     var percent = e.loaded / e.total;
                     percent = Math.min( 1, Math.max( 0, percent ) );
