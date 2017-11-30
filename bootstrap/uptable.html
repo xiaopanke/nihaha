@@ -15,8 +15,11 @@
 <body>
 	<div class="text-center">
 		<button class="btn btn-default upbtn">上传文件</button>
-		<input type="file" class="hidden upbtninput" accept=".csv,.xlsx">
+		<input type="file" class="hidden upbtninput"  accept=".csv,.xlsx">
 		<button class="btn btn-default">下载模板</button>
+		<br />
+		<span class="name"></span>
+		<span class="progress"></span>
 	</div>	
 	<script>
 		$(function(){
@@ -24,14 +27,28 @@
 				$('.upbtninput').click();
 			})
       $('.upbtninput').change(function(e){
-        let $target = e.target || e.srcElement
-        console.log($target.files[0].name)
-        let file = $target.files[0]
+        let target = e.target || e.srcElement
+		$('.name').html(target.files[0].name)
+        let file = target.files[0]
+		var total = file.size;
         var reader = new FileReader()
         reader.onload = (data) => {
-          let res = data.target || data.srcElement;
-          console.log(data)
-          console.log(123456789)
+			console.log(122345)
+          let res = data.target || data.srcElement
+          	reader.onprogress = function(e) {
+                $(".progress").val((e.loaded/total)*100)
+            };
+            reader.onabort=function () {
+                layer.msg("文件上传中断,请重试")
+            };
+            reader.onerror=function () {
+                layer.msg("文件上传出错，请重试")
+            };
+            reader.onload=function () {
+                $(".progress1").hide();
+                layer.msg("文件上传成功")
+            };
+            reader.readAsDataURL(file);
         }
       })
 		})
