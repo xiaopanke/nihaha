@@ -15,7 +15,7 @@
 <body>
 	<div class="text-center">
 		<button class="btn btn-default upbtn">上传文件</button>
-		<input type="file" class="hidden upbtninput">
+		<input type="file" class="hidden upbtninput" accept=".csv,.xlsx">
 		<button class="btn btn-default">下载模板</button>
 	</div>	
 	<script>
@@ -25,12 +25,12 @@
 			})
       $('.upbtninput').change(function(e){
         let $target = e.target || e.srcElement
+        console.log($target.files[0].name)
         let file = $target.files[0]
         var reader = new FileReader()
-        console.log(reader)
         reader.onload = (data) => {
-          let res = data.target || data.srcElement
-          console.log(res)
+          let res = data.target || data.srcElement;
+          console.log(data)
         }
       })
 		})
