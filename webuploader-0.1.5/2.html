@@ -9,16 +9,18 @@
 <link rel="stylesheet" type="text/css" href="jscss/webuploader.css">
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="jscss/webuploader.js"></script>
-<script type="text/javascript" src="jscss/webuploader.min.js"></script>
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<style>
+    .progress span{background: red;display: block;height: 20px;}
+</style>
 </head>
 <body>
         <span style="font-size:14px;"><div id="uploader-demo">  
                 <!--用来存放item-->  
                 <div id="thelist" class="uploader-list"></div>  
                 <div>  
-                 <div id="filePicker">选择图片</div>  
+                 <div id="filePicker">选择文件</div>  
                  <button id="ctlBtn" class="btn btn-default">开始上传</button>  
                 </div>  
             </div>  
@@ -39,18 +41,18 @@
        swf: 'jscss/Uploader.swf',  
   
        // 文件接收服务端。  
-       server: './test/',  
+       server: 'http://localhost/info.php',  
   
        // 选择文件的按钮。可选。  
        // 内部根据当前运行是创建，可能是input元素，也可能是flash.  
        pick: '#filePicker',  
   
        // 只允许选择图片文件。  
-       accept: {  
-           title: 'Images',  
-           extensions: 'gif,jpg,jpeg,bmp,png',  
-           mimeTypes: 'image/*'  
-       },  
+       accept: {
+        title: 'Xlsx',
+        extensions: "xlsx",       
+        mimeTypes: ".xlsx"
+     } ,
        method:'GET',  
    });  
    // 当有文件添加进来的时候  
@@ -72,7 +74,7 @@
        // thumbnailWidth x thumbnailHeight 为 100 x 100  
        uploader.makeThumb( file, function( error, src ) {   //webuploader方法  
            if ( error ) {  
-               $img.replaceWith('<span>不能预览</span>');  
+            //    $img.replaceWith('<span>不能预览</span>');  
                return;  
            }  
   
@@ -90,7 +92,7 @@
                    .appendTo( $li )  
                    .find('span');  
        }  
-  
+       console.log(percentage)
        $percent.css( 'width', percentage * 100 + '%' );  
    });  
   
@@ -114,7 +116,8 @@
   
    // 完成上传完了，成功或者失败，先删除进度条。  
    uploader.on( 'uploadComplete', function( file ) {  
-       $( '#'+file.id ).find('.progress').remove();  
+       console.log(123123);
+       //$( '#'+file.id ).find('.progress').remove();  
    });  
       $btn.on( 'click', function() {  
         console.log("上传...");  
