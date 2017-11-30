@@ -32,11 +32,13 @@
         let file = target.files[0]
 		var total = file.size;
         var reader = new FileReader()
-        reader.onload = (data) => {
+		console.log(reader)
+        //reader.onload = (data) => {
 			console.log(122345)
-          let res = data.target || data.srcElement
+         // let res = data.target || data.srcElement
           	reader.onprogress = function(e) {
-                $(".progress").val((e.loaded/total)*100)
+				  console.log(e.loaded)
+                $(".progress").html((e.loaded/total)*100)
             };
             reader.onabort=function () {
                 console.log("文件上传中断,请重试")
@@ -49,7 +51,7 @@
                 console.log("文件上传成功")
             };
             reader.readAsDataURL(file);
-        }
+        //}
       })
 		})
 	</script>
