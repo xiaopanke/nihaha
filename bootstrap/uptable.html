@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>上传表</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<style>
+	.hidden{display: none;}
+</style>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</head>
+<body>
+	<div class="text-center">
+		<button class="btn btn-default upbtn">上传文件</button>
+		<input type="file" class="hidden upbtninput">
+		<button class="btn btn-default">下载模板</button>
+	</div>	
+	<script>
+		$(function(){
+			$('.upbtn').click(function(){
+				$('.upbtninput').click();
+			})
+      $('.upbtninput').change(function(e){
+        let $target = e.target || e.srcElement
+        let file = $target.files[0]
+        var reader = new FileReader()
+        console.log(reader)
+        reader.onload = (data) => {
+          let res = data.target || data.srcElement
+          console.log(res)
+        }
+      })
+		})
+	</script>
+</body>
+</html>
