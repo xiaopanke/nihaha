@@ -39,14 +39,14 @@
                 $(".progress").val((e.loaded/total)*100)
             };
             reader.onabort=function () {
-                layer.msg("文件上传中断,请重试")
+                console.log("文件上传中断,请重试")
             };
             reader.onerror=function () {
-                layer.msg("文件上传出错，请重试")
+                console.log("文件上传出错，请重试")
             };
             reader.onload=function () {
                 $(".progress1").hide();
-                layer.msg("文件上传成功")
+                console.log("文件上传成功")
             };
             reader.readAsDataURL(file);
         }
