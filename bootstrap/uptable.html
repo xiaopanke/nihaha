@@ -31,6 +31,7 @@ $(function(){
         $('.upbtninput').click();
     })
     $('.upbtninput').change(function(e){
+
         let target = e.target || e.srcElement
 			$('.name').html(target.files[0].name)
         let file = target.files[0]
@@ -39,6 +40,7 @@ $(function(){
         console.log(reader)
         reader.readAsDataURL(file);
         reader.onload = (data) => {
+					console.log(12345)
             let res = data.target || data.srcElement
             //this.result
           	reader.onprogress = function(e) {
@@ -49,9 +51,6 @@ $(function(){
             };
             reader.onerror=function () {
                 console.log("文件上传出错，请重试")
-            };
-            reader.onload=function () {
-                $(".progress").parent().html('文件上传成功')
             };
 
         }
