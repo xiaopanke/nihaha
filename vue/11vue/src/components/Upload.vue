@@ -45,21 +45,18 @@ export default {
       reader.onload = (data) => {
           let res = data.target || data.srcElement
           //this.result
-          reader.onprogress=(e)=>{
-            this.file.fileprogress=(e.loaded/total)*100
-            console.log(this.file.fileprogress)
-          }
-          reader.onabort=function () {
-              console.log("文件上传中断,请重试")
-          };
-          reader.onerror=function () {
-              console.log("文件上传出错，请重试")
-          };
-          reader.onload=function () {
-              //$(".progress").parent().html('文件上传成功')
-          };
-
       }
+      reader.onprogress=(e)=>{
+        this.file.fileprogress=(e.loaded/total)*100
+        console.log(this.file.fileprogress)
+      }
+      reader.onabort=function () {
+          console.log("文件上传中断,请重试")
+      };
+      reader.onerror=function () {
+          console.log("文件上传出错，请重试")
+      };
+
     }
   }
 

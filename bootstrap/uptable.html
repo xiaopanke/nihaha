@@ -41,20 +41,18 @@ $(function(){
         reader.readAsDataURL(file);
         reader.onload = (data) => {
 					console.log(`onload`)
-            let res = data.target || data.srcElement
+            let res = data.target || data.srcElement;
+						console.log(data)
         }
 				//this.result
 				reader.onprogress = function(e) {
-						console.log(`onprogress`)
 						$(".progress span").css('width',(e.loaded/total)*100+'%')
 				};
 				reader.onabort=function () {
-					console.log(`onabort`)
-						console.log("文件上传中断,请重试")
+						console.log("onabort文件上传中断,请重试")
 				};
 				reader.onerror=function () {
-					console.log(`onerror`)
-						console.log("文件上传出错，请重试")
+						console.log("onerror文件上传出错，请重试")
 				};
     })
 })
