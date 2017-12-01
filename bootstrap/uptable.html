@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 <style>
 	.hidden{display: none;}
+    .progress{ position: relative;padding:0;}
+    .progress span{display: block;background: red;height: 20px; position: absolute;top:0;left:0 }
 </style>
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
@@ -17,9 +19,13 @@
 		<button class="btn btn-default upbtn">上传文件</button>
 		<input type="file" class="hidden upbtninput"  accept=".csv,.xlsx">
 		<button class="btn btn-default">下载模板</button>
-		<br />
-		<span class="name"></span>
-		<span class="progress"></span>
+		<br />文件名：<span class="name"></span>
+        <br />文件上传进度：
+        <div class="row">
+            <div class="progress col-md-6 col-md-offset-3"><span></span></div>
+        </div>
+        
+		
 	</div>	
 	<script>
 		$(function(){
@@ -36,8 +42,7 @@
         //reader.onload = (data) => {
          // let res = data.target || data.srcElement
           	reader.onprogress = function(e) {
-				  console.log(e.loaded)
-                $(".progress").html((e.loaded/total)*100)
+                $(".progress span").css('width',(e.loaded/total)*100+'%')
             };
             reader.onabort=function () {
                 console.log("文件上传中断,请重试")
@@ -46,8 +51,7 @@
                 console.log("文件上传出错，请重试")
             };
             reader.onload=function () {
-                $(".progress1").hide();
-                console.log("文件上传成功")
+                $(".progress").parent().html('文件上传成功')
             };
             reader.readAsDataURL(file);
         //}
