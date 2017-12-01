@@ -5,8 +5,8 @@
     <title>XMLHttpRequest上传文件进度实现</title>
     <script type="text/javascript">
         var xhr;
-        var ot;//
-        var oloaded;
+        var ot;//设置开始下载的时间
+        var oloaded;  //计算该分段上传的文件大小
         //上传文件方法
         function UpladFile() {
             var fileObj = document.getElementById("file").files[0]; // js 获取文件对象
@@ -85,8 +85,8 @@
     <progress id="progressBar" value="0" max="100" style="width: 300px;"></progress>
     <span id="percentage"></span><span id="time"></span>
     <br /><br />
-    <input type="file" id="file" name="myfile" />
-    <input type="button" onclick="UpladFile()" value="上传" />
+    <input type="file" id="file" name="myfile" accept=".xlsx" />
+    <input type="button" onclick="UpladFile()" value="上传"  />
     <input type="button" onclick="cancleUploadFile()" value="取消" />
 </body>
 </html>
