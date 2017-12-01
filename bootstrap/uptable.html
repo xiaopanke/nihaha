@@ -24,23 +24,23 @@
         <div class="row">
             <div class="progress col-md-6 col-md-offset-3"><span></span></div>
         </div>
-        
-		
-	</div>	
-	<script>
-		$(function(){
-			$('.upbtn').click(function(){
-				$('.upbtninput').click();
-			})
-      $('.upbtninput').change(function(e){
+	</div>
+<script>
+$(function(){
+    $('.upbtn').click(function(){
+        $('.upbtninput').click();
+    })
+    $('.upbtninput').change(function(e){
         let target = e.target || e.srcElement
-		$('.name').html(target.files[0].name)
+			$('.name').html(target.files[0].name)
         let file = target.files[0]
-		var total = file.size;
+				var total = file.size;
         var reader = new FileReader()
-		console.log(reader)
-        //reader.onload = (data) => {
-         // let res = data.target || data.srcElement
+        console.log(reader)
+        reader.readAsDataURL(file);
+        reader.onload = (data) => {
+            let res = data.target || data.srcElement
+            //this.result
           	reader.onprogress = function(e) {
                 $(".progress span").css('width',(e.loaded/total)*100+'%')
             };
@@ -53,10 +53,10 @@
             reader.onload=function () {
                 $(".progress").parent().html('文件上传成功')
             };
-            reader.readAsDataURL(file);
-        //}
-      })
-		})
+
+        }
+    })
+})
 	</script>
 </body>
 </html>

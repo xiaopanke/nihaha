@@ -10,15 +10,16 @@
           <router-link to='/vuexa'>vuexa</router-link>
           <router-link to='/vuexb'>vuexb</router-link>
           <router-link to='/toastparent'>toastparent</router-link>
+          <router-link to='/upload'>upload</router-link>
         </li>
       </ul>
-      
+
   </div>
 </template>
 
 <script>
 export default {
-  
+
   data () {
     return {
       msg: '123'

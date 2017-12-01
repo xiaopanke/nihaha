@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import directives from './directives/autofix'
 import store from './store'
+import 'bootstrap/dist/css/bootstrap.css';
 directives(Vue)
 
 

@@ -9,6 +9,7 @@ import Vuexc from '@/components/Vuex'
 import Vuexa from '@/components/Vuexa'
 import Vuexb from '@/components/Vuexb'
 import Toastparent from '@/components/Toastparent'
+import Upload from '@/components/Upload'
 
 Vue.use(Router)
 
@@ -22,6 +23,7 @@ export default new Router({
     {path:'/vuex',component:Vuexc},
     {path:'/vuexa',component:Vuexa},
     {path:'/vuexb',component:Vuexb},
-    {path:'/toastparent',component:Toastparent}
+    {path:'/toastparent',component:Toastparent},
+    {path:'/upload',component:Upload}
   ]
 })
