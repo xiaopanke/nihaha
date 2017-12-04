@@ -17,7 +17,7 @@
     <span class="prevbtn" @click='go(-1)'><</span>
     <span class="nextbtn" @click="go(1)">></span>
     <div class="dotbtn">
-        <span v-for="(item,index) in swiperimg" :key2="index">{{index}}</span>
+        <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(iNow-1) ?  'green' : '')}">{{index+1}}</span>
     </div>
   </div>
 </template>
@@ -123,5 +123,4 @@ export default {
 .nextbtn{right:20px;}
 .dotbtn { display: flex;align-items: center; justify-content:center;}
 .dotbtn span{width:20px;height: 20px;border-radius: 50%; margin:0 10px;background: red; text-align: center;color: #fff;}
-.dotbtn .cur{ background: green;}
 </style>
