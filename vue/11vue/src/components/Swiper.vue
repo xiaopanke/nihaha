@@ -41,7 +41,6 @@ export default {
     this.oUl=this.$refs.swiper;
     this.aLi=this.oUl.children;
     this.initswiper();
-
   },
   props:['options','swiperimg'],
   methods:{
@@ -53,11 +52,7 @@ export default {
     go(step){
       this.iNow+=step;
       this.panduaniNow()
-
-      this.oUl.style.WebkitTransition='.2s all ease';
-      this.x=-this.iNow*this.w;
-      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
-      this.oUl.addEventListener('transitionend',this.tend,false);
+      this.dongqilai(1)
     },
     startfn(ev){
       if(this.haha==this.iNow){this.bready=true;}
@@ -76,12 +71,7 @@ export default {
           this.downX>upX ? this.iNow++ : this.iNow--
           this.panduaniNow()
       }
-
-      this.oUl.style.WebkitTransition='.2s all ease';
-      this.x=-this.iNow*this.w;
-      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
-      this.oUl.addEventListener('transitionend',this.tend,false);
-
+      this.dongqilai(1)
     },
     tend(){
       this.bready=true;
@@ -92,22 +82,27 @@ export default {
       if(this.iNow==0){
           this.iNow=this.aLi.length-2;
       }
-      
-      this.oUl.style.WebkitTransition='none';
-      this.x=-this.iNow*this.w;
-      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
-      this.haha=this.iNow;
+      this.dongqilai(0)
     },
     dotclick(index){
       this.iNow=index+1;
-      this.oUl.style.WebkitTransition='.2s all ease';
-      this.x=-this.iNow*this.w;
-      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
-      this.oUl.addEventListener('transitionend',this.tend,false);
+      this.dongqilai(1)
     },
     panduaniNow(){
       if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
       if(this.iNow==-1){this.iNow=0;}
+    },
+    dongqilai(type){
+      // 如果传0 表示，要清掉动画 ，传1 表示正常动画
+      if(type==0){
+        this.oUl.style.WebkitTransition='none';
+        this.haha=this.iNow;
+      }else{
+        this.oUl.style.WebkitTransition='.2s all ease';
+        this.oUl.addEventListener('transitionend',this.tend,false);
+      }
+      this.x=-this.iNow*this.w;
+      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
     }
   },
   computed:{
