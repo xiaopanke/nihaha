@@ -17,7 +17,7 @@
     <span class="prevbtn" @click='go(-1)'><</span>
     <span class="nextbtn" @click="go(1)">></span>
     <div class="dotbtn">
-        <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(iNow-1) ?  'green' : '')}">{{index+1}}</span>
+        <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(iNow-1) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
     </div>
   </div>
 </template>
@@ -51,10 +51,13 @@ export default {
       this.oUl.style.WebkitTransform='translateX('+this.x+'px)';
     },
     go(step){
-      this.index+=step;
-      this.transX=this.index*this.w
-      this.$refs.swiper.style.transitionDuration = .2+'s';
-      this.$refs.swiper.style.transform=`translateX(-${this.index*this.w}px)`
+      this.iNow+=step;
+      if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
+      if(this.iNow==-1){this.iNow=0;}
+      this.oUl.style.WebkitTransition='.2s all ease';
+      this.x=-this.iNow*this.w;
+      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
+      this.oUl.addEventListener('transitionend',this.tend,false);
     },
     startfn(ev){
       if(this.haha==this.iNow){this.bready=true;}
@@ -83,26 +86,34 @@ export default {
 
           };
       }
-      this.x=-this.iNow*this.aLi[0].offsetWidth;
+      this.x=-this.iNow*this.w;
       this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
 
       this.oUl.addEventListener('transitionend',this.tend,false);
 
     },
     tend(){
+      console.log('this.iNow='+this.iNow)
       this.bready=true;
       this.oUl.removeEventListener('transitionend',this.tend,false);
       if(this.iNow==this.aLi.length-1){
+        console.log(1234)
           this.iNow=1;
-          this.x=-this.iNow*this.aLi[0].offsetWidth;this.oUl.style.WebkitTransition='none';
-          this.oUl.style.WebkitTransform='transitionend('+this.x+'px,0,0)';
+          this.x=-this.iNow*this.w;
+          this.oUl.style.WebkitTransition='none';
+          this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
       }
       if(this.iNow==0){
           this.iNow=this.aLi.length-2;
-          this.x=-this.iNow*this.aLi[0].offsetWidth;this.oUl.style.WebkitTransition='none';
-          this.oUl.style.WebkitTransform='transitionend('+this.x+'px,0,0)';
+          this.x=-this.iNow*this.w;
+          this.oUl.style.WebkitTransition='none';
+          this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
       }
       this.haha=this.iNow;
+    },
+    dotclick(index){
+      this.iNow=index+1;
+      console.log(this.iNow)
     }
   },
   computed:{
