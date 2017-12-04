@@ -52,8 +52,8 @@ export default {
     },
     go(step){
       this.iNow+=step;
-      if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
-      if(this.iNow==-1){this.iNow=0;}
+      this.panduaniNow()
+
       this.oUl.style.WebkitTransition='.2s all ease';
       this.x=-this.iNow*this.w;
       this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
@@ -63,57 +63,51 @@ export default {
       if(this.haha==this.iNow){this.bready=true;}
        if(this.bready==false)return;
        this.bready=false;
-
        this.oUl.style.WebkitTransition='none';
        this.downX=ev.targetTouches[0].pageX;
        this.disX=this.downX-this.x;
-       console.log(this.downX)
-       console.log(this.disX)
     },
     movefn(ev){
         this.oUl.style.WebkitTransform='translateX('+(ev.targetTouches[0].pageX-this.disX)+'px)';
     },
     endfn(ev){
       var upX=ev.changedTouches[0].pageX;
-      this.oUl.style.WebkitTransition='.2s all ease';
       if(Math.abs(upX-this.downX)>50){
-          if(this.downX>upX){
-              this.iNow++;
-              if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
-          }else{
-              this.iNow--;
-              if(this.iNow==-1){this.iNow=0;}
-
-          };
+          this.downX>upX ? this.iNow++ : this.iNow--
+          this.panduaniNow()
       }
+
+      this.oUl.style.WebkitTransition='.2s all ease';
       this.x=-this.iNow*this.w;
       this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
-
       this.oUl.addEventListener('transitionend',this.tend,false);
 
     },
     tend(){
-      console.log('this.iNow='+this.iNow)
       this.bready=true;
       this.oUl.removeEventListener('transitionend',this.tend,false);
       if(this.iNow==this.aLi.length-1){
-        console.log(1234)
           this.iNow=1;
-          this.x=-this.iNow*this.w;
-          this.oUl.style.WebkitTransition='none';
-          this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
       }
       if(this.iNow==0){
           this.iNow=this.aLi.length-2;
-          this.x=-this.iNow*this.w;
-          this.oUl.style.WebkitTransition='none';
-          this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
       }
+      
+      this.oUl.style.WebkitTransition='none';
+      this.x=-this.iNow*this.w;
+      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
       this.haha=this.iNow;
     },
     dotclick(index){
       this.iNow=index+1;
-      console.log(this.iNow)
+      this.oUl.style.WebkitTransition='.2s all ease';
+      this.x=-this.iNow*this.w;
+      this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
+      this.oUl.addEventListener('transitionend',this.tend,false);
+    },
+    panduaniNow(){
+      if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
+      if(this.iNow==-1){this.iNow=0;}
     }
   },
   computed:{
