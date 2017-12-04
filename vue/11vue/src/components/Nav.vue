@@ -11,6 +11,7 @@
           <router-link to='/vuexb'>vuexb</router-link>
           <router-link to='/toastparent'>toastparent</router-link>
           <router-link to='/upload'>upload</router-link>
+          <router-link to='/swiperdemo'>swiperdemo</router-link>
         </li>
       </ul>
 

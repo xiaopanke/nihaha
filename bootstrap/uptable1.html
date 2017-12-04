@@ -9,6 +9,7 @@
         var oloaded;  //计算该分段上传的文件大小
         //上传文件方法
         function UpladFile() {
+						console.log(document.getElementById("file").files)
             var fileObj = document.getElementById("file").files[0]; // js 获取文件对象
             var url = "https://jsonplaceholder.typicode.com/posts/"; // 接收上传文件的后台地址
 
@@ -67,6 +68,7 @@
         }
         //上传成功响应
         function uploadComplete(evt) {
+					console.log(evt)
          //服务断接收完文件返回的结果
          //    alert(evt.target.responseText);
              alert("上传成功！");
@@ -85,7 +87,7 @@
     <progress id="progressBar" value="0" max="100" style="width: 300px;"></progress>
     <span id="percentage"></span><span id="time"></span>
     <br /><br />
-    <input type="file" id="file" name="myfile" accept=".xlsx" />
+    <input type="file" id="file" name="myfile"  multiple="multiple" accept=".xlsx" />
     <input type="button" onclick="UpladFile()" value="上传"  />
     <input type="button" onclick="cancleUploadFile()" value="取消" />
 </body>
