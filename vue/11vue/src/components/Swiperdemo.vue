@@ -54,11 +54,11 @@ import swiper from './Swiper'
     data() {
       return {
         swiperOption: {
-           //autoplay: 1000,//自动播放时间
+           //autoplay: 2000,//自动播放时间
            dotbtn :true, //是否显示下面的小点点
            prevnextbtn:true, //是否显示左右的按钮
-           //speed:.2,//运动的速度 以s为单位
-           //loop:true
+           speed:.2,//运动的速度 以s为单位
+          loop:true
         },
         swiperimg:[
           {

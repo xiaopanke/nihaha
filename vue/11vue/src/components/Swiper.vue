@@ -37,23 +37,25 @@ export default {
       timer:'', //自动播放时间id
       aSpan:'',
       speed:0,
+      leng:0
     }
   },
   mounted(){
     this.oUl=this.$refs.swiper;
     this.aLi=this.oUl.children;
     this.aSpan=this.$refs.dotbtn.children;
+    this.leng=this.aLi.length;
+    console.log(this.leng)
     this.speed=this.options.speed || .5
     this.initswiper();
   },
   props:['options','swiperimg'],
   methods:{
     initswiper(){
+      this.oUl.style.width=this.leng*this.w+'px';
       if(this.options.loop){
-        this.oUl.style.width=(this.swiperimg.length+2)*this.w+'px';
         this.oUl.style.WebkitTransform='translateX('+this.x+'px)';
       }else{
-        this.oUl.style.width=this.swiperimg.length*this.w+'px';
         this.iNow=0;
         this.x=0;
         this.aSpan[0].style.background='green'
@@ -79,12 +81,23 @@ export default {
        this.disX=this.downX-this.x;
     },
     movefn(ev){
-        this.oUl.style.WebkitTransform='translateX('+(ev.targetTouches[0].pageX-this.disX)+'px)';
+      if(!this.options.loop && (ev.targetTouches[0].pageX-this.disX)>=100){
+            this.oUl.style.WebkitTransform='translateX(100px)';
+      }else if(!this.options.loop &&  (ev.targetTouches[0].pageX-this.disX)<=(-this.w*(this.leng-1)-100)){
+        console.log(23456)
+      }else{
+          this.oUl.style.WebkitTransform='translateX('+(ev.targetTouches[0].pageX-this.disX)+'px)';
+      }
+
     },
     endfn(ev){
       var upX=ev.changedTouches[0].pageX;
       if(Math.abs(upX-this.downX)>50){
           this.downX>upX ? this.iNow++ : this.iNow--
+          if(!this.options.loop){
+            this.iNow==-1 ? this.iNow=0 : ''
+            this.iNow==this.leng ? this.iNow=this.leng-1 : ''
+          }
           this.panduaniNow()
       }
       this.dongqilai(1)
@@ -93,11 +106,11 @@ export default {
       this.bready=true;
       this.oUl.removeEventListener('transitionend',this.tend,false);
       if(this.options.loop){
-        if(this.iNow==this.aLi.length-1){
+        if(this.iNow==this.leng-1){
             this.iNow=1;
         }
         if(this.iNow==0){
-            this.iNow=this.aLi.length-2;
+            this.iNow=this.leng-2;
         }
         this.dongqilai(0)
       }else{
@@ -114,16 +127,12 @@ export default {
       this.dongqilai(1)
     },
     panduaniNow(){
-      if(this.options.loop){
-        if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
+
+        if(this.iNow==this.leng){this.iNow=this.leng-1;}
         if(this.iNow==-1){this.iNow=0;}
-      }else{
-        console.log('panduaniNowiNow='+this.iNow)
-
-      }
-
     },
     dongqilai(type){
+
       // 如果传0 表示，要清掉动画 ，传1 表示正常动画
       if(type==0){
         this.oUl.style.WebkitTransition='none';
