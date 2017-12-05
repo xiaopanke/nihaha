@@ -3,21 +3,21 @@
     {{options}}
     <!-- 图片 -->
     <ul class="swiper" ref="swiper" @touchstart='startfn($event)' @touchmove='movefn($event)' @touchend='endfn($event)'>
-        <li class="item" :style="{'width':w+'px'}" v-if="options.loop">
+        <li class="item" :style="{'width':w+'px'}">
           <img :src="swiperimg[swiperimg.length-1].src" ref="img" />
         </li>
         <li class="item" v-for="(item,index) in swiperimg" :style="{'width':w+'px'}" :key="index">
           <img :src="item.src" ref="img" />
         </li>
-        <li class="item" :style="{'width':w+'px'}" v-if="options.loop">
+        <li class="item" :style="{'width':w+'px'}">
           <img :src="swiperimg[0].src" ref="img" />
         </li>
     </ul>
     <!--  左右按钮-->
-    <span class="prevbtn" v-show="options.prevnextbtn"  @click='go(-1)'>&lt;</span>
-    <span class="nextbtn"  v-show="options.prevnextbtn"   @click="go(1)">&gt;</span>
+    <span class="prevbtn" v-show="options.prevnextbtn"  @click='go(-1)'><</span>
+    <span class="nextbtn"  v-show="options.prevnextbtn"   @click="go(1)">></span>
     <div class="dotbtn" ref="dotbtn" v-show="options.dotbtn">
-        <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(options.loop ? (iNow-1) : iNow) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
+        <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(iNow-1) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@
 export default {
   data () {
     return {
-      x:-document.documentElement.getBoundingClientRect().width,//ul平移的大小
+      x:-document.documentElement.getBoundingClientRect().width,//获取屏幕的宽度
       w:document.documentElement.getBoundingClientRect().width,//获取屏幕的宽度
       oUl:'',
       aLi:'',
@@ -49,24 +49,16 @@ export default {
   props:['options','swiperimg'],
   methods:{
     initswiper(){
-      if(this.options.loop){
-        this.oUl.style.width=(this.swiperimg.length+2)*this.w+'px';
-        this.oUl.style.WebkitTransform='translateX('+this.x+'px)';
-      }else{
-        this.oUl.style.width=this.swiperimg.length*this.w+'px';
-        this.iNow=0;
-        this.x=0;
-        this.aSpan[0].style.background='green'
-      }
+      this.oUl.style.width=(this.swiperimg.length+2)*this.w+'px';
+      this.oUl.style.WebkitTransform='translateX('+this.x+'px)';
+
       if(this.options.autoplay){this.autoplayfn()};
     },
     go(step){
-
       if(this.bready==false)return;
       this.bready=false;
       clearInterval(this.timer)
       this.iNow+=step;
-
       this.panduaniNow()
       this.dongqilai(1)
     },
@@ -92,36 +84,26 @@ export default {
     tend(){
       this.bready=true;
       this.oUl.removeEventListener('transitionend',this.tend,false);
-      if(this.options.loop){
-        if(this.iNow==this.aLi.length-1){
-            this.iNow=1;
-        }
-        if(this.iNow==0){
-            this.iNow=this.aLi.length-2;
-        }
-        this.dongqilai(0)
-      }else{
-        console.log(this.iNow)
-        this.dongqilai(1)
+      if(this.iNow==this.aLi.length-1){
+          console.log('this.iNow==this.aLi.length-1')
+          this.iNow=1;
       }
-
+      if(this.iNow==0){
+        console.log('this.iNow==0')
+          this.iNow=this.aLi.length-2;
+      }
+      this.dongqilai(0)
     },
     dotclick(index){
       if(this.bready==false)return;
       this.bready=false;
       clearInterval(this.timer)
-      this.options.loop ?  this.iNow=index+1 : this.iNow=index;
+      this.iNow=index+1;
       this.dongqilai(1)
     },
     panduaniNow(){
-      if(this.options.loop){
-        if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
-        if(this.iNow==-1){this.iNow=0;}
-      }else{
-        console.log('panduaniNowiNow='+this.iNow)
-
-      }
-
+      if(this.iNow==this.aLi.length){this.iNow=this.aLi.length-1;}
+      if(this.iNow==-1){this.iNow=0;}
     },
     dongqilai(type){
       // 如果传0 表示，要清掉动画 ，传1 表示正常动画
@@ -129,7 +111,6 @@ export default {
         this.oUl.style.WebkitTransition='none';
       }else{
         this.oUl.style.WebkitTransition=this.speed+'s all ease';
-
         this.oUl.addEventListener('transitionend',this.tend,false);
         this.dotsspancur()
       }
@@ -144,17 +125,12 @@ export default {
       },this.options.autoplay)
     },
     dotsspancur(){
-      if(this.options.loop){
-        if(this.iNow==0 || this.iNow==this.aSpan.length){
-          this.aSpan[this.aSpan.length-1].style.background='green'
-        }
-        if(this.iNow==1 || this.iNow==this.aSpan.length+1){
-          this.aSpan[0].style.background='green'
-        }
-      }else{
-
+      if(this.iNow==0 || this.iNow==this.aSpan.length){
+        this.aSpan[this.aSpan.length-1].style.background='green'
       }
-
+      if(this.iNow==1 || this.iNow==this.aSpan.length+1){
+        this.aSpan[0].style.background='green'
+      }
     }
   }
 }
