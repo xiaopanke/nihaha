@@ -54,9 +54,9 @@ import swiper from './Swiper'
       return {
         swiperOption: {
            autoplay: 1000,//自动播放时间
-           //dotbtn :true, //是否显示下面的小点点
-           //prevnextbtn:true, //是否显示左右的按钮
-          // autoplayDisableOnInteraction: false,
+           dotbtn :true, //是否显示下面的小点点
+           prevnextbtn:true, //是否显示左右的按钮
+           //speed:.2,//运动的速度 以s为单位
            loop:true
         },
         swiperimg:[

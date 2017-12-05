@@ -35,13 +35,15 @@ export default {
       downX:'',
       disX:'',
       timer:'', //自动播放时间id
-      aSpan:''
+      aSpan:'',
+      speed:0,
     }
   },
   mounted(){
     this.oUl=this.$refs.swiper;
     this.aLi=this.oUl.children;
     this.aSpan=this.$refs.dotbtn.children;
+    this.speed=this.options.speed || .5
     this.initswiper();
   },
   props:['options','swiperimg'],
@@ -107,9 +109,8 @@ export default {
       // 如果传0 表示，要清掉动画 ，传1 表示正常动画
       if(type==0){
         this.oUl.style.WebkitTransition='none';
-        //this.haha=this.iNow;
       }else{
-        this.oUl.style.WebkitTransition='.5s all ease';
+        this.oUl.style.WebkitTransition=this.speed+'s all ease';
         this.oUl.addEventListener('transitionend',this.tend,false);
         this.dotsspancur()
       }
@@ -124,8 +125,6 @@ export default {
       },this.options.autoplay)
     },
     dotsspancur(){
-      console.log(this.aSpan[0])
-      console.log(this.aSpan[this.aSpan.length-1])
       if(this.iNow==0 || this.iNow==this.aSpan.length){
         this.aSpan[this.aSpan.length-1].style.background='green'
       }
