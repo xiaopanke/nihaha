@@ -72,6 +72,18 @@ import swiper from './Swiper'
           {
             href:'https://www.jd.com/',
             src:require('../assets/swiper3.jpg')
+          },
+          {
+            href:'https://www.baidu.com/',
+            src:require('../assets/swiper4.jpg')
+          },
+          {
+            href:'https://www.taobao.com/',
+            src:require('../assets/swiper5.jpg')
+          },
+          {
+            href:'https://www.jd.com/',
+            src:require('../assets/swiper6.jpg')
           }
         ]
       }
