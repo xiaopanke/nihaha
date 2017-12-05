@@ -14,9 +14,9 @@
         </li>
     </ul>
     <!--  左右按钮-->
-    <span class="prevbtn" @click='go(-1)'><</span>
-    <span class="nextbtn" @click="go(1)">></span>
-    <div class="dotbtn" ref="dotbtn">
+    <span class="prevbtn" v-show="options.prevnextbtn"  @click='go(-1)'><</span>
+    <span class="nextbtn"  v-show="options.prevnextbtn"   @click="go(1)">></span>
+    <div class="dotbtn" ref="dotbtn" v-show="options.dotbtn">
         <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(iNow-1) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
     </div>
   </div>
@@ -49,7 +49,8 @@ export default {
     initswiper(){
       this.oUl.style.width=(this.swiperimg.length+2)*this.w+'px';
       this.oUl.style.WebkitTransform='translateX('+this.x+'px)';
-      this.autoplayfn();
+
+      if(this.options.autoplay){this.autoplayfn()};
     },
     go(step){
       if(this.bready==false)return;
@@ -62,6 +63,7 @@ export default {
     startfn(ev){
        if(this.bready==false)return;
        this.bready=false;
+       clearInterval(this.timer)
        this.oUl.style.WebkitTransition='none';
        this.downX=ev.targetTouches[0].pageX;
        this.disX=this.downX-this.x;
@@ -113,13 +115,13 @@ export default {
       }
       this.x=-this.iNow*this.w;
       this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
-      this.autoplayfn();
+      if(this.options.autoplay){this.autoplayfn()};
     },
     autoplayfn(){
       clearInterval(this.timer)
       this.timer=setInterval(()=>{
         this.go(1)
-      },1000)
+      },this.options.autoplay)
     },
     dotsspancur(){
       console.log(this.aSpan[0])
@@ -145,6 +147,6 @@ export default {
 .prevbtn,.nextbtn{position: absolute;top:50%;transform: translateY(-50%);font-size: 30px; color: #fff;z-index: 2;}
 .prevbtn{left:20px;}
 .nextbtn{right:20px;}
-.dotbtn { display: flex;align-items: center; justify-content:center;}
+.dotbtn {position: absolute;bottom: 14px;  width: 100%; display: flex;align-items: center; justify-content:center;}
 .dotbtn span{width:20px;height: 20px;border-radius: 50%; margin:0 10px;background: red; text-align: center;color: #fff;}
 </style>

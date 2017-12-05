@@ -53,12 +53,11 @@ import swiper from './Swiper'
     data() {
       return {
         swiperOption: {
-           autoplay: 3500,
-          // setWrapperSize :true,
-          // pagination : '.swiper-pagination',
-          // observeParents:true,
+           autoplay: 1000,//自动播放时间
+           //dotbtn :true, //是否显示下面的小点点
+           //prevnextbtn:true, //是否显示左右的按钮
           // autoplayDisableOnInteraction: false,
-          // loop:true
+           loop:true
         },
         swiperimg:[
           {
