@@ -63,27 +63,27 @@ import swiper from './Swiper'
         swiperimg:[
           {
             href:'https://www.baidu.com/',
-            src:require('../assets/swiper1.jpg')
+            src:'http://upload.ouliu.net/i/20171206145305sgj8m.jpeg'
           },
           {
             href:'https://www.taobao.com/',
-            src:require('../assets/swiper2.jpg')
+            src:'http://upload.ouliu.net/i/201712061454195ee4v.jpeg'
           },
           {
             href:'https://www.jd.com/',
-            src:require('../assets/swiper3.jpg')
+            src:'http://upload.ouliu.net/i/201712061454346k3x9.jpeg'
           },
           {
             href:'https://www.baidu.com/',
-            src:require('../assets/swiper4.jpg')
+            src:'http://upload.ouliu.net/i/20171206145538l0s1b.jpeg'
           },
           {
             href:'https://www.taobao.com/',
-            src:require('../assets/swiper5.jpg')
+            src:'http://upload.ouliu.net/i/20171206145557w60zh.jpeg'
           },
           {
             href:'https://www.jd.com/',
-            src:require('../assets/swiper6.jpg')
+            src:'http://upload.ouliu.net/i/20171206145617jnlz6.jpeg'
           }
         ]
       }
