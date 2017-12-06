@@ -62,15 +62,23 @@ export default {
       if(this.options.autoplay){this.autoplayfn()};
     },
     go(e,step){
-      if(!this.options.loop){
-        if(e.currentTarget.style.opacity=='0.3'){
+      if(!this.options.loop){//没有循环的时候
+        if(!!e.style){//自动播放时没有currentTarget
+          if(this.iNow==this.aSpan.length-1){
+            this.iNow=-1;
+          }
+        }
+        if(!!e.currentTarget && e.currentTarget.style.opacity=='0.3'){
           return
         }
       }
+      console.log(1)
       if(this.bready==false)return;
       this.bready=false;
+      console.log(2)
       clearInterval(this.timer)
       this.iNow+=step;
+      console.log(3)
       this.panduaniNow()
       this.dongqilai(1)
     },
@@ -121,6 +129,12 @@ export default {
 
     },
     dotclick(index){
+      if(!this.options.loop){
+        if(index==this.iNow){return} //如果当前的显示和点击的是同一个，则return
+      }
+      if(this.options.loop){
+        if((index+1)==this.iNow){return} //如果当前的显示和点击的是同一个，则return
+      }
       if(this.bready==false)return;
       this.bready=false;
       clearInterval(this.timer)
@@ -128,7 +142,7 @@ export default {
       this.dongqilai(1)
     },
     panduaniNow(){
-
+        console.log(4)
         if(this.iNow==this.leng){this.iNow=this.leng-1;}
         if(this.iNow==-1){this.iNow=0;}
     },
@@ -150,7 +164,7 @@ export default {
     autoplayfn(){
       clearInterval(this.timer)
       this.timer=setInterval(()=>{
-        this.go(1)
+        this.go(this.$refs.nextbtn,1) //自动播放时第一个参数传nextbtn这个对象
       },this.options.autoplay)
     },
     dotsspancur(){
