@@ -1,6 +1,5 @@
 <template>
   <div class="wrap">
-    {{options}}
     <!-- 图片 -->
     <ul class="swiper" ref="swiper" @touchstart='startfn($event)' @touchmove='movefn($event)' @touchend='endfn($event)'>
         <li class="item" :style="{'width':w+'px'}" v-if="options.loop">
@@ -14,8 +13,8 @@
         </li>
     </ul>
     <!--  左右按钮-->
-    <span class="prevbtn" v-show="options.prevnextbtn"  @click='go(-1)'>&lt;</span>
-    <span class="nextbtn"  v-show="options.prevnextbtn"   @click="go(1)">&gt;</span>
+    <span class="prevbtn" ref="prevbtn" v-show="options.prevnextbtn"  @click='go($event,-1)'>&lt;</span>
+    <span class="nextbtn" ref="nextbtn"  v-show="options.prevnextbtn"   @click="go($event,1)">&gt;</span>
     <div class="dotbtn" ref="dotbtn" v-show="options.dotbtn">
         <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(options.loop ? (iNow-1) : iNow) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
     </div>
@@ -62,13 +61,16 @@ export default {
       }
       if(this.options.autoplay){this.autoplayfn()};
     },
-    go(step){
-
+    go(e,step){
+      if(!this.options.loop){
+        if(e.currentTarget.style.opacity=='0.3'){
+          return
+        }
+      }
       if(this.bready==false)return;
       this.bready=false;
       clearInterval(this.timer)
       this.iNow+=step;
-
       this.panduaniNow()
       this.dongqilai(1)
     },
@@ -114,7 +116,6 @@ export default {
         }
         this.dongqilai(0)
       }else{
-        console.log(this.iNow)
         this.dongqilai(1)
       }
 
@@ -161,6 +162,16 @@ export default {
           this.aSpan[0].style.background='green'
         }
       }else{
+        if(this.iNow==this.aSpan.length-1){
+          this.$refs.nextbtn.style.opacity='.3'
+          this.$refs.prevbtn.style.opacity='1'
+        }else if( this.iNow==0){
+          this.$refs.prevbtn.style.opacity='.3'
+          this.$refs.nextbtn.style.opacity='1'
+        }else{
+          this.$refs.nextbtn.style.opacity='1'
+          this.$refs.prevbtn.style.opacity='1'
+        }
 
       }
 
