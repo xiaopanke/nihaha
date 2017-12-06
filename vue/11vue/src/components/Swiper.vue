@@ -72,13 +72,10 @@ export default {
           return
         }
       }
-      console.log(1)
       if(this.bready==false)return;
       this.bready=false;
-      console.log(2)
       clearInterval(this.timer)
       this.iNow+=step;
-      console.log(3)
       this.panduaniNow()
       this.dongqilai(1)
     },
@@ -94,7 +91,6 @@ export default {
       if(!this.options.loop && (ev.targetTouches[0].pageX-this.disX)>=100){
             this.oUl.style.WebkitTransform='translateX(100px)';
       }else if(!this.options.loop &&  (ev.targetTouches[0].pageX-this.disX)<=(-this.w*(this.leng-1)-100)){
-        console.log(23456)
       }else{
           this.oUl.style.WebkitTransform='translateX('+(ev.targetTouches[0].pageX-this.disX)+'px)';
       }
@@ -142,7 +138,6 @@ export default {
       this.dongqilai(1)
     },
     panduaniNow(){
-        console.log(4)
         if(this.iNow==this.leng){this.iNow=this.leng-1;}
         if(this.iNow==-1){this.iNow=0;}
     },
@@ -176,6 +171,7 @@ export default {
           this.aSpan[0].style.background='green'
         }
       }else{
+        //如果轮播不是循环时，当运动到第一个，或者第三个，则为透明，不能点击
         if(this.iNow==this.aSpan.length-1){
           this.$refs.nextbtn.style.opacity='.3'
           this.$refs.prevbtn.style.opacity='1'
@@ -192,6 +188,32 @@ export default {
     }
   }
 }
+/*
+*author:lipanke
+*day:2017-12-06
+*使用方法：
+1： import swiper from './Swiper'
+2：data里的数据
+swiperOption: { //基本配置
+   autoplay: 500,//自动播放时间
+   //dotbtn :true, //是否显示下面的小点点
+   prevnextbtn:true, //是否显示左右的按钮
+   speed:.2,//运动的速度 以s为单位
+   loop:true
+},
+swiperimg:[
+  {
+    href:'https://www.baidu.com/',
+    src:require('../assets/swiper1.jpg')
+  },
+  {
+    href:'https://www.taobao.com/',
+    src:require('../assets/swiper2.jpg')
+  }
+
+  3：<swiper :options="swiperOption" :swiperimg="swiperimg"></swiper>
+  4：在components里注册
+*/
 </script>
 
 <style scoped>
