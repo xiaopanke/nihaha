@@ -63,7 +63,7 @@ export default {
     },
     go(e,step){
       if(!this.options.loop){//没有循环的时候
-        if(!!e.style){//自动播放时没有currentTarget
+        if(!!e.style){//自动播放时没有currentTarget //有问题，得修改
           if(this.iNow==this.aSpan.length-1){
             this.iNow=-1;
           }
@@ -80,14 +80,18 @@ export default {
       this.dongqilai(1)
     },
     startfn(ev){
+      console.log('startfn')
        if(this.bready==false)return;
        this.bready=false;
        clearInterval(this.timer)
        this.oUl.style.WebkitTransition='none';
        this.downX=ev.targetTouches[0].pageX;
        this.disX=this.downX-this.x;
+       console.log(this.downX,this.disX)
+       console.log('startfn')
     },
-    movefn(ev){
+    movefn(ev){//需要优化，如果用户上下滑动了 ev.preventDefault();
+      ev.preventDefault();
       if(!this.options.loop && (ev.targetTouches[0].pageX-this.disX)>=100){
             this.oUl.style.WebkitTransform='translateX(100px)';
       }else if(!this.options.loop &&  (ev.targetTouches[0].pageX-this.disX)<=(-this.w*(this.leng-1)-100)){
@@ -97,7 +101,11 @@ export default {
 
     },
     endfn(ev){
+      this.$refs.swiper.removeEventListener('touchmove',this.movefn)
       var upX=ev.changedTouches[0].pageX;
+      if(this.downX==upX){ //如果用户只是点击了一下 判断时间
+        this.bready=true;
+      }
       if(Math.abs(upX-this.downX)>50){
           this.downX>upX ? this.iNow++ : this.iNow--
           if(!this.options.loop){
