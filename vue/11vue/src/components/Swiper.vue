@@ -103,7 +103,7 @@ export default {
     endfn(ev){
       this.$refs.swiper.removeEventListener('touchmove',this.movefn)
       var upX=ev.changedTouches[0].pageX;
-      if(this.downX==upX){ //如果用户只是点击了一下 判断时间
+      if(this.downX==upX){ //如果用户只是点击了一下
         this.bready=true;
       }
       if(Math.abs(upX-this.downX)>50){
