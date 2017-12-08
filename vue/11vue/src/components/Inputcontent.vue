@@ -1,7 +1,14 @@
 <template>
   <div class="">
-    <span @click="showinput=true">回复</span>
-    <inputson v-if="showinput" @closefn="showinput=false"></inputson>
+    abc <br>
+    abc <br>
+    abc <br>
+    abc <br>
+    abc <br>
+    abc <br>
+    abc <br>
+    <span @click="showinputfn">回复</span>
+    <inputson v-if="showinput" @closefn="closefnparent"></inputson>
     <inputleng></inputleng>
   </div>
 </template>
@@ -12,20 +19,32 @@ import inputleng from './Inputleng'
 export default {
 	data () {
 		return {
-      showinput:false
+      showinput:false,
+      bodyscroll:0
 		}
 	},
 	created(){
 
 	},
 	mounted(){
-
+    
   },
   components:{
     inputson,
     inputleng
   },
   methods:{
+    showinputfn(ev){
+      this.showinput=true;
+      console.log(document.documentElement.scrollTop)
+      this.bodyscroll=document.documentElement.scrollTop;
+      document.body.style.position='fixed';
+      document.body.style.top=-this.bodyscroll+'px';
+    },
+    closefnparent(){
+      this.showinput=false
+      document.body.style.position='static'
+    }
   }
 
 }
