@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <span @click="showinputfn">回复</span>
-    <inputson v-if="showinput"></inputson>
+    <span @click="showinput=true">回复</span>
+    <inputson v-if="showinput" @closefn="showinput=false"></inputson>
     <inputleng></inputleng>
   </div>
 </template>
@@ -26,12 +26,6 @@ export default {
     inputleng
   },
   methods:{
-    showinputfn(){
-        this.showinput=true;
-        document.addEventListener('touchstart',function(e){
-          e.preventDefault();
-        })
-    }
   }
 
 }
