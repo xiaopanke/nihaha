@@ -40,10 +40,15 @@ export default {
       this.bodyscroll=document.documentElement.scrollTop;
       document.body.style.position='fixed';
       document.body.style.top=-this.bodyscroll+'px';
+      document.body.style.height='100px';
+      document.body.style.overflow='hidden';
     },
     closefnparent(){
       this.showinput=false
-      document.body.style.position='static'
+      document.body.style.position='static';
+      //document.documentElement.scrollTop=-this.bodyscroll+'px';
+      document.body.style.height='auto';
+      document.body.style.overflow='auto';
     }
   }
 
