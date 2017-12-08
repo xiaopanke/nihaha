@@ -11,6 +11,7 @@ import Vuexb from '@/components/Vuexb'
 import Toastparent from '@/components/Toastparent'
 import Upload from '@/components/Upload'
 import Swiperdemo from '@/components/Swiperdemo'
+import Inputcontent from '@/components/Inputcontent'
 
 Vue.use(Router)
 
@@ -26,6 +27,7 @@ export default new Router({
     {path:'/vuexb',component:Vuexb},
     {path:'/toastparent',component:Toastparent},
     {path:'/upload',component:Upload},
-    {path:'/swiperdemo',component:Swiperdemo}
+    {path:'/swiperdemo',component:Swiperdemo},
+    {path:'/inputcontent',component:Inputcontent},
   ]
 })

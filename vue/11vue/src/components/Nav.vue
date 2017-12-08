@@ -12,6 +12,7 @@
           <router-link to='/toastparent'>toastparent</router-link>
           <router-link to='/upload'>upload</router-link>
           <router-link to='/swiperdemo'>swiperdemo</router-link>
+          <router-link to='/inputcontent'>inputcontent</router-link>
         </li>
       </ul>
 
