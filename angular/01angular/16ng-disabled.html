@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <div ng-init="mySwitch=true">
+            <button ng-disabled="mySwitch">点我!</button>
+            <input type="checkbox" ng-model="mySwitch">按钮
+            {{ mySwitch }}
+        </div>
+    </div>
+    <script>
+        let app=angular.module('myApp',[]) 
+        app.controller('myCtrl',($scope,$location,$timeout,$http)=>{
+            
+        })
+    </script>
+</body>
+</html>

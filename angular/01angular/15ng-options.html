@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <!-- ng-init用来设置默认值 -->
+        <select ng-init="selectsite=selectsite[0].site" ng-options="x.site for x in sites" ng-model="selectsite"></select>
+        <span>{{selectsite.site}}</span>
+        <span>{{selectsite.url}}</span>
+    </div>
+    <script>
+        let app=angular.module('myApp',[]) 
+        app.controller('myCtrl',($scope,$location,$timeout,$http)=>{
+            $scope.sites = [
+                {site : "Google", url : "http://www.google.com"},
+                {site : "Runoob", url : "http://www.runoob.com"},
+                {site : "Taobao", url : "http://www.taobao.com"}
+            ];
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="text" ng-model="firstname">
+        <input type="text" ng-model="lastname">
+        {{comname()}}
+    </div>
+    <script>     
+    //  $rootScope针对全局的作用域生效
+    //  $scope只针对当前的controller作用域生效
+        var app= angular.module('myApp',[]);//这是空数组是用来干嘛的
+        app.controller('myCtrl',function($scope,$rootScope){
+            $scope.firstname='哈哈';
+            $scope.lastname='哈哈';
+            $scope.comname=function(){
+                return `${$scope.firstname} ++ ${$scope.lastname}`
+            }
+        })
+    </script>
+</body>
+</html>

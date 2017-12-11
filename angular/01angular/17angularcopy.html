@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <form action="" novalidate>
+            <input type="text" ng-model="user.name">
+            <input type="text" ng-model="user.age">
+            <br />
+            <span ng-click="go()">重置</span>
+            {{user}}
+            {{inituser}}
+        </form>
+    </div>
+    <script>
+        
+        let app=angular.module('myApp',[]) 
+        app.controller('myCtrl',($scope,$location,$timeout,$http)=>{
+            $scope.inituser={name:'panke',age:'17'}
+            $scope.go=()=>{
+                $scope.user=angular.copy($scope.inituser)
+            }
+            $scope.go();
+        })
+    </script>
+</body>
+</html>
