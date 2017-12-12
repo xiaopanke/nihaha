@@ -86,7 +86,7 @@ import swiper from './Swiper'
            dotbtn :true, //是否显示下面的小点点
            prevnextbtn:true, //是否显示左右的按钮
            speed:.2,//运动的速度 以s为单位
-           loop:true
+           loop:false
         },
         swiperOption2: {
            autoplay: 1500,//自动播放时间
