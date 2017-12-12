@@ -16,7 +16,7 @@
     <span class="prevbtn" ref="prevbtn" v-show="options.prevnextbtn"  @click='go($event,-1)'>&lt;</span>
     <span class="nextbtn" ref="nextbtn"  v-show="options.prevnextbtn"   @click="go($event,1)">&gt;</span>
     <div class="dotbtn" ref="dotbtn" v-show="options.dotbtn">
-        <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(options.loop ? (iNow-1) : iNow) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
+        <span v-for="(item,index) in swiperimg" :key="index" :style="{'background': (index==(options.loop ? (iNow-1) : iNow) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
     </div>
   </div>
 </template>
@@ -44,7 +44,6 @@ export default {
     this.aLi=this.oUl.children;
     this.aSpan=this.$refs.dotbtn.children;
     this.leng=this.aLi.length;
-    console.log(this.leng)
     this.speed=this.options.speed || .5
     this.initswiper();
   },
@@ -87,8 +86,6 @@ export default {
        this.oUl.style.WebkitTransition='none';
        this.downX=ev.targetTouches[0].pageX;
        this.disX=this.downX-this.x;
-       console.log(this.downX,this.disX)
-       console.log('startfn')
     },
     movefn(ev){//需要优化，如果用户上下滑动了 ev.preventDefault();
       ev.preventDefault();

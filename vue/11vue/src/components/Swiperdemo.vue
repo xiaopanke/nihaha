@@ -4,7 +4,7 @@
       <swiper :options="swiperOption" :swiperimg="swiperimg"></swiper>
       <swiper :options="swiperOption2" :swiperimg="swiperimg"></swiper>
     </div>
-    <!--
+    <!-- 
     <div class="item02">
       <p>你想要什么配置呢：</p>
       <ul>
@@ -31,7 +31,8 @@
           <label for="">否<input type="radio" :value="false" v-model="swiperOption.loop" ></label>
         </li>
       </ul>
-    </div>-->
+    </div>
+     -->
     <div class="">
       123 <br />
       123 <br />
@@ -82,17 +83,17 @@ import swiper from './Swiper'
     data() {
       return {
         swiperOption: {
-           autoplay: 1000,//自动播放时间
-           dotbtn :true, //是否显示下面的小点点
-           prevnextbtn:true, //是否显示左右的按钮
-           speed:.4,//运动的速度 以s为单位
-           loop:true
-        },
-        swiperOption2: {
            autoplay: 2000,//自动播放时间
            dotbtn :true, //是否显示下面的小点点
            prevnextbtn:true, //是否显示左右的按钮
            speed:.2,//运动的速度 以s为单位
+           loop:true
+        },
+        swiperOption2: {
+           autoplay: 1500,//自动播放时间
+           dotbtn :true, //是否显示下面的小点点
+           prevnextbtn:true, //是否显示左右的按钮
+           speed:.4,//运动的速度 以s为单位
         },
         swiperimg:[
           {
