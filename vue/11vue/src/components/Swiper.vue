@@ -103,7 +103,7 @@ export default {
       if(this.downX==upX){ //如果用户只是点击了一下
         this.bready=true;
       }
-      if(Math.abs(upX-this.downX)>50){
+      if(Math.abs(upX-this.downX)>100){
           this.downX>upX ? this.iNow++ : this.iNow--
           if(!this.options.loop){
             this.iNow==-1 ? this.iNow=0 : ''

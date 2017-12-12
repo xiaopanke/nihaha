@@ -1,7 +1,6 @@
 <template>
   <div class="">
     <div class="item01">
-      <swiper :options="swiperOption" :swiperimg="swiperimg"></swiper>
       <swiper :options="swiperOption2" :swiperimg="swiperimg"></swiper>
     </div>
     <!-- 
