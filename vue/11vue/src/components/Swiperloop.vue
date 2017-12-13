@@ -17,7 +17,7 @@
     <span class="prevbtn" v-show="options.prevnextbtn"  @click='go(-1)'><</span>
     <span class="nextbtn"  v-show="options.prevnextbtn"   @click="go(1)">></span>
     <div class="dotbtn" ref="dotbtn" v-show="options.dotbtn">
-        <span v-for="(item,index) in swiperimg" :key2="index" :style="{'background': (index==(iNow-1) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
+        <span v-for="(item,index) in swiperimg" :key="index" :style="{'background': (index==(iNow-1) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
     </div>
   </div>
 </template>

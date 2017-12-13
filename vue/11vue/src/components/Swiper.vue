@@ -16,7 +16,7 @@
     <span class="prevbtn" ref="prevbtn" v-show="options.prevnextbtn"  @click='go($event,-1)'>&lt;</span>
     <span class="nextbtn" ref="nextbtn"  v-show="options.prevnextbtn"   @click="go($event,1)">&gt;</span>
     <div class="dotbtn" ref="dotbtn" v-show="options.dotbtn">
-        <span v-for="(item,index) in swiperimg" :key="index" :style="{'background': (index==(options.loop ? (iNow-1) : iNow) ?  'green' : '')}" @click='dotclick(index)'>{{index+1}}</span>
+        <span v-for="(item,index) in swiperimg" :key="index" :style="{'background': (index==(options.loop ? (iNow-1) : iNow) ?  'green' : '')}" @click='dotclick(index)' class="dotbtnspan">{{index+1}}</span>
     </div>
   </div>
 </template>
@@ -36,7 +36,8 @@ export default {
       timer:'', //自动播放时间id
       aSpan:'',
       speed:0,
-      leng:0
+      leng:0,
+      dotbtnstyle:{}
     }
   },
   mounted(){
@@ -44,7 +45,11 @@ export default {
     this.aLi=this.oUl.children;
     this.aSpan=this.$refs.dotbtn.children;
     this.leng=this.aLi.length;
-    this.speed=this.options.speed || .5
+    this.speed=this.options.speed || .5;
+    this.dotbtnstyle=this.options.dotbtnstyle || {
+      default:`width:20px;height: 20px; margin:0 10px;background: red;`,
+      cur:`background:green`
+    }
     this.initswiper();
   },
   props:['options','swiperimg'],
@@ -79,7 +84,6 @@ export default {
       this.dongqilai(1)
     },
     startfn(ev){
-      console.log('startfn')
        if(this.bready==false)return;
        this.bready=false;
        clearInterval(this.timer)
@@ -168,6 +172,7 @@ export default {
       },this.options.autoplay)
     },
     dotsspancur(){
+      console.log(2345)
       if(this.options.loop){
         if(this.iNow==0 || this.iNow==this.aSpan.length){
           this.aSpan[this.aSpan.length-1].style.background='green'
@@ -232,5 +237,5 @@ swiperimg:[
 .prevbtn{left:20px;}
 .nextbtn{right:20px;}
 .dotbtn {position: absolute;bottom: 14px;  width: 100%; display: flex;align-items: center; justify-content:center;}
-.dotbtn span{width:20px;height: 20px;border-radius: 50%; margin:0 10px;background: red; text-align: center;color: #fff;}
+.dotbtn span{border-radius: 50%; text-align: center;color: #fff;}
 </style>
