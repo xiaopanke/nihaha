@@ -241,5 +241,5 @@ swiperimg:[
 .prevbtn{left:20px;}
 .nextbtn{right:20px;}
 .dotbtn {position: absolute;bottom: 14px;  width: 100%; display: flex;align-items: center; justify-content:center;}
-.dotbtn span{border-radius: 50%; color: #fff; display: flex;justify-content: center}
+.dotbtn span{border-radius: 50%; color: #fff; display: flex;justify-content: center;align-items: center}
 </style>
