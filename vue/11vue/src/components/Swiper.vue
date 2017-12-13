@@ -188,17 +188,12 @@ export default {
       }
     },
     dotsspanstyle(){
-      console.log(this.iNow)
-      
       for(var i=0;i<this.aSpan.length;i++){
           this.aSpan[i].setAttribute('style',this.dotbtnstyle.default)
       }
-      if(this.options.loop){
-        this.aSpan[(this.iNow-1+this.aSpan.length)%this.aSpan.length].setAttribute('style',this.dotbtnstyle.cur)
-      }else{
-        this.aSpan[(this.iNow+this.aSpan.length)%this.aSpan.length].setAttribute('style',this.dotbtnstyle.cur)
-      }
-      
+      var n;
+      n= this.options.loop ? this.iNow-1 :this.iNow
+      this.aSpan[(n+this.aSpan.length)%this.aSpan.length].setAttribute('style',this.dotbtnstyle.cur)
     }
   }
 }
@@ -213,7 +208,11 @@ swiperOption: { //基本配置
    //dotbtn :true, //是否显示下面的小点点
    prevnextbtn:true, //是否显示左右的按钮
    speed:.2,//运动的速度 以s为单位
-   loop:true
+   loop:true, //是否无缝滚动
+   dotbtnstyle:{  //给小圆点配置样式，default是默认的样式，cur是当前显示的样式
+    default:`width:14px;font-size:12px;height:14px;font-size:12px;background:purple;color:yellow;margin:0 5px;`,
+    cur:`width:14px;font-size:12px;height:14px;font-size:12px;background:yellow;color:purple;margin:0 5px;`
+  }
 },
 swiperimg:[
   {
