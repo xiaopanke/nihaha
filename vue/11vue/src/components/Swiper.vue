@@ -16,7 +16,7 @@
     <span class="prevbtn" ref="prevbtn" v-show="options.prevnextbtn"  @click='go($event,-1)'>&lt;</span>
     <span class="nextbtn" ref="nextbtn"  v-show="options.prevnextbtn"   @click="go($event,1)">&gt;</span>
     <div class="dotbtn" ref="dotbtn" v-show="options.dotbtn">
-        <span v-for="(item,index) in swiperimg" :key="index" :style="{'background': (index==(options.loop ? (iNow-1) : iNow) ?  'green' : '')}" @click='dotclick(index)' class="dotbtnspan">{{index+1}}</span>
+        <span v-for="(item,index) in swiperimg" :key="index"  @click='dotclick(index)'>{{index+1}}</span>
     </div>
   </div>
 </template>
@@ -48,9 +48,10 @@ export default {
     this.speed=this.options.speed || .5;
     this.dotbtnstyle=this.options.dotbtnstyle || {
       default:`width:20px;height: 20px; margin:0 10px;background: red;`,
-      cur:`background:green`
+      cur:`width:20px;height:20px;background:green;margin:0 10px;`
     }
     this.initswiper();
+    this.dotsspanstyle();
   },
   props:['options','swiperimg'],
   methods:{
@@ -151,7 +152,6 @@ export default {
         if(this.iNow==-1){this.iNow=0;}
     },
     dongqilai(type){
-
       // 如果传0 表示，要清掉动画 ，传1 表示正常动画
       if(type==0){
         this.oUl.style.WebkitTransition='none';
@@ -160,6 +160,7 @@ export default {
 
         this.oUl.addEventListener('transitionend',this.tend,false);
         this.dotsspancur()
+        this.dotsspanstyle()
       }
       this.x=-this.iNow*this.w;
       this.oUl.style.WebkitTransform='translate3d('+this.x+'px,0,0)';
@@ -172,16 +173,8 @@ export default {
       },this.options.autoplay)
     },
     dotsspancur(){
-      console.log(2345)
-      if(this.options.loop){
-        if(this.iNow==0 || this.iNow==this.aSpan.length){
-          this.aSpan[this.aSpan.length-1].style.background='green'
-        }
-        if(this.iNow==1 || this.iNow==this.aSpan.length+1){
-          this.aSpan[0].style.background='green'
-        }
-      }else{
-        //如果轮播不是循环时，当运动到第一个，或者第三个，则为透明，不能点击
+      if(!this.options.loop){
+          //如果轮播不是循环时，当运动到第一个，或者第三个，则为透明，不能点击
         if(this.iNow==this.aSpan.length-1){
           this.$refs.nextbtn.style.opacity='.3'
           this.$refs.prevbtn.style.opacity='1'
@@ -192,9 +185,20 @@ export default {
           this.$refs.nextbtn.style.opacity='1'
           this.$refs.prevbtn.style.opacity='1'
         }
-
       }
-
+    },
+    dotsspanstyle(){
+      console.log(this.iNow)
+      
+      for(var i=0;i<this.aSpan.length;i++){
+          this.aSpan[i].setAttribute('style',this.dotbtnstyle.default)
+      }
+      if(this.options.loop){
+        this.aSpan[(this.iNow-1+this.aSpan.length)%this.aSpan.length].setAttribute('style',this.dotbtnstyle.cur)
+      }else{
+        this.aSpan[(this.iNow+this.aSpan.length)%this.aSpan.length].setAttribute('style',this.dotbtnstyle.cur)
+      }
+      
     }
   }
 }
@@ -237,5 +241,5 @@ swiperimg:[
 .prevbtn{left:20px;}
 .nextbtn{right:20px;}
 .dotbtn {position: absolute;bottom: 14px;  width: 100%; display: flex;align-items: center; justify-content:center;}
-.dotbtn span{border-radius: 50%; text-align: center;color: #fff;}
+.dotbtn span{border-radius: 50%; color: #fff; display: flex;justify-content: center}
 </style>
