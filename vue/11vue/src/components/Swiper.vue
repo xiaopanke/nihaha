@@ -3,13 +3,13 @@
     <!-- 图片 -->
     <ul class="swiper" ref="swiper" @touchstart='startfn($event)' @touchmove='movefn($event)' @touchend='endfn($event)'>
         <li class="item" :style="{'width':w+'px'}" v-if="options.loop">
-          <img :src="swiperimg[swiperimg.length-1].src" ref="img" />
+          <a :href="swiperimg[swiperimg.length-1].href"><img :src="swiperimg[swiperimg.length-1].src" ref="img" /></a>
         </li>
         <li class="item" v-for="(item,index) in swiperimg" :style="{'width':w+'px'}" :key="index">
-          <img :src="item.src" ref="img" />
+          <a :href="item.href"><img :src="item.src" ref="img" /></a>
         </li>
         <li class="item" :style="{'width':w+'px'}" v-if="options.loop">
-          <img :src="swiperimg[0].src" ref="img" />
+          <a :href="swiperimg[0].href"><img :src="swiperimg[0].src" ref="img" /></a>
         </li>
     </ul>
     <!--  左右按钮-->
@@ -200,6 +200,7 @@ export default {
 /*
 *author:lipanke
 *day:2017-12-06
+*update :2017-12-13
 *使用方法：
 1： import swiper from './Swiper'
 2：data里的数据
