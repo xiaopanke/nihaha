@@ -3,7 +3,6 @@
     <div class="item01">
       <swiper :options="swiperOption" :swiperimg="swiperimg"></swiper>
       <swiper :options="swiperOption2" :swiperimg="swiperimg"></swiper>
-      <swiper :options="swiperOption3" :swiperimg="swiperimg"></swiper>
     </div>
     <!-- 
     <div class="item02">
@@ -99,19 +98,12 @@ import swiper from './Swiper'
            dotbtn :true, //是否显示下面的小点点
            prevnextbtn:true, //是否显示左右的按钮
            speed:.2,//运动的速度 以s为单位
-           loop:false
-           
-        },
-        swiperOption3: {
-           //autoplay:3000,//自动播放时间
-           dotbtn :true, //是否显示下面的小点点
-           //prevnextbtn:true, //是否显示左右的按钮
-           speed:.5,//运动的速度 以s为单位
-           loop:true,
+           loop:false,
            dotbtnstyle:{
              default:`width:16px;font-size:12px;height:16px;font-size:12px;background:green;color:pink;margin:0 7px;`,
              cur:`width:16px;font-size:12px;height:14px;font-size:12px;background:pink;color:purple;margin:0 7px;`
            }
+           
         },
         swiperimg:[
           {
