@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl" >
+  <input type="text" ng-model="a"/>
+  <input type="text" ng-model="b"/>
+  {{a+' '+b}}
+  <haha></haha>
+  <div haha></div>
+  自定义指令可以通过元素名、属性来调用指令
+</div>
+<script type="text/javascript">
+    var app=angular.module('myApp',[]);
+    app.directive('haha',()=>{
+      return {
+        template:'<h1>李盼珂</h1>'
+      }
+    })
+</script>
+</body>
+</html>
