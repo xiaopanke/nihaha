@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl" >
+  <div>{{ foo }}</div>
+  <button id="addBtn">go</button>
+</div>
+<script type="text/javascript">
+    var app=angular.module('myApp',[]);
+    app.controller('myCtrl',($scope)=>{
+      $scope.foo = 0;
+      $scope.flag = 0;
+      $scope.$watch("flag", (newValue, oldValue) => {
+        // 当 $digest 循环检测 flag 时，如果新旧值不一致将调用该函数
+        $scope.foo = $scope.flag;
+      });
+      document.getElementById("addBtn").addEventListener("click", () => {
+        $scope.flag++;
+        $scope.$digest(); // 主动触发 $digest 循环
+      }, false);
+
+
+    })
+</script>
+</body>
+</html>
