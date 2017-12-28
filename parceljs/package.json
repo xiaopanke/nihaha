@@ -2,5 +2,8 @@
   "name": "parceljs",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
 }
