@@ -1,2 +1,2 @@
 alert(1)
-console.log(234567)
+console.log(111111)
