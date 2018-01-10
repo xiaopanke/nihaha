@@ -8,7 +8,9 @@ module.exports={
   output:{
     path:path.resolve(__dirname,'asset3'),
     filename:'[name].js',
-    publicPath: "https://cdn.example.com/assets/"
+    //publicPath: "https://cdn.example.com/assets/"
+    //publicPath: "//cdn.example.com/assets/"
+    publicPath:'/assets/'
   },
   module: {
     loaders: [
