@@ -29,3 +29,6 @@ app.js是入口js，vendor则是通过提取公共模块插件来提取的代码
 app.js：基本就是你实际编写的那个app.vue(.vue或.js?),没这个页面跑不起来.
 vendor的文件大小最大，因为其包含了vue整一个框架的代码，以及webpack的模块化代码
 manifest的话，主要是一些异步加载的实现方法（通过建立script方式动态引入js），内容上包含异步js的文件名和路径。
+
+plugin:插件
+webpack.optimize.UglifyJsPlugin()  有这个js就压缩了
