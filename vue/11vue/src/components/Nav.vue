@@ -13,6 +13,10 @@
           <router-link to='/upload'>upload</router-link>
           <router-link to='/swiperdemo'>swiperdemo</router-link>
           <router-link to='/inputcontent'>inputcontent</router-link>
+          <router-link to='/computed'>computed</router-link>
+          <router-link to='/mixins'>mixins</router-link>
+          <router-link to='/parentchild'>parentchild</router-link>
+          <router-link to='/draggabledemo'>draggabledemo</router-link>
         </li>
       </ul>
 

@@ -12,6 +12,10 @@ import Toastparent from '@/components/Toastparent'
 import Upload from '@/components/Upload'
 import Swiperdemo from '@/components/Swiperdemo'
 import Inputcontent from '@/components/Inputcontent'
+import Computed from '@/components/Computed'
+import Mixins from '@/components/Mixins'
+import Parentchild from '@/components/Parentchild'
+import Draggabledemo from '@/components/Draggabledemo'
 
 Vue.use(Router)
 
@@ -29,5 +33,9 @@ export default new Router({
     {path:'/upload',component:Upload},
     {path:'/swiperdemo',component:Swiperdemo},
     {path:'/inputcontent',component:Inputcontent},
+    {path:'/computed',component:Computed},
+    {path:'/mixins',component:Mixins},
+    {path:'/parentchild',component:Parentchild},
+    {path:'/draggabledemo',component:Draggabledemo},
   ]
 })

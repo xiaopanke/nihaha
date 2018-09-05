@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      canvas{ margin: 100px auto; display: block;}
+    </style>
+    <script src="https://cdn.bootcss.com/underscore.js/1.9.0/underscore-min.js"></script>
+  </head>
+  <body>
+    <canvas id="canvas">请升级浏览器</canvas>
+  </body>
+  <script type="text/javascript">
+    window.onload=function () {
+      var canvas=document.getElementById('canvas');
+      var ctx=canvas.getContext('2d');
+      canvas.style.background="black";
+      canvas.width=1000;
+      canvas.height=500;
+
+      //小球类
+      class ball {
+        //构造器
+        constructor(x,y,color) {
+          this.x=x;
+          this.y=y;
+          this.color=color;
+          this.r=30;
+        }
+        //绘制小球
+        render(){
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(this.x,this.y,this.r,0,Math.PI*2);
+          ctx.fillStyle=this.color;
+          ctx.fill();
+          ctx.restore();
+
+        }
+      }
+
+      class moveball extends ball{
+        constructor(x,y,color){
+          super(x,y,color);
+          //量的变化
+          this.dX=_.random(-5,5);
+          this.dY=_.random(-5,5);
+          this.dR=_.random(1,3);
+        }
+
+        upData(){
+          this.x+=this.dX;
+          this.y+=this.dY;
+          this.r-=this.dR;
+          if(this.r<0){
+            this.r=0;
+          }
+        }
+      }
+      // var ball01=new ball(0,0,'red');
+      // ball01.render();
+      //实例化小球
+      let ballArr=[];
+      let ballColor=['red','yellow','pink','orange','purple'];
+
+      //监听鼠标移动
+      canvas.addEventListener('mousemove',function(e){
+        ballArr.push(new moveball(e.offsetX,e.offsetY,bg3()));
+      });
+      setInterval(function(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        for (var i = 0; i < ballArr.length; i++) {
+          ballArr[i].render();
+          ballArr[i].upData();
+
+        }
+      },50);
+
+      function bg3(){
+           var r=Math.floor(Math.random()*256);
+           var g=Math.floor(Math.random()*256);
+           var b=Math.floor(Math.random()*256);
+           return `rgb(${r},${g},${b})`;
+       }
+    }
+  </script>
+</html>
