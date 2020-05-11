@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/aboutme/aboutme"
+  ],
+  "tabBar": {
+    "selectedColor":"#f00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/selecthome.png"
+      },
+      {
+        "pagePath": "pages/aboutme/aboutme",
+        "text": "关于我",
+        "iconPath":"pages/images/man.png",
+        "selectedIconPath": "pages/images/selectman.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "小盼珂的小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
