@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+  </head>
+  <body>
+  </body>
+  <script type="text/javascript">
+    let a=120;
+    let promise=new Promise((resolve,reject)=>{
+      if(a==10){
+        resolve('成功')
+      }else{
+        reject('失败')
+      }
+    })
+    //promise.then(success,fail)
+    promise.then(res=>{
+      console.log(res);
+    },err=>{
+      console.log(err);
+    })
+    promise.catch(err=>{  //catch跟then的第二个参数效果一样
+      console.log(err+'catch');
+    })
+  </script>
+</html>
